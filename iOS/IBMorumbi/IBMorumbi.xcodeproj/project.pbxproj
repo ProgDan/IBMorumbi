@@ -207,6 +207,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Daniel Arndt Alves";
 				TargetAttributes = {
+					6567243C18A979A9000AFE76 = {
+						DevelopmentTeam = 3PSB9V93UY;
+					};
 					6567246318A979AA000AFE76 = {
 						TestTargetID = 6567243C18A979A9000AFE76;
 					};
@@ -398,9 +401,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,9 +416,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -480,6 +487,7 @@
 				6567247718A979AA000AFE76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6567247818A979AA000AFE76 /* Build configuration list for PBXNativeTarget "IBMorumbiTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +496,7 @@
 				6567247A18A979AA000AFE76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
