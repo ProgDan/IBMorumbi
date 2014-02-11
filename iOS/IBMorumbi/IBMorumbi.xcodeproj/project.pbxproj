@@ -23,6 +23,8 @@
 		6567246818A979AA000AFE76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567244418A979A9000AFE76 /* UIKit.framework */; };
 		6567247018A979AA000AFE76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6567246E18A979AA000AFE76 /* InfoPlist.strings */; };
 		6567247218A979AA000AFE76 /* IBMorumbiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567247118A979AA000AFE76 /* IBMorumbiTests.m */; };
+		656724A718A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 656724A618A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png */; };
+		656724A918A9AAA1000AFE76 /* logo_IBMorumbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 656724A818A9AAA1000AFE76 /* logo_IBMorumbi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		6567246D18A979AA000AFE76 /* IBMorumbiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBMorumbiTests-Info.plist"; sourceTree = "<group>"; };
 		6567246F18A979AA000AFE76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6567247118A979AA000AFE76 /* IBMorumbiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBMorumbiTests.m; sourceTree = "<group>"; };
+		656724A618A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_IBMorumbi_iPhone.png; path = images/logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
+		656724A818A9AAA1000AFE76 /* logo_IBMorumbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_IBMorumbi.png; path = images/logo_IBMorumbi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		6567244618A979AA000AFE76 /* IBMorumbi */ = {
 			isa = PBXGroup;
 			children = (
+				656724A518A99F92000AFE76 /* images */,
 				6567244F18A979AA000AFE76 /* AppDelegate.h */,
 				6567245018A979AA000AFE76 /* AppDelegate.m */,
 				6567245218A979AA000AFE76 /* Main_iPhone.storyboard */,
@@ -158,6 +163,15 @@
 				6567246E18A979AA000AFE76 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		656724A518A99F92000AFE76 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				656724A818A9AAA1000AFE76 /* logo_IBMorumbi.png */,
+				656724A618A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,8 +255,10 @@
 			files = (
 				6567245718A979AA000AFE76 /* Main_iPad.storyboard in Resources */,
 				6567245F18A979AA000AFE76 /* Images.xcassets in Resources */,
+				656724A718A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png in Resources */,
 				6567245418A979AA000AFE76 /* Main_iPhone.storyboard in Resources */,
 				6567244B18A979AA000AFE76 /* InfoPlist.strings in Resources */,
+				656724A918A9AAA1000AFE76 /* logo_IBMorumbi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

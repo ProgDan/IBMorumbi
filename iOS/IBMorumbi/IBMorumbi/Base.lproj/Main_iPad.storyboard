@@ -232,20 +232,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Sobre" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-9g-NZH">
-                                <rect key="frame" x="20" y="250" width="728" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Igreja Batista do Morumbi" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lsy-9g-NZH">
+                                <rect key="frame" x="20" y="490" width="728" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aFa-yP-j2s">
-                                <rect key="frame" x="235" y="350" width="297" height="70"/>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aFa-yP-j2s">
+                                <rect key="frame" x="235" y="590" width="297" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="WaC-Pt-BfD"/>
+                                    <constraint firstAttribute="height" constant="100" id="WaC-Pt-BfD"/>
                                     <constraint firstAttribute="width" constant="297" id="bAR-YV-rCI"/>
                                 </constraints>
+                                <string key="text">Rua Carvalho de Freitas, 1.076
+05728-030 - Morumbi - São Paulo - SP - Brasil
+Tel: (11) 3538-0250</string>
                                 <fontDescription key="fontDescription" type="system" size="system"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
@@ -255,17 +258,23 @@
                                     <navigationItem id="P7a-P6-7dL"/>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_IBMorumbi.png" translatesAutoresizingMaskIntoConstraints="NO" id="eHJ-cu-cPL">
+                                <rect key="frame" x="136" y="44" width="496" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eHJ-cu-cPL" firstAttribute="top" secondItem="U7D-VI-wre" secondAttribute="bottom" id="4Du-KX-kMn"/>
                             <constraint firstItem="U7D-VI-wre" firstAttribute="leading" secondItem="A9A-F0-52R" secondAttribute="leading" id="CWr-Dj-UHd"/>
                             <constraint firstItem="U7D-VI-wre" firstAttribute="top" secondItem="A9A-F0-52R" secondAttribute="top" id="Dj6-Ki-7hG"/>
-                            <constraint firstItem="lsy-9g-NZH" firstAttribute="top" secondItem="A9A-F0-52R" secondAttribute="top" constant="250" id="Jdt-Vm-6Jt"/>
-                            <constraint firstItem="aFa-yP-j2s" firstAttribute="top" secondItem="A9A-F0-52R" secondAttribute="top" constant="350" id="Qsh-IM-5t9"/>
+                            <constraint firstItem="lsy-9g-NZH" firstAttribute="top" secondItem="A9A-F0-52R" secondAttribute="top" constant="490" id="Jdt-Vm-6Jt"/>
+                            <constraint firstItem="aFa-yP-j2s" firstAttribute="top" secondItem="A9A-F0-52R" secondAttribute="top" constant="590" id="Qsh-IM-5t9"/>
                             <constraint firstAttribute="trailing" secondItem="lsy-9g-NZH" secondAttribute="trailing" constant="20" symbolic="YES" id="bti-9Y-z2o"/>
+                            <constraint firstAttribute="centerX" secondItem="eHJ-cu-cPL" secondAttribute="centerX" id="cLS-Ch-AmK"/>
                             <constraint firstItem="U7D-VI-wre" firstAttribute="trailing" secondItem="A9A-F0-52R" secondAttribute="trailing" id="ja7-Rq-D5M"/>
+                            <constraint firstAttribute="centerX" secondItem="aFa-yP-j2s" secondAttribute="centerX" id="mra-aX-KRK"/>
                             <constraint firstItem="lsy-9g-NZH" firstAttribute="leading" secondItem="A9A-F0-52R" secondAttribute="leading" constant="20" symbolic="YES" id="s4Q-Up-9av"/>
-                            <constraint firstItem="aFa-yP-j2s" firstAttribute="leading" secondItem="A9A-F0-52R" secondAttribute="leading" constant="235" id="z56-oT-zh8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="sobre" image="sobre" id="EfP-Jj-w3V"/>
@@ -298,6 +307,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo_IBMorumbi.png" width="496" height="411"/>
         <image name="mapa" width="29" height="29"/>
         <image name="mensagens" width="28" height="28"/>
         <image name="midia" width="29" height="29"/>
