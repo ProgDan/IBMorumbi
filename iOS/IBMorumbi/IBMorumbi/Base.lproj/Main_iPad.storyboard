@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--First View Controller - Mensagens-->
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="3042" y="1284"/>
         </scene>
-        <!--View Controller - Mapa-->
+        <!--Map View Controller - Mapa-->
         <scene sceneID="ic4-lP-gA1">
             <objects>
-                <viewController title="Mapa" id="Kud-Ao-JEf" sceneMemberID="viewController">
+                <viewController title="Mapa" id="Kud-Ao-JEf" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ifm-zc-pkX"/>
                         <viewControllerLayoutGuide type="bottom" id="lSf-9Z-6jQ"/>
@@ -124,43 +124,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mapa" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="o5d-Av-Ocd">
-                                <rect key="frame" x="20" y="250" width="728" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ra-3Z-3zp">
-                                <rect key="frame" x="235" y="350" width="297" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="IMI-Bz-bxQ"/>
-                                    <constraint firstAttribute="width" constant="297" id="S5a-Iy-5vP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" size="system"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textView>
                             <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xj-5r-Zjd">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                                 <items>
                                     <navigationItem id="eCl-11-XkQ"/>
                                 </items>
                             </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7tp-Xa-m6O">
+                                <rect key="frame" x="628" y="938" width="120" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="zh0-GV-0nr"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Mapa"/>
+                                    <segment title="Satélite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMap:" destination="Kud-Ao-JEf" eventType="valueChanged" id="pi7-6E-E6W"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4US-Fh-5l9">
+                                <rect key="frame" x="20" y="937" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Localização">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLocation:" destination="Kud-Ao-JEf" eventType="touchUpInside" id="8nW-oK-G8f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAA-B3-2f1">
+                                <rect key="frame" x="142" y="937" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Traçar Rota">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeRoute:" destination="Kud-Ao-JEf" eventType="touchUpInside" id="ba2-O4-hed"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-wP-BRP">
+                                <rect key="frame" x="0.0" y="44" width="768" height="885"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kud-Ao-JEf" id="3PX-Vd-zyS"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2Ra-3Z-3zp" firstAttribute="leading" secondItem="Nl4-mN-NIy" secondAttribute="leading" constant="235" id="5xD-HA-I0d"/>
-                            <constraint firstItem="o5d-Av-Ocd" firstAttribute="top" secondItem="Nl4-mN-NIy" secondAttribute="top" constant="250" id="Hp9-hY-BDy"/>
+                            <constraint firstItem="lSf-9Z-6jQ" firstAttribute="top" secondItem="4US-Fh-5l9" secondAttribute="bottom" constant="8" id="0dQ-uC-n7s"/>
+                            <constraint firstItem="fBz-wP-BRP" firstAttribute="leading" secondItem="Nl4-mN-NIy" secondAttribute="leading" id="10K-md-BZy"/>
                             <constraint firstItem="8xj-5r-Zjd" firstAttribute="trailing" secondItem="Nl4-mN-NIy" secondAttribute="trailing" id="Qae-1M-eFQ"/>
-                            <constraint firstItem="o5d-Av-Ocd" firstAttribute="leading" secondItem="Nl4-mN-NIy" secondAttribute="leading" constant="20" symbolic="YES" id="jqH-S0-DMm"/>
-                            <constraint firstItem="2Ra-3Z-3zp" firstAttribute="top" secondItem="Nl4-mN-NIy" secondAttribute="top" constant="350" id="mJS-V5-ALl"/>
-                            <constraint firstAttribute="trailing" secondItem="o5d-Av-Ocd" secondAttribute="trailing" constant="20" symbolic="YES" id="pEp-hh-3eY"/>
+                            <constraint firstItem="4US-Fh-5l9" firstAttribute="leading" secondItem="Nl4-mN-NIy" secondAttribute="leading" constant="20" id="T4P-Zv-uFK"/>
+                            <constraint firstItem="lSf-9Z-6jQ" firstAttribute="top" secondItem="nAA-B3-2f1" secondAttribute="bottom" constant="8" id="aAt-xL-Zhl"/>
+                            <constraint firstItem="lSf-9Z-6jQ" firstAttribute="top" secondItem="7tp-Xa-m6O" secondAttribute="bottom" constant="9" id="gdz-98-7MQ"/>
+                            <constraint firstItem="fBz-wP-BRP" firstAttribute="top" secondItem="8xj-5r-Zjd" secondAttribute="bottom" id="gfg-jV-Yo5"/>
+                            <constraint firstItem="nAA-B3-2f1" firstAttribute="top" secondItem="fBz-wP-BRP" secondAttribute="bottom" constant="8" id="tGm-83-Gj0"/>
+                            <constraint firstAttribute="trailing" secondItem="7tp-Xa-m6O" secondAttribute="trailing" constant="20" id="tg4-bH-Ldh"/>
+                            <constraint firstItem="nAA-B3-2f1" firstAttribute="leading" secondItem="4US-Fh-5l9" secondAttribute="trailing" constant="40" id="ual-9q-mFd"/>
                             <constraint firstItem="8xj-5r-Zjd" firstAttribute="top" secondItem="Nl4-mN-NIy" secondAttribute="top" id="vKt-he-vP8"/>
                             <constraint firstItem="8xj-5r-Zjd" firstAttribute="leading" secondItem="Nl4-mN-NIy" secondAttribute="leading" id="w1H-sT-uqx"/>
+                            <constraint firstAttribute="trailing" secondItem="fBz-wP-BRP" secondAttribute="trailing" id="y8L-8v-atc"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" image="mapa" id="eoB-9v-Q5J"/>
+                    <connections>
+                        <outlet property="mapa" destination="fBz-wP-BRP" id="aTG-D1-OGT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpX-hT-Ump" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

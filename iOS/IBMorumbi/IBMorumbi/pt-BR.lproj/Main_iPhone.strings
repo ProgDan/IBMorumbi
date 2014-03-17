@@ -1,0 +1,60 @@
+
+/* Class = "IBUITextView"; text = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "120-HA-98l"; */
+"120-HA-98l.text" = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.";
+
+/* Class = "IBUILabel"; text = "Mapa"; ObjectID = "1SX-yP-PbF"; */
+"1SX-yP-PbF.text" = "Mapa";
+
+/* Class = "IBUILabel"; text = "Mídia"; ObjectID = "29h-N2-YGT"; */
+"29h-N2-YGT.text" = "Mídia";
+
+/* Class = "IBUILabel"; text = "Ofertas"; ObjectID = "67P-ns-PFI"; */
+"67P-ns-PFI.text" = "Ofertas";
+
+/* Class = "IBUITabBarItem"; title = "Mapa"; ObjectID = "73w-5r-CJF"; */
+"73w-5r-CJF.title" = "Mapa";
+
+/* Class = "IBUIViewController"; title = "Mensagens"; ObjectID = "CZ4-MO-1fc"; */
+"CZ4-MO-1fc.title" = "Mensagens";
+
+/* Class = "IBUITabBarItem"; title = "Ofertas"; ObjectID = "CzF-ND-LMp"; */
+"CzF-ND-LMp.title" = "Ofertas";
+
+/* Class = "IBUITextView"; text = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "DcM-Fx-MKR"; */
+"DcM-Fx-MKR.text" = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.";
+
+/* Class = "IBUIViewController"; title = "Ofertas"; ObjectID = "Evf-Gk-tDS"; */
+"Evf-Gk-tDS.title" = "Ofertas";
+
+/* Class = "IBUITextView"; text = "Rua Carvalho de Freitas, 1.076\n05728-030 - Morumbi - São Paulo - SP - Brasil\nTel: (11) 3538-0250"; ObjectID = "Nq4-dQ-F27"; */
+"Nq4-dQ-F27.text" = "Rua Carvalho de Freitas, 1.076\n05728-030 - Morumbi - São Paulo - SP - Brasil\nTel: (11) 3538-0250";
+
+/* Class = "IBUIViewController"; title = "Mídia"; ObjectID = "QUy-BD-bpt"; */
+"QUy-BD-bpt.title" = "Mídia";
+
+/* Class = "IBUILabel"; text = "Igreja Batista do Morumbi"; ObjectID = "Yop-mO-FC7"; */
+"Yop-mO-FC7.text" = "Igreja Batista do Morumbi";
+
+/* Class = "IBUITabBarItem"; title = "Mídia"; ObjectID = "Z7h-1E-pvt"; */
+"Z7h-1E-pvt.title" = "Mídia";
+
+/* Class = "IBUILabel"; text = "Mensagens"; ObjectID = "Zhg-ve-WU7"; */
+"Zhg-ve-WU7.text" = "Mensagens";
+
+/* Class = "IBUITabBarItem"; title = "Sobre"; ObjectID = "aNY-NB-mbg"; */
+"aNY-NB-mbg.title" = "Sobre";
+
+/* Class = "IBUITextView"; text = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "cHa-9K-ZWj"; */
+"cHa-9K-ZWj.text" = "Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate.";
+
+/* Class = "IBUIViewController"; title = "Sobre"; ObjectID = "eNh-7H-uhi"; */
+"eNh-7H-uhi.title" = "Sobre";
+
+/* Class = "IBUIViewController"; title = "Mapa"; ObjectID = "h7P-EV-lbS"; */
+"h7P-EV-lbS.title" = "Mapa";
+
+/* Class = "IBUITextView"; text = "Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate."; ObjectID = "tZ3-Hv-Q7E"; */
+"tZ3-Hv-Q7E.text" = "Loaded by the first view controller — an instance of FirstViewController — specified in the app delegate.";
+
+/* Class = "IBUITabBarItem"; title = "Mensagens"; ObjectID = "u1e-5L-l1D"; */
+"u1e-5L-l1D.title" = "Mensagens";
