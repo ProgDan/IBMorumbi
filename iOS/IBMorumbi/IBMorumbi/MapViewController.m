@@ -2,56 +2,55 @@
 //  MapViewController.m
 //  IBMorumbi
 //
-//  Created by Daniel Arndt Alves on 3/16/14.
-//  Copyright (c) 2014 Daniel Arndt Alves. All rights reserved.
+//  Created by Daniel Arndt Alves on 3/17/14.
+//  Copyright (c) 2014 ProgDan Software. All rights reserved.
 //
 
 #import "MapViewController.h"
 
 @interface MapViewController ()
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapa;
+@property (weak, nonatomic) IBOutlet MKMapView *map;
 @property (strong, nonatomic) CLLocationManager *locManager;
-@property (strong, nonatomic) CLLocation *localizacao;
+@property (strong, nonatomic) CLLocation *location;
 
-- (IBAction)showLocation:(UIButton *)sender;
 - (IBAction)makeRoute:(UIButton *)sender;
-- (IBAction)changeMap:(UISegmentedControl *)sender;
-
+- (IBAction)changeMapTYpe:(UISegmentedControl *)sender;
 
 @end
 
 @implementation MapViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self mostraIBMorumbi];
-}
-
-- (void) mostraIBMorumbi
-{
-    MKPointAnnotation *pino = [MKPointAnnotation new];
+    [self showIBMorumbi];
     
-    // Configura a coordenada do pino
-    pino.coordinate = CLLocationCoordinate2DMake(-23.633065,-46.7400826);
-    
-    // Configura um título
-    pino.title = @"IB Morumbi";
-    pino.subtitle = @"Igreja Batista do Morumbi";
-    
-    // Adiciona no mapa
-    [self.mapa addAnnotation:pino];
-    
-    // Define a quantidade de mapa que ficará visível na horizontal e na vertical
-    MKCoordinateSpan zoom = MKCoordinateSpanMake(0.01, 0.01);
-    
-    // Define o local onde será aplicado o zoom
-    MKCoordinateRegion regiao = MKCoordinateRegionMake(pino.coordinate, zoom);
-    
-    [self.mapa setRegion:regiao animated:YES];
+    // Localizando o dispositivo via GPS
+    if ([CLLocationManager locationServicesEnabled])
+    {
+        if (!self.locManager)
+        {
+            self.locManager = [CLLocationManager new];
+            self.locManager.delegate = self;
+        }
+        [self.locManager startUpdatingLocation];
+    }
+    else
+    {
+        [[[UIAlertView alloc] initWithTitle:@"Erro" message:@"É necessário autorizar o aplicativo a buscar a localização" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,88 +70,105 @@
 }
 */
 
-#pragma mark - CLLocationManagerDelegate
-
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+- (void) showIBMorumbi
 {
-    [self.locManager stopUpdatingLocation];
+    MKPointAnnotation *pin = [MKPointAnnotation new];
     
-    self.localizacao = [locations lastObject];
+    // Configura a coordenada do pino
+    pin.coordinate = CLLocationCoordinate2DMake(-23.633165,-46.7394826);
     
-    MKCoordinateSpan zoom = MKCoordinateSpanMake(0.005, 0.005);
-    MKCoordinateRegion regiao = MKCoordinateRegionMake(self.localizacao.coordinate, zoom);
+    // Configura um título
+    pin.title = @"IB Morumbi";
+    pin.subtitle = @"Igreja Batista do Morumbi";
     
-    [self.mapa setRegion:regiao animated:YES];
+    // Adiciona no mapa
+    [self.map addAnnotation:pin];
+    
+    // Define a quantidade de mapa que ficará visível na horizontal e na vertical
+    MKCoordinateSpan zoom = MKCoordinateSpanMake(0.01, 0.01);
+    
+    // Define o local onde será aplicado o zoom
+    MKCoordinateRegion region = MKCoordinateRegionMake(pin.coordinate, zoom);
+    
+    [self.map setRegion:region animated:YES];
+    self.map.showsUserLocation = YES;
 }
 
-#pragma mark - Botões de Controle
+#pragma mark - Interface Buttons
 
-- (IBAction)showLocation:(UIButton *)sender {
-    if ([CLLocationManager locationServicesEnabled])
-    {
-        if (!self.locManager)
-        {
-            self.locManager = [CLLocationManager new];
-            self.locManager.delegate = self;
-        }
-        [self.locManager startUpdatingLocation];
-    }
-    else
-    {
-        [[[UIAlertView alloc] initWithTitle:@"Erro" message:@"É necessário autorizar o aplicativo a buscar a localização" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-    }
-}
-
-- (IBAction)makeRoute:(UIButton *)sender {
+- (IBAction)makeRoute:(UIButton *)sender
+{
     // Como traçar rota no mapa
-    CLLocationCoordinate2D ibmorumbi = CLLocationCoordinate2DMake(-23.633065,-46.7400826);
+    CLLocationCoordinate2D ibmorumbi = CLLocationCoordinate2DMake(-23.633465,-46.7397026);
     
-    MKPlacemark *localizacaoPlace = [[MKPlacemark alloc] initWithCoordinate:self.localizacao.coordinate addressDictionary:nil];
+    MKPlacemark *locationPlace = [[MKPlacemark alloc] initWithCoordinate:self.location.coordinate addressDictionary:nil];
     MKPlacemark *ibmorumbiPlace = [[MKPlacemark alloc] initWithCoordinate:ibmorumbi addressDictionary:nil];
     
     // criando a requisição de busca
-    MKDirectionsRequest *requisicao = [MKDirectionsRequest new];
+    MKDirectionsRequest *request = [MKDirectionsRequest new];
     
     // setando a origem
-    requisicao.source = [[MKMapItem alloc] initWithPlacemark:localizacaoPlace];
+    request.source = [[MKMapItem alloc] initWithPlacemark:locationPlace];
     
     // setando o destino
-    requisicao.destination = [[MKMapItem alloc] initWithPlacemark:ibmorumbiPlace];
+    request.destination = [[MKMapItem alloc] initWithPlacemark:ibmorumbiPlace];
     
     // Configurando o tipo de transporte
-    requisicao.transportType = MKDirectionsTransportTypeAutomobile;
+    request.transportType = MKDirectionsTransportTypeAutomobile;
     
-    MKDirections *roteador = [[MKDirections alloc] initWithRequest:requisicao];
+    MKDirections *router = [[MKDirections alloc] initWithRequest:request];
     
     // Mandar calcular a rota e quando terminar, executar o bloco
-    [roteador calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
+    [router calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
         if (error) {
             NSLog(@"%@", error);
         }
         else {
             // dentro do parâmetro response, temos a rota em questão
             MKRoute *rota = [response.routes firstObject];
-            [self.mapa addOverlay:rota.polyline];
+            [self.map addOverlay:rota.polyline];
+            
+            [self.map setVisibleMapRect:rota.polyline.boundingMapRect animated:YES];
         }
     }];
 }
 
-- (IBAction)changeMap:(UISegmentedControl *)sender {
-    if (sender.selectedSegmentIndex == 0)
-    {
-        self.mapa.mapType = MKMapTypeStandard;
+- (IBAction)changeMapTYpe:(UISegmentedControl *)sender
+{
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            self.map.mapType = MKMapTypeStandard;
+            break;
+        case 1:
+            self.map.mapType = MKMapTypeSatellite;
+            break;
+        case 2:
+            self.map.mapType = MKMapTypeHybrid;
+            break;
+        default:
+            break;
     }
-    else
-    {
-        self.mapa.mapType = MKMapTypeSatellite;
-    }
+ }
+
+#pragma mark - CLLocationManagerDelegate
+
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    [self.locManager stopUpdatingLocation];
+    self.location = [locations lastObject];
 }
+
+
+#pragma mark - MKMapViewDelegate
 
 // Método adicionado para definir o layout do overlay que vai ser exibido
 // Estamos recebendo um overlay que não sabemos se é círculo, linha ou polígono
--(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
+{
     
-    if ([overlay isKindOfClass:[MKPolyline class]]) {
+    if ([overlay isKindOfClass:[MKPolyline class]])
+    {
         // Linha
         MKPolylineRenderer *linha = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
         linha.lineWidth = 3;

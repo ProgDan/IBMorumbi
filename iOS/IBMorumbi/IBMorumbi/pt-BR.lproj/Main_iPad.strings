@@ -1,60 +1,15 @@
 
-/* Class = "IBUITextView"; text = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "2Ra-3Z-3zp"; */
-"2Ra-3Z-3zp.text" = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate.";
+/* Class = "IBUIButton"; normalTitle = "Traçar Rota"; ObjectID = "UZw-7u-49k"; */
+"UZw-7u-49k.normalTitle" = "Traçar Rota";
 
-/* Class = "IBUIViewController"; title = "Mídia"; ObjectID = "8rJ-Kc-sve"; */
-"8rJ-Kc-sve.title" = "Mídia";
+/* Class = "IBUISegmentedControl"; cbR-6m-q6v.segmentTitles[0] = "Mapa"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[0]" = "Mapa";
 
-/* Class = "IBUIViewController"; title = "Mensagens"; ObjectID = "9pv-A4-QxB"; */
-"9pv-A4-QxB.title" = "Mensagens";
+/* Class = "IBUISegmentedControl"; cbR-6m-q6v.segmentTitles[1] = "Satélite"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[1]" = "Satélite";
 
-/* Class = "IBUITextView"; text = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "CR1-qY-bxT"; */
-"CR1-qY-bxT.text" = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate.";
+/* Class = "IBUISegmentedControl"; cbR-6m-q6v.segmentTitles[2] = "Híbrido"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[2]" = "Híbrido";
 
-/* Class = "IBUITabBarItem"; title = "sobre"; ObjectID = "EfP-Jj-w3V"; */
-"EfP-Jj-w3V.title" = "sobre";
-
-/* Class = "IBUIViewController"; title = "Mapa"; ObjectID = "Kud-Ao-JEf"; */
-"Kud-Ao-JEf.title" = "Mapa";
-
-/* Class = "IBUIViewController"; title = "Ofertas"; ObjectID = "M8a-81-MgV"; */
-"M8a-81-MgV.title" = "Ofertas";
-
-/* Class = "IBUITextView"; text = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "NDk-cv-Gan"; */
-"NDk-cv-Gan.text" = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate.";
-
-/* Class = "IBUITextView"; text = "Rua Carvalho de Freitas, 1.076\n05728-030 - Morumbi - São Paulo - SP - Brasil\nTel: (11) 3538-0250"; ObjectID = "aFa-yP-j2s"; */
-"aFa-yP-j2s.text" = "Rua Carvalho de Freitas, 1.076\n05728-030 - Morumbi - São Paulo - SP - Brasil\nTel: (11) 3538-0250";
-
-/* Class = "IBUIViewController"; title = "Sobre"; ObjectID = "aYL-rq-b03"; */
-"aYL-rq-b03.title" = "Sobre";
-
-/* Class = "IBUITabBarItem"; title = "Mensagens"; ObjectID = "acW-dT-cKf"; */
-"acW-dT-cKf.title" = "Mensagens";
-
-/* Class = "IBUITabBarItem"; title = "Mídia"; ObjectID = "cPa-gy-q4n"; */
-"cPa-gy-q4n.title" = "Mídia";
-
-/* Class = "IBUITextView"; text = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate."; ObjectID = "ei3-g3-nBx"; */
-"ei3-g3-nBx.text" = "Loaded by the Second View Controller — an instance of SecondViewController — specified in the app delegate.";
-
-/* Class = "IBUITabBarItem"; title = "Mapa"; ObjectID = "eoB-9v-Q5J"; */
-"eoB-9v-Q5J.title" = "Mapa";
-
-/* Class = "IBUITabBarItem"; title = "Ofertas"; ObjectID = "f8N-rc-rRo"; */
-"f8N-rc-rRo.title" = "Ofertas";
-
-/* Class = "IBUILabel"; text = "Mensagens"; ObjectID = "h44-gT-756"; */
-"h44-gT-756.text" = "Mensagens";
-
-/* Class = "IBUILabel"; text = "Igreja Batista do Morumbi"; ObjectID = "lsy-9g-NZH"; */
-"lsy-9g-NZH.text" = "Igreja Batista do Morumbi";
-
-/* Class = "IBUILabel"; text = "Mapa"; ObjectID = "o5d-Av-Ocd"; */
-"o5d-Av-Ocd.text" = "Mapa";
-
-/* Class = "IBUILabel"; text = "Ofertas"; ObjectID = "yCA-GI-pWo"; */
-"yCA-GI-pWo.text" = "Ofertas";
-
-/* Class = "IBUILabel"; text = "Mídia"; ObjectID = "zEq-FU-wV5"; */
-"zEq-FU-wV5.text" = "Mídia";
+/* Class = "IBUITabBarItem"; title = "Mapa"; ObjectID = "kVN-XK-d9I"; */
+"kVN-XK-d9I.title" = "Mapa";

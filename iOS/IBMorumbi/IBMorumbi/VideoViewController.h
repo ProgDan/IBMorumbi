@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  VideoViewController.h
 //  IBMorumbi
 //
 //  Created by Daniel Arndt Alves on 3/17/14.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface VideoViewController : UIViewController
 
 @end

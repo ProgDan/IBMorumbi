@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  ViewController.m
 //  IBMorumbi
 //
-//  Created by Daniel Arndt Alves on 2/10/14.
-//  Copyright (c) 2014 Daniel Arndt Alves. All rights reserved.
+//  Created by Daniel Arndt Alves on 3/17/14.
+//  Copyright (c) 2014 ProgDan Software. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ViewController.h"
 
-@interface FirstViewController ()
+@interface ViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ViewController
 
 - (void)viewDidLoad
 {

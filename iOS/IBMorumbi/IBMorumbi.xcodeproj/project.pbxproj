@@ -7,200 +7,209 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6567244118A979A9000AFE76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567244018A979A9000AFE76 /* Foundation.framework */; };
-		6567244318A979A9000AFE76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567244218A979A9000AFE76 /* CoreGraphics.framework */; };
-		6567244518A979A9000AFE76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567244418A979A9000AFE76 /* UIKit.framework */; };
-		6567244B18A979AA000AFE76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6567244918A979AA000AFE76 /* InfoPlist.strings */; };
-		6567244D18A979AA000AFE76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567244C18A979AA000AFE76 /* main.m */; };
-		6567245118A979AA000AFE76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567245018A979AA000AFE76 /* AppDelegate.m */; };
-		6567245418A979AA000AFE76 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567245218A979AA000AFE76 /* Main_iPhone.storyboard */; };
-		6567245718A979AA000AFE76 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6567245518A979AA000AFE76 /* Main_iPad.storyboard */; };
-		6567245A18A979AA000AFE76 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567245918A979AA000AFE76 /* FirstViewController.m */; };
-		6567245D18A979AA000AFE76 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567245C18A979AA000AFE76 /* SecondViewController.m */; };
-		6567245F18A979AA000AFE76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6567245E18A979AA000AFE76 /* Images.xcassets */; };
-		6567246618A979AA000AFE76 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567246518A979AA000AFE76 /* XCTest.framework */; };
-		6567246718A979AA000AFE76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567244018A979A9000AFE76 /* Foundation.framework */; };
-		6567246818A979AA000AFE76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6567244418A979A9000AFE76 /* UIKit.framework */; };
-		6567247018A979AA000AFE76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6567246E18A979AA000AFE76 /* InfoPlist.strings */; };
-		6567247218A979AA000AFE76 /* IBMorumbiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567247118A979AA000AFE76 /* IBMorumbiTests.m */; };
-		656724A718A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 656724A618A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png */; };
-		656724A918A9AAA1000AFE76 /* logo_IBMorumbi.png in Resources */ = {isa = PBXBuildFile; fileRef = 656724A818A9AAA1000AFE76 /* logo_IBMorumbi.png */; };
-		659A704218D6710300C8A0E8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659A704118D6710300C8A0E8 /* CoreLocation.framework */; };
-		659A704418D6710E00C8A0E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659A704318D6710E00C8A0E8 /* MapKit.framework */; };
-		659A704A18D674FA00C8A0E8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659A704918D674FA00C8A0E8 /* MapViewController.m */; };
+		659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E518D7B48F001DADB7 /* Localizable.strings */; };
+		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
+		659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */; };
+		659D28ED18D7C5C9001DADB7 /* preview_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 659D28EC18D7C5C9001DADB7 /* preview_470.jpg */; };
+		659D28F018D7C74A001DADB7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659D28EF18D7C74A001DADB7 /* VideoViewController.m */; };
+		659D28F218D7C905001DADB7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659D28F118D7C905001DADB7 /* MediaPlayer.framework */; };
+		65AB7E5718D787E8007FF707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5618D787E8007FF707 /* Foundation.framework */; };
+		65AB7E5918D787E8007FF707 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5818D787E8007FF707 /* CoreGraphics.framework */; };
+		65AB7E5B18D787E8007FF707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5A18D787E8007FF707 /* UIKit.framework */; };
+		65AB7E6118D787E8007FF707 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E5F18D787E8007FF707 /* InfoPlist.strings */; };
+		65AB7E6318D787E8007FF707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E6218D787E8007FF707 /* main.m */; };
+		65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E6618D787E9007FF707 /* AppDelegate.m */; };
+		65AB7E6A18D787E9007FF707 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E6818D787E9007FF707 /* Main_iPhone.storyboard */; };
+		65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E6B18D787E9007FF707 /* Main_iPad.storyboard */; };
+		65AB7E7018D787E9007FF707 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E6F18D787E9007FF707 /* ViewController.m */; };
+		65AB7E7218D787E9007FF707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E7118D787E9007FF707 /* Images.xcassets */; };
+		65AB7E7918D787E9007FF707 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E7818D787E9007FF707 /* XCTest.framework */; };
+		65AB7E7A18D787E9007FF707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5618D787E8007FF707 /* Foundation.framework */; };
+		65AB7E7B18D787E9007FF707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5A18D787E8007FF707 /* UIKit.framework */; };
+		65AB7E8318D787E9007FF707 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E8118D787E9007FF707 /* InfoPlist.strings */; };
+		65AB7E8518D787E9007FF707 /* IBMorumbiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E8418D787E9007FF707 /* IBMorumbiTests.m */; };
+		65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E8E18D78823007FF707 /* MapKit.framework */; };
+		65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E9018D7882A007FF707 /* CoreLocation.framework */; };
+		65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E9318D789A2007FF707 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6567246918A979AA000AFE76 /* PBXContainerItemProxy */ = {
+		65AB7E7C18D787E9007FF707 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6567243518A979A9000AFE76 /* Project object */;
+			containerPortal = 65AB7E4B18D787E8007FF707 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6567243C18A979A9000AFE76;
+			remoteGlobalIDString = 65AB7E5218D787E8007FF707;
 			remoteInfo = IBMorumbi;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6567243D18A979A9000AFE76 /* IBMorumbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMorumbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6567244018A979A9000AFE76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6567244218A979A9000AFE76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6567244418A979A9000AFE76 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6567244818A979AA000AFE76 /* IBMorumbi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBMorumbi-Info.plist"; sourceTree = "<group>"; };
-		6567244A18A979AA000AFE76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6567244C18A979AA000AFE76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6567244E18A979AA000AFE76 /* IBMorumbi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBMorumbi-Prefix.pch"; sourceTree = "<group>"; };
-		6567244F18A979AA000AFE76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6567245018A979AA000AFE76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6567245318A979AA000AFE76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6567245618A979AA000AFE76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6567245818A979AA000AFE76 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		6567245918A979AA000AFE76 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		6567245B18A979AA000AFE76 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		6567245C18A979AA000AFE76 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		6567245E18A979AA000AFE76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6567246418A979AA000AFE76 /* IBMorumbiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMorumbiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6567246518A979AA000AFE76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6567246D18A979AA000AFE76 /* IBMorumbiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBMorumbiTests-Info.plist"; sourceTree = "<group>"; };
-		6567246F18A979AA000AFE76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6567247118A979AA000AFE76 /* IBMorumbiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBMorumbiTests.m; sourceTree = "<group>"; };
-		656724A618A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_IBMorumbi_iPhone.png; path = images/logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
-		656724A818A9AAA1000AFE76 /* logo_IBMorumbi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo_IBMorumbi.png; path = images/logo_IBMorumbi.png; sourceTree = "<group>"; };
-		659A703D18D670AC00C8A0E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
-		659A703E18D670AC00C8A0E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
-		659A703F18D670AC00C8A0E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		659A704018D670AC00C8A0E8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		659A704118D6710300C8A0E8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		659A704318D6710E00C8A0E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		659A704818D674FA00C8A0E8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		659A704918D674FA00C8A0E8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		659D28E118D7B47B001DADB7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
+		659D28E218D7B47B001DADB7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
+		659D28E418D7B48F001DADB7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		659D28E618D7B49E001DADB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPad.png; sourceTree = "<group>"; };
+		659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
+		659D28EC18D7C5C9001DADB7 /* preview_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_470.jpg; sourceTree = "<group>"; };
+		659D28EE18D7C74A001DADB7 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		659D28EF18D7C74A001DADB7 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		659D28F118D7C905001DADB7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		65AB7E5318D787E8007FF707 /* IBMorumbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMorumbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AB7E5618D787E8007FF707 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65AB7E5818D787E8007FF707 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65AB7E5A18D787E8007FF707 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65AB7E5E18D787E8007FF707 /* IBMorumbi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBMorumbi-Info.plist"; sourceTree = "<group>"; };
+		65AB7E6018D787E8007FF707 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65AB7E6218D787E8007FF707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65AB7E6418D787E8007FF707 /* IBMorumbi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBMorumbi-Prefix.pch"; sourceTree = "<group>"; };
+		65AB7E6518D787E8007FF707 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65AB7E6618D787E9007FF707 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65AB7E6918D787E9007FF707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		65AB7E6C18D787E9007FF707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		65AB7E6E18D787E9007FF707 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		65AB7E6F18D787E9007FF707 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65AB7E7118D787E9007FF707 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65AB7E7718D787E9007FF707 /* IBMorumbiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMorumbiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AB7E7818D787E9007FF707 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		65AB7E8018D787E9007FF707 /* IBMorumbiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBMorumbiTests-Info.plist"; sourceTree = "<group>"; };
+		65AB7E8218D787E9007FF707 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65AB7E8418D787E9007FF707 /* IBMorumbiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBMorumbiTests.m; sourceTree = "<group>"; };
+		65AB7E8E18D78823007FF707 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		65AB7E9018D7882A007FF707 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		65AB7E9218D789A2007FF707 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		65AB7E9318D789A2007FF707 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6567243A18A979A9000AFE76 /* Frameworks */ = {
+		65AB7E5018D787E8007FF707 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659A704418D6710E00C8A0E8 /* MapKit.framework in Frameworks */,
-				659A704218D6710300C8A0E8 /* CoreLocation.framework in Frameworks */,
-				6567244318A979A9000AFE76 /* CoreGraphics.framework in Frameworks */,
-				6567244518A979A9000AFE76 /* UIKit.framework in Frameworks */,
-				6567244118A979A9000AFE76 /* Foundation.framework in Frameworks */,
+				659D28F218D7C905001DADB7 /* MediaPlayer.framework in Frameworks */,
+				65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */,
+				65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */,
+				65AB7E5918D787E8007FF707 /* CoreGraphics.framework in Frameworks */,
+				65AB7E5B18D787E8007FF707 /* UIKit.framework in Frameworks */,
+				65AB7E5718D787E8007FF707 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6567246118A979AA000AFE76 /* Frameworks */ = {
+		65AB7E7418D787E9007FF707 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6567246618A979AA000AFE76 /* XCTest.framework in Frameworks */,
-				6567246818A979AA000AFE76 /* UIKit.framework in Frameworks */,
-				6567246718A979AA000AFE76 /* Foundation.framework in Frameworks */,
+				65AB7E7918D787E9007FF707 /* XCTest.framework in Frameworks */,
+				65AB7E7B18D787E9007FF707 /* UIKit.framework in Frameworks */,
+				65AB7E7A18D787E9007FF707 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6567243418A979A9000AFE76 = {
+		659D28E718D7B7D0001DADB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				6567244618A979AA000AFE76 /* IBMorumbi */,
-				6567246B18A979AA000AFE76 /* IBMorumbiTests */,
-				6567243F18A979A9000AFE76 /* Frameworks */,
-				6567243E18A979A9000AFE76 /* Products */,
+				659D28EC18D7C5C9001DADB7 /* preview_470.jpg */,
+				659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */,
+				659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		65AB7E4A18D787E8007FF707 = {
+			isa = PBXGroup;
+			children = (
+				65AB7E5C18D787E8007FF707 /* IBMorumbi */,
+				65AB7E7E18D787E9007FF707 /* IBMorumbiTests */,
+				65AB7E5518D787E8007FF707 /* Frameworks */,
+				65AB7E5418D787E8007FF707 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6567243E18A979A9000AFE76 /* Products */ = {
+		65AB7E5418D787E8007FF707 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6567243D18A979A9000AFE76 /* IBMorumbi.app */,
-				6567246418A979AA000AFE76 /* IBMorumbiTests.xctest */,
+				65AB7E5318D787E8007FF707 /* IBMorumbi.app */,
+				65AB7E7718D787E9007FF707 /* IBMorumbiTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6567243F18A979A9000AFE76 /* Frameworks */ = {
+		65AB7E5518D787E8007FF707 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				659A704318D6710E00C8A0E8 /* MapKit.framework */,
-				659A704118D6710300C8A0E8 /* CoreLocation.framework */,
-				6567244018A979A9000AFE76 /* Foundation.framework */,
-				6567244218A979A9000AFE76 /* CoreGraphics.framework */,
-				6567244418A979A9000AFE76 /* UIKit.framework */,
-				6567246518A979AA000AFE76 /* XCTest.framework */,
+				659D28F118D7C905001DADB7 /* MediaPlayer.framework */,
+				65AB7E9018D7882A007FF707 /* CoreLocation.framework */,
+				65AB7E8E18D78823007FF707 /* MapKit.framework */,
+				65AB7E5618D787E8007FF707 /* Foundation.framework */,
+				65AB7E5818D787E8007FF707 /* CoreGraphics.framework */,
+				65AB7E5A18D787E8007FF707 /* UIKit.framework */,
+				65AB7E7818D787E9007FF707 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6567244618A979AA000AFE76 /* IBMorumbi */ = {
+		65AB7E5C18D787E8007FF707 /* IBMorumbi */ = {
 			isa = PBXGroup;
 			children = (
-				656724A518A99F92000AFE76 /* images */,
-				6567244F18A979AA000AFE76 /* AppDelegate.h */,
-				6567245018A979AA000AFE76 /* AppDelegate.m */,
-				6567245218A979AA000AFE76 /* Main_iPhone.storyboard */,
-				6567245518A979AA000AFE76 /* Main_iPad.storyboard */,
-				6567245818A979AA000AFE76 /* FirstViewController.h */,
-				6567245918A979AA000AFE76 /* FirstViewController.m */,
-				6567245B18A979AA000AFE76 /* SecondViewController.h */,
-				6567245C18A979AA000AFE76 /* SecondViewController.m */,
-				659A704818D674FA00C8A0E8 /* MapViewController.h */,
-				659A704918D674FA00C8A0E8 /* MapViewController.m */,
-				6567245E18A979AA000AFE76 /* Images.xcassets */,
-				6567244718A979AA000AFE76 /* Supporting Files */,
+				659D28E718D7B7D0001DADB7 /* images */,
+				65AB7E6518D787E8007FF707 /* AppDelegate.h */,
+				65AB7E6618D787E9007FF707 /* AppDelegate.m */,
+				65AB7E6818D787E9007FF707 /* Main_iPhone.storyboard */,
+				65AB7E6B18D787E9007FF707 /* Main_iPad.storyboard */,
+				65AB7E9218D789A2007FF707 /* MapViewController.h */,
+				65AB7E9318D789A2007FF707 /* MapViewController.m */,
+				659D28EE18D7C74A001DADB7 /* VideoViewController.h */,
+				659D28EF18D7C74A001DADB7 /* VideoViewController.m */,
+				65AB7E6E18D787E9007FF707 /* ViewController.h */,
+				65AB7E6F18D787E9007FF707 /* ViewController.m */,
+				65AB7E7118D787E9007FF707 /* Images.xcassets */,
+				65AB7E5D18D787E8007FF707 /* Supporting Files */,
 			);
 			path = IBMorumbi;
 			sourceTree = "<group>";
 		};
-		6567244718A979AA000AFE76 /* Supporting Files */ = {
+		65AB7E5D18D787E8007FF707 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6567244818A979AA000AFE76 /* IBMorumbi-Info.plist */,
-				6567244918A979AA000AFE76 /* InfoPlist.strings */,
-				6567244C18A979AA000AFE76 /* main.m */,
-				6567244E18A979AA000AFE76 /* IBMorumbi-Prefix.pch */,
+				659D28E518D7B48F001DADB7 /* Localizable.strings */,
+				65AB7E5E18D787E8007FF707 /* IBMorumbi-Info.plist */,
+				65AB7E5F18D787E8007FF707 /* InfoPlist.strings */,
+				65AB7E6218D787E8007FF707 /* main.m */,
+				65AB7E6418D787E8007FF707 /* IBMorumbi-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6567246B18A979AA000AFE76 /* IBMorumbiTests */ = {
+		65AB7E7E18D787E9007FF707 /* IBMorumbiTests */ = {
 			isa = PBXGroup;
 			children = (
-				6567247118A979AA000AFE76 /* IBMorumbiTests.m */,
-				6567246C18A979AA000AFE76 /* Supporting Files */,
+				65AB7E8418D787E9007FF707 /* IBMorumbiTests.m */,
+				65AB7E7F18D787E9007FF707 /* Supporting Files */,
 			);
 			path = IBMorumbiTests;
 			sourceTree = "<group>";
 		};
-		6567246C18A979AA000AFE76 /* Supporting Files */ = {
+		65AB7E7F18D787E9007FF707 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6567246D18A979AA000AFE76 /* IBMorumbiTests-Info.plist */,
-				6567246E18A979AA000AFE76 /* InfoPlist.strings */,
+				65AB7E8018D787E9007FF707 /* IBMorumbiTests-Info.plist */,
+				65AB7E8118D787E9007FF707 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		656724A518A99F92000AFE76 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				656724A818A9AAA1000AFE76 /* logo_IBMorumbi.png */,
-				656724A618A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png */,
-			);
-			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6567243C18A979A9000AFE76 /* IBMorumbi */ = {
+		65AB7E5218D787E8007FF707 /* IBMorumbi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6567247518A979AA000AFE76 /* Build configuration list for PBXNativeTarget "IBMorumbi" */;
+			buildConfigurationList = 65AB7E8818D787E9007FF707 /* Build configuration list for PBXNativeTarget "IBMorumbi" */;
 			buildPhases = (
-				6567243918A979A9000AFE76 /* Sources */,
-				6567243A18A979A9000AFE76 /* Frameworks */,
-				6567243B18A979A9000AFE76 /* Resources */,
+				65AB7E4F18D787E8007FF707 /* Sources */,
+				65AB7E5018D787E8007FF707 /* Frameworks */,
+				65AB7E5118D787E8007FF707 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -208,152 +217,157 @@
 			);
 			name = IBMorumbi;
 			productName = IBMorumbi;
-			productReference = 6567243D18A979A9000AFE76 /* IBMorumbi.app */;
+			productReference = 65AB7E5318D787E8007FF707 /* IBMorumbi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6567246318A979AA000AFE76 /* IBMorumbiTests */ = {
+		65AB7E7618D787E9007FF707 /* IBMorumbiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6567247818A979AA000AFE76 /* Build configuration list for PBXNativeTarget "IBMorumbiTests" */;
+			buildConfigurationList = 65AB7E8B18D787E9007FF707 /* Build configuration list for PBXNativeTarget "IBMorumbiTests" */;
 			buildPhases = (
-				6567246018A979AA000AFE76 /* Sources */,
-				6567246118A979AA000AFE76 /* Frameworks */,
-				6567246218A979AA000AFE76 /* Resources */,
+				65AB7E7318D787E9007FF707 /* Sources */,
+				65AB7E7418D787E9007FF707 /* Frameworks */,
+				65AB7E7518D787E9007FF707 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6567246A18A979AA000AFE76 /* PBXTargetDependency */,
+				65AB7E7D18D787E9007FF707 /* PBXTargetDependency */,
 			);
 			name = IBMorumbiTests;
 			productName = IBMorumbiTests;
-			productReference = 6567246418A979AA000AFE76 /* IBMorumbiTests.xctest */;
+			productReference = 65AB7E7718D787E9007FF707 /* IBMorumbiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6567243518A979A9000AFE76 /* Project object */ = {
+		65AB7E4B18D787E8007FF707 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Daniel Arndt Alves";
+				ORGANIZATIONNAME = "ProgDan Software";
 				TargetAttributes = {
-					6567243C18A979A9000AFE76 = {
-						DevelopmentTeam = 3PSB9V93UY;
-					};
-					6567246318A979AA000AFE76 = {
-						TestTargetID = 6567243C18A979A9000AFE76;
+					65AB7E7618D787E9007FF707 = {
+						TestTargetID = 65AB7E5218D787E8007FF707;
 					};
 				};
 			};
-			buildConfigurationList = 6567243818A979A9000AFE76 /* Build configuration list for PBXProject "IBMorumbi" */;
+			buildConfigurationList = 65AB7E4E18D787E8007FF707 /* Build configuration list for PBXProject "IBMorumbi" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
-				"pt-BR",
 			);
-			mainGroup = 6567243418A979A9000AFE76;
-			productRefGroup = 6567243E18A979A9000AFE76 /* Products */;
+			mainGroup = 65AB7E4A18D787E8007FF707;
+			productRefGroup = 65AB7E5418D787E8007FF707 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6567243C18A979A9000AFE76 /* IBMorumbi */,
-				6567246318A979AA000AFE76 /* IBMorumbiTests */,
+				65AB7E5218D787E8007FF707 /* IBMorumbi */,
+				65AB7E7618D787E9007FF707 /* IBMorumbiTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6567243B18A979A9000AFE76 /* Resources */ = {
+		65AB7E5118D787E8007FF707 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6567245718A979AA000AFE76 /* Main_iPad.storyboard in Resources */,
-				6567245F18A979AA000AFE76 /* Images.xcassets in Resources */,
-				656724A718A9A00D000AFE76 /* logo_IBMorumbi_iPhone.png in Resources */,
-				6567245418A979AA000AFE76 /* Main_iPhone.storyboard in Resources */,
-				6567244B18A979AA000AFE76 /* InfoPlist.strings in Resources */,
-				656724A918A9AAA1000AFE76 /* logo_IBMorumbi.png in Resources */,
+				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
+				659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */,
+				659D28ED18D7C5C9001DADB7 /* preview_470.jpg in Resources */,
+				659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */,
+				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
+				65AB7E7218D787E9007FF707 /* Images.xcassets in Resources */,
+				65AB7E6A18D787E9007FF707 /* Main_iPhone.storyboard in Resources */,
+				65AB7E6118D787E8007FF707 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6567246218A979AA000AFE76 /* Resources */ = {
+		65AB7E7518D787E9007FF707 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6567247018A979AA000AFE76 /* InfoPlist.strings in Resources */,
+				65AB7E8318D787E9007FF707 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6567243918A979A9000AFE76 /* Sources */ = {
+		65AB7E4F18D787E8007FF707 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6567245D18A979AA000AFE76 /* SecondViewController.m in Sources */,
-				6567245118A979AA000AFE76 /* AppDelegate.m in Sources */,
-				659A704A18D674FA00C8A0E8 /* MapViewController.m in Sources */,
-				6567245A18A979AA000AFE76 /* FirstViewController.m in Sources */,
-				6567244D18A979AA000AFE76 /* main.m in Sources */,
+				659D28F018D7C74A001DADB7 /* VideoViewController.m in Sources */,
+				65AB7E7018D787E9007FF707 /* ViewController.m in Sources */,
+				65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */,
+				65AB7E6318D787E8007FF707 /* main.m in Sources */,
+				65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6567246018A979AA000AFE76 /* Sources */ = {
+		65AB7E7318D787E9007FF707 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6567247218A979AA000AFE76 /* IBMorumbiTests.m in Sources */,
+				65AB7E8518D787E9007FF707 /* IBMorumbiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6567246A18A979AA000AFE76 /* PBXTargetDependency */ = {
+		65AB7E7D18D787E9007FF707 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6567243C18A979A9000AFE76 /* IBMorumbi */;
-			targetProxy = 6567246918A979AA000AFE76 /* PBXContainerItemProxy */;
+			target = 65AB7E5218D787E8007FF707 /* IBMorumbi */;
+			targetProxy = 65AB7E7C18D787E9007FF707 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6567244918A979AA000AFE76 /* InfoPlist.strings */ = {
+		659D28E518D7B48F001DADB7 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6567244A18A979AA000AFE76 /* en */,
-				659A703F18D670AC00C8A0E8 /* pt-BR */,
+				659D28E418D7B48F001DADB7 /* pt-BR */,
+				659D28E618D7B49E001DADB7 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		65AB7E5F18D787E8007FF707 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65AB7E6018D787E8007FF707 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6567245218A979AA000AFE76 /* Main_iPhone.storyboard */ = {
+		65AB7E6818D787E9007FF707 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6567245318A979AA000AFE76 /* Base */,
-				659A703D18D670AC00C8A0E8 /* pt-BR */,
+				65AB7E6918D787E9007FF707 /* Base */,
+				659D28E118D7B47B001DADB7 /* pt-BR */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		6567245518A979AA000AFE76 /* Main_iPad.storyboard */ = {
+		65AB7E6B18D787E9007FF707 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6567245618A979AA000AFE76 /* Base */,
-				659A703E18D670AC00C8A0E8 /* pt-BR */,
+				65AB7E6C18D787E9007FF707 /* Base */,
+				659D28E218D7B47B001DADB7 /* pt-BR */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		6567246E18A979AA000AFE76 /* InfoPlist.strings */ = {
+		65AB7E8118D787E9007FF707 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6567246F18A979AA000AFE76 /* en */,
-				659A704018D670AC00C8A0E8 /* pt-BR */,
+				65AB7E8218D787E9007FF707 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -361,7 +375,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6567247318A979AA000AFE76 /* Debug */ = {
+		65AB7E8618D787E9007FF707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +404,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -400,7 +414,7 @@
 			};
 			name = Debug;
 		};
-		6567247418A979AA000AFE76 /* Release */ = {
+		65AB7E8718D787E9007FF707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -423,7 +437,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -433,37 +447,33 @@
 			};
 			name = Release;
 		};
-		6567247618A979AA000AFE76 /* Debug */ = {
+		65AB7E8918D787E9007FF707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		6567247718A979AA000AFE76 /* Release */ = {
+		65AB7E8A18D787E9007FF707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		6567247918A979AA000AFE76 /* Debug */ = {
+		65AB7E8C18D787E9007FF707 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IBMorumbi.app/IBMorumbi";
@@ -485,7 +495,7 @@
 			};
 			name = Debug;
 		};
-		6567247A18A979AA000AFE76 /* Release */ = {
+		65AB7E8D18D787E9007FF707 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IBMorumbi.app/IBMorumbi";
@@ -506,34 +516,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6567243818A979A9000AFE76 /* Build configuration list for PBXProject "IBMorumbi" */ = {
+		65AB7E4E18D787E8007FF707 /* Build configuration list for PBXProject "IBMorumbi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6567247318A979AA000AFE76 /* Debug */,
-				6567247418A979AA000AFE76 /* Release */,
+				65AB7E8618D787E9007FF707 /* Debug */,
+				65AB7E8718D787E9007FF707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6567247518A979AA000AFE76 /* Build configuration list for PBXNativeTarget "IBMorumbi" */ = {
+		65AB7E8818D787E9007FF707 /* Build configuration list for PBXNativeTarget "IBMorumbi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6567247618A979AA000AFE76 /* Debug */,
-				6567247718A979AA000AFE76 /* Release */,
+				65AB7E8918D787E9007FF707 /* Debug */,
+				65AB7E8A18D787E9007FF707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6567247818A979AA000AFE76 /* Build configuration list for PBXNativeTarget "IBMorumbiTests" */ = {
+		65AB7E8B18D787E9007FF707 /* Build configuration list for PBXNativeTarget "IBMorumbiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6567247918A979AA000AFE76 /* Debug */,
-				6567247A18A979AA000AFE76 /* Release */,
+				65AB7E8C18D787E9007FF707 /* Debug */,
+				65AB7E8D18D787E9007FF707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6567243518A979A9000AFE76 /* Project object */;
+	rootObject = 65AB7E4B18D787E8007FF707 /* Project object */;
 }

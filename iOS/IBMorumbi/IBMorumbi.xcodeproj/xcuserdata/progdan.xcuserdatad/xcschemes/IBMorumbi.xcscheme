@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6567243C18A979A9000AFE76"
+               BlueprintIdentifier = "65AB7E5218D787E8007FF707"
                BuildableName = "IBMorumbi.app"
                BlueprintName = "IBMorumbi"
                ReferencedContainer = "container:IBMorumbi.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6567246318A979AA000AFE76"
+               BlueprintIdentifier = "65AB7E7618D787E9007FF707"
                BuildableName = "IBMorumbiTests.xctest"
                BlueprintName = "IBMorumbiTests"
                ReferencedContainer = "container:IBMorumbi.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6567243C18A979A9000AFE76"
+            BlueprintIdentifier = "65AB7E5218D787E8007FF707"
             BuildableName = "IBMorumbi.app"
             BlueprintName = "IBMorumbi"
             ReferencedContainer = "container:IBMorumbi.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6567243C18A979A9000AFE76"
+            BlueprintIdentifier = "65AB7E5218D787E8007FF707"
             BuildableName = "IBMorumbi.app"
             BlueprintName = "IBMorumbi"
             ReferencedContainer = "container:IBMorumbi.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6567243C18A979A9000AFE76"
+            BlueprintIdentifier = "65AB7E5218D787E8007FF707"
             BuildableName = "IBMorumbi.app"
             BlueprintName = "IBMorumbi"
             ReferencedContainer = "container:IBMorumbi.xcodeproj">
