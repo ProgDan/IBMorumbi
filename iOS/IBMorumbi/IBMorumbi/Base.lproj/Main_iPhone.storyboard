@@ -126,7 +126,7 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-Ig-Vpc">
@@ -170,6 +170,7 @@ Tel: (11) 3538-0250</string>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b8g-Ig-Vpc" secondAttribute="bottom" constant="8" id="uQE-g8-h6h"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Mapa" image="map" id="xNp-c5-Zj2"/>
                     <connections>
                         <outlet property="map" destination="K19-Jb-EDz" id="E2w-jS-24x"/>
