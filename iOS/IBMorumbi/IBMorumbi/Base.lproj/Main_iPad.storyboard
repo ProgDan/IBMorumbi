@@ -91,7 +91,7 @@
                                 <rect key="frame" x="149" y="71" width="470" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preview_470.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-fK-h1W">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="preview_morumbiplus_470.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IHY-fK-h1W">
                                         <rect key="frame" x="0.0" y="0.0" width="470" height="320"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
@@ -203,7 +203,7 @@ Tel: (11) 3538-0250</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hms-lP-bbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="-212"/>
+            <point key="canvasLocation" x="-1024" y="-212"/>
         </scene>
     </scenes>
     <resources>
@@ -211,7 +211,7 @@ Tel: (11) 3538-0250</string>
         <image name="logo_IBMorumbi_iPad.png" width="496" height="411"/>
         <image name="map" width="29" height="29"/>
         <image name="message" width="28" height="28"/>
-        <image name="preview_470.jpg" width="470" height="320"/>
+        <image name="preview_morumbiplus_470.jpg" width="470" height="320"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

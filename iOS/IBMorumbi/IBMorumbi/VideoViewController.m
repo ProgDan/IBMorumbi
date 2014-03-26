@@ -12,8 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIView *areaVideo;
 @property (weak, nonatomic) IBOutlet UIImageView *imgBackVideo;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) IBOutlet UITableView *table;
 
-// Objetio responsável por executar arquivos de vídeo
+// Objeto responsável por executar arquivos de vídeo
 @property (strong, nonatomic) MPMoviePlayerController *playerVideo;
 
 @end
@@ -37,13 +38,6 @@
     // Cadastrar a ViewController como ouvinte das mensagens do player de vídeo
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(playerVideoMudouEstado) name:MPMoviePlayerPlaybackStateDidChangeNotification object:nil];
     
-    // Localizar o arquivo
-    NSURL *urlVideoRemoto = [NSURL URLWithString:@"http://www.ibmorumbi.org.br/audio/2014/morumbi_mais/morumbi_mais_hd.mp4"];
-    
-    [self criarNovoPlayer:urlVideoRemoto];
-    
-    [self.spinner startAnimating];
-    
     // Trazendo a view do spinner para o topo das views
     [self.areaVideo bringSubviewToFront:self.spinner];
     
@@ -61,6 +55,8 @@
     
     // adicionar na tela
     [self.areaVideo addSubview:self.playerVideo.view];
+    
+    [self.spinner startAnimating];
     
     [self.playerVideo play];
 }
@@ -87,15 +83,71 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Navigation
+#pragma mark Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)viewWillDisappear:(BOOL)animated
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     [self.playerVideo stop];
 }
 
+#pragma mark UITableViewDataSource
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (section) {
+        return 1;
+    }
+    return 1;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell;
+    if (indexPath.section == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"MorumbiPlus" forIndexPath:indexPath];
+        cell.textLabel.text = @"Morumbi+";
+        cell.imageView.image = [UIImage imageNamed:@"preview_morumbiplus_470.jpg"];
+    }
+    if (indexPath.section == 1) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"VideoCell" forIndexPath:indexPath];
+        cell.textLabel.text = @"Um dia a casa Cai";
+        cell.detailTextLabel.text = @"(Lucas 15) - Pr. Lisânias Moura";
+        cell.imageView.image = [UIImage imageNamed:@"preview_mensagens_470.jpg"];
+    }
+    return cell;
+}
+
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (section) {
+        return @"Mensagens";
+    }
+    else {
+        return @"Morumbi+";
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Localizar o arquivo
+    NSURL *urlVideoRemoto;
+    
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        urlVideoRemoto = [NSURL URLWithString:@"http://www.ibmorumbi.org.br/audio/2014/morumbi_mais/morumbi_mais_hd.mp4"];
+    }
+    else {
+        urlVideoRemoto = [NSURL URLWithString:@"http://www.ibmorumbi.com.br/audio/2014/video/mar1603m.mp4"];
+    }
+    
+    
+    [self criarNovoPlayer:urlVideoRemoto];
+}
 
 @end

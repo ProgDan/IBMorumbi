@@ -10,7 +10,7 @@
 		659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E518D7B48F001DADB7 /* Localizable.strings */; };
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
 		659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */; };
-		659D28ED18D7C5C9001DADB7 /* preview_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 659D28EC18D7C5C9001DADB7 /* preview_470.jpg */; };
+		659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */; };
 		659D28F018D7C74A001DADB7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659D28EF18D7C74A001DADB7 /* VideoViewController.m */; };
 		659D28F218D7C905001DADB7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659D28F118D7C905001DADB7 /* MediaPlayer.framework */; };
 		65AB7E5718D787E8007FF707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5618D787E8007FF707 /* Foundation.framework */; };
@@ -21,7 +21,6 @@
 		65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E6618D787E9007FF707 /* AppDelegate.m */; };
 		65AB7E6A18D787E9007FF707 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E6818D787E9007FF707 /* Main_iPhone.storyboard */; };
 		65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E6B18D787E9007FF707 /* Main_iPad.storyboard */; };
-		65AB7E7018D787E9007FF707 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E6F18D787E9007FF707 /* ViewController.m */; };
 		65AB7E7218D787E9007FF707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AB7E7118D787E9007FF707 /* Images.xcassets */; };
 		65AB7E7918D787E9007FF707 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E7818D787E9007FF707 /* XCTest.framework */; };
 		65AB7E7A18D787E9007FF707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5618D787E8007FF707 /* Foundation.framework */; };
@@ -31,6 +30,7 @@
 		65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E8E18D78823007FF707 /* MapKit.framework */; };
 		65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E9018D7882A007FF707 /* CoreLocation.framework */; };
 		65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E9318D789A2007FF707 /* MapViewController.m */; };
+		65D3D2CF18E2592900B87698 /* preview_mensagens_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		659D28E618D7B49E001DADB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPad.png; sourceTree = "<group>"; };
 		659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
-		659D28EC18D7C5C9001DADB7 /* preview_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_470.jpg; sourceTree = "<group>"; };
+		659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_morumbiplus_470.jpg; sourceTree = "<group>"; };
 		659D28EE18D7C74A001DADB7 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		659D28EF18D7C74A001DADB7 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		659D28F118D7C905001DADB7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -66,8 +66,6 @@
 		65AB7E6618D787E9007FF707 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		65AB7E6918D787E9007FF707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		65AB7E6C18D787E9007FF707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		65AB7E6E18D787E9007FF707 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		65AB7E6F18D787E9007FF707 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		65AB7E7118D787E9007FF707 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65AB7E7718D787E9007FF707 /* IBMorumbiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBMorumbiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AB7E7818D787E9007FF707 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -78,6 +76,7 @@
 		65AB7E9018D7882A007FF707 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		65AB7E9218D789A2007FF707 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		65AB7E9318D789A2007FF707 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_mensagens_470.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +109,8 @@
 		659D28E718D7B7D0001DADB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				659D28EC18D7C5C9001DADB7 /* preview_470.jpg */,
+				65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */,
+				659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */,
 				659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */,
 				659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */,
 			);
@@ -162,8 +162,6 @@
 				65AB7E9318D789A2007FF707 /* MapViewController.m */,
 				659D28EE18D7C74A001DADB7 /* VideoViewController.h */,
 				659D28EF18D7C74A001DADB7 /* VideoViewController.m */,
-				65AB7E6E18D787E9007FF707 /* ViewController.h */,
-				65AB7E6F18D787E9007FF707 /* ViewController.m */,
 				65AB7E7118D787E9007FF707 /* Images.xcassets */,
 				65AB7E5D18D787E8007FF707 /* Supporting Files */,
 			);
@@ -278,10 +276,11 @@
 			files = (
 				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
 				659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */,
-				659D28ED18D7C5C9001DADB7 /* preview_470.jpg in Resources */,
+				659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */,
 				659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */,
 				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
 				65AB7E7218D787E9007FF707 /* Images.xcassets in Resources */,
+				65D3D2CF18E2592900B87698 /* preview_mensagens_470.jpg in Resources */,
 				65AB7E6A18D787E9007FF707 /* Main_iPhone.storyboard in Resources */,
 				65AB7E6118D787E8007FF707 /* InfoPlist.strings in Resources */,
 			);
@@ -303,7 +302,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				659D28F018D7C74A001DADB7 /* VideoViewController.m in Sources */,
-				65AB7E7018D787E9007FF707 /* ViewController.m in Sources */,
 				65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */,
 				65AB7E6318D787E8007FF707 /* main.m in Sources */,
 				65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */,
