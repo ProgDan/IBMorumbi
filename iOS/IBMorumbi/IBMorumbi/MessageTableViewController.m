@@ -51,6 +51,7 @@
     dadosArquivo = [NSData dataWithContentsOfFile:path];
     NSError *error;
     self.messageList = [NSJSONSerialization JSONObjectWithData:dadosArquivo options:NSJSONReadingAllowFragments error:&error];
+    
     [self.messagesTable reloadData];
 }
 
@@ -59,12 +60,15 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIStoryboard *story;
+    NSString *video_morumbiplus;
     
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         story = [UIStoryboard storyboardWithName:@"Main_iPad" bundle:nil];
+        video_morumbiplus = self.ibmorumbiConfig[@"video_morumbiplushd"];
     }
     else {
         story = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+        video_morumbiplus = self.ibmorumbiConfig[@"video_morumbiplus"];
     }
     
     if (self.mediaSelector.selectedSegmentIndex) {
@@ -72,18 +76,18 @@
         detalhe.mensagem = self.messageList[indexPath.row];
         [self.navigationController pushViewController:detalhe animated:YES];
     }
+    else {
+        MessageVideoPlayerViewController *detalhe = [story instantiateViewControllerWithIdentifier:@"VideoPlayer"];
+        if (indexPath.section) {
+            detalhe.mensagem = self.messageList[indexPath.row];
+        }
+        else {
+            detalhe.mensagem = @{@"tema": @"Morumbi+",@"video":video_morumbiplus};
+        }
+        [self.navigationController pushViewController:detalhe animated:YES];
+    }
     
 }
-
-/*
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark - UITableViewDataSource
 

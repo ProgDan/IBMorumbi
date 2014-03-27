@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MessageAudioPlayerViewController.h"
+#import "MessageVideoPlayerViewController.h"
 
 @interface MessageTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 

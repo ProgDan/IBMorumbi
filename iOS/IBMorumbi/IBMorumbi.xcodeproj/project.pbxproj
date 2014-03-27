@@ -18,7 +18,6 @@
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
 		659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */; };
 		659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */; };
-		659D28F018D7C74A001DADB7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659D28EF18D7C74A001DADB7 /* VideoViewController.m */; };
 		65AB7E5718D787E8007FF707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5618D787E8007FF707 /* Foundation.framework */; };
 		65AB7E5918D787E8007FF707 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5818D787E8007FF707 /* CoreGraphics.framework */; };
 		65AB7E5B18D787E8007FF707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5A18D787E8007FF707 /* UIKit.framework */; };
@@ -36,6 +35,15 @@
 		65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E8E18D78823007FF707 /* MapKit.framework */; };
 		65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E9018D7882A007FF707 /* CoreLocation.framework */; };
 		65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E9318D789A2007FF707 /* MapViewController.m */; };
+		65BA4D2518E4CB16006AD658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659D28F118D7C905001DADB7 /* MediaPlayer.framework */; };
+		65BA4D2F18E4D553006AD658 /* andre_fontana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2718E4D553006AD658 /* andre_fontana.jpg */; };
+		65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */; };
+		65BA4D3118E4D553006AD658 /* Gilberto_Lisboa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2918E4D553006AD658 /* Gilberto_Lisboa.jpg */; };
+		65BA4D3218E4D553006AD658 /* isaque_s.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2A18E4D553006AD658 /* isaque_s.jpg */; };
+		65BA4D3318E4D553006AD658 /* l_perruci.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2B18E4D553006AD658 /* l_perruci.jpg */; };
+		65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2C18E4D553006AD658 /* pastor_lisanias.jpg */; };
+		65BA4D3518E4D553006AD658 /* pastor_rivanildo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2D18E4D553006AD658 /* pastor_rivanildo.jpg */; };
+		65BA4D3618E4D553006AD658 /* samuel_mendes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2E18E4D553006AD658 /* samuel_mendes.jpg */; };
 		65D3D2CF18E2592900B87698 /* preview_mensagens_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */; };
 		65DD692018E38169007E3D80 /* img_serie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65DD691F18E38169007E3D80 /* img_serie.jpg */; };
 		65DD692818E387E2007E3D80 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DD692318E387E2007E3D80 /* pause.png */; };
@@ -76,8 +84,6 @@
 		659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPad.png; sourceTree = "<group>"; };
 		659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
 		659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_morumbiplus_470.jpg; sourceTree = "<group>"; };
-		659D28EE18D7C74A001DADB7 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		659D28EF18D7C74A001DADB7 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		659D28F118D7C905001DADB7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		65AB7E5318D787E8007FF707 /* IBMorumbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMorumbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AB7E5618D787E8007FF707 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +107,14 @@
 		65AB7E9018D7882A007FF707 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		65AB7E9218D789A2007FF707 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		65AB7E9318D789A2007FF707 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		65BA4D2718E4D553006AD658 /* andre_fontana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = andre_fontana.jpg; sourceTree = "<group>"; };
+		65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = claudio_duarte.jpg; sourceTree = "<group>"; };
+		65BA4D2918E4D553006AD658 /* Gilberto_Lisboa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gilberto_Lisboa.jpg; sourceTree = "<group>"; };
+		65BA4D2A18E4D553006AD658 /* isaque_s.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = isaque_s.jpg; sourceTree = "<group>"; };
+		65BA4D2B18E4D553006AD658 /* l_perruci.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = l_perruci.jpg; sourceTree = "<group>"; };
+		65BA4D2C18E4D553006AD658 /* pastor_lisanias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pastor_lisanias.jpg; sourceTree = "<group>"; };
+		65BA4D2D18E4D553006AD658 /* pastor_rivanildo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pastor_rivanildo.jpg; sourceTree = "<group>"; };
+		65BA4D2E18E4D553006AD658 /* samuel_mendes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samuel_mendes.jpg; sourceTree = "<group>"; };
 		65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_mensagens_470.jpg; sourceTree = "<group>"; };
 		65DD691F18E38169007E3D80 /* img_serie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_serie.jpg; sourceTree = "<group>"; };
 		65DD692318E387E2007E3D80 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
@@ -109,7 +123,7 @@
 		65DD692618E387E2007E3D80 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		65DD692718E387E2007E3D80 /* voltar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voltar.png; sourceTree = "<group>"; };
 		65DD692D18E3A80E007E3D80 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		65DD692F18E3BB72007E3D80 /* mystery-man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mystery-man.jpg"; path = "../../../../../../Downloads/mystery-man.jpg"; sourceTree = "<group>"; };
+		65DD692F18E3BB72007E3D80 /* mystery-man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mystery-man.jpg"; path = "../../../../../../../Downloads/mystery-man.jpg"; sourceTree = "<group>"; };
 		65DD693118E3C470007E3D80 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		65DD693218E3C470007E3D80 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BA4D2518E4CB16006AD658 /* MediaPlayer.framework in Frameworks */,
 				65DD692E18E3A80E007E3D80 /* AVFoundation.framework in Frameworks */,
 				65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */,
 				65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */,
@@ -153,7 +168,6 @@
 		659D28E718D7B7D0001DADB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				65DD692F18E3BB72007E3D80 /* mystery-man.jpg */,
 				65DD691F18E38169007E3D80 /* img_serie.jpg */,
 				6552136D18E3725000924CB0 /* bck_topo.gif */,
 				6552136618E35D3000924CB0 /* message_logo.gif */,
@@ -202,6 +216,7 @@
 		65AB7E5C18D787E8007FF707 /* IBMorumbi */ = {
 			isa = PBXGroup;
 			children = (
+				65BA4D2618E4D553006AD658 /* pastores */,
 				65DD692118E387C5007E3D80 /* icons */,
 				6552136818E35FFB00924CB0 /* data */,
 				659D28E718D7B7D0001DADB7 /* images */,
@@ -217,8 +232,6 @@
 				6552135818E3458100924CB0 /* MessageTableViewController.m */,
 				6552135D18E345D100924CB0 /* MessageVideoPlayerViewController.h */,
 				6552135E18E345D100924CB0 /* MessageVideoPlayerViewController.m */,
-				659D28EE18D7C74A001DADB7 /* VideoViewController.h */,
-				659D28EF18D7C74A001DADB7 /* VideoViewController.m */,
 				65DD693118E3C470007E3D80 /* WebViewController.h */,
 				65DD693218E3C470007E3D80 /* WebViewController.m */,
 				65AB7E7118D787E9007FF707 /* Images.xcassets */,
@@ -255,6 +268,22 @@
 				65AB7E8118D787E9007FF707 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65BA4D2618E4D553006AD658 /* pastores */ = {
+			isa = PBXGroup;
+			children = (
+				65DD692F18E3BB72007E3D80 /* mystery-man.jpg */,
+				65BA4D2718E4D553006AD658 /* andre_fontana.jpg */,
+				65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */,
+				65BA4D2918E4D553006AD658 /* Gilberto_Lisboa.jpg */,
+				65BA4D2A18E4D553006AD658 /* isaque_s.jpg */,
+				65BA4D2B18E4D553006AD658 /* l_perruci.jpg */,
+				65BA4D2C18E4D553006AD658 /* pastor_lisanias.jpg */,
+				65BA4D2D18E4D553006AD658 /* pastor_rivanildo.jpg */,
+				65BA4D2E18E4D553006AD658 /* samuel_mendes.jpg */,
+			);
+			path = pastores;
 			sourceTree = "<group>";
 		};
 		65DD692118E387C5007E3D80 /* icons */ = {
@@ -357,21 +386,29 @@
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
 				6552136718E35D3000924CB0 /* message_logo.gif in Resources */,
 				65DD692818E387E2007E3D80 /* pause.png in Resources */,
+				65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */,
+				65BA4D3218E4D553006AD658 /* isaque_s.jpg in Resources */,
 				65DD693018E3BB72007E3D80 /* mystery-man.jpg in Resources */,
 				659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */,
+				65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */,
 				659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */,
 				659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */,
+				65BA4D3118E4D553006AD658 /* Gilberto_Lisboa.jpg in Resources */,
 				6552136C18E3601800924CB0 /* messages.json in Resources */,
+				65BA4D3318E4D553006AD658 /* l_perruci.jpg in Resources */,
 				65DD692018E38169007E3D80 /* img_serie.jpg in Resources */,
 				6552136E18E3725000924CB0 /* bck_topo.gif in Resources */,
 				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
 				65DD692B18E387E2007E3D80 /* stop.png in Resources */,
 				65DD692A18E387E2007E3D80 /* proximo.png in Resources */,
 				65AB7E7218D787E9007FF707 /* Images.xcassets in Resources */,
+				65BA4D3518E4D553006AD658 /* pastor_rivanildo.jpg in Resources */,
 				65D3D2CF18E2592900B87698 /* preview_mensagens_470.jpg in Resources */,
 				65AB7E6A18D787E9007FF707 /* Main_iPhone.storyboard in Resources */,
+				65BA4D2F18E4D553006AD658 /* andre_fontana.jpg in Resources */,
 				6552136B18E3601800924CB0 /* ibmorumbi.json in Resources */,
 				65DD692C18E387E2007E3D80 /* voltar.png in Resources */,
+				65BA4D3618E4D553006AD658 /* samuel_mendes.jpg in Resources */,
 				65AB7E6118D787E8007FF707 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +428,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659D28F018D7C74A001DADB7 /* VideoViewController.m in Sources */,
 				6552135918E3458100924CB0 /* MessageTableViewController.m in Sources */,
 				65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */,
 				65DD693318E3C470007E3D80 /* WebViewController.m in Sources */,

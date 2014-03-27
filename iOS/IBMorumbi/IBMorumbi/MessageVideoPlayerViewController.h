@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface MessageVideoPlayerViewController : UIViewController
+
+// Dado recebido da View Controller de Lista de Mensagens
+@property (strong, nonatomic) NSDictionary *mensagem;
 
 @end
