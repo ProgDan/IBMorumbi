@@ -1,0 +1,202 @@
+[
+ {
+ "data" : "23/03/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15 - Noite - 18h30",
+ "tema" : "Reconstruindo a Esperança",
+ "passagens" : "Rute",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/mar2303m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/mar2303m.mp4"
+ },
+ {
+ "data" : "16/03/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15 - Noite - 18h30",
+ "tema" : "Um dia a casa Cai",
+ "passagens" : "Lucas 15",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/mar1603m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/mar1603m.mp4"
+ },
+ {
+ "data" : "09/03/2014",
+ "pregador" : "Pr. Samuel Mendes",
+ "pregador_img" : "http://www.ibmorumbi.com.br/audio/imagens/samuel_mendes.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Em busca da Felicidade (moderação x glutonaria)",
+ "passagens" : "Filipenses 4.6",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/mar0903n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/mar0903n.mp4"
+ },
+ {
+ "data" : "09/03/2014",
+ "pregador" : "Pb. Claudio Duarte",
+ "pregador_img" : "http://www.ibmorumbi.com.br/presbiterio/imagens/claudio_duarte.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "O que faz você feliz? (avareza x generosidade)",
+ "passagens" : "Efésios 5.5",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/mar0903m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/mar0903m.mp4"
+ },
+ {
+ "data" : "02/03/2014",
+ "pregador" : "Pr. Rivanildo Guedes",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_rivanildo.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15 - Noite - 18h30",
+ "tema" : "Pavio Curto (mansidão x ira)",
+ "passagens" : "Tiago 1.19-27",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/mar0203m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/mar0203m.mp4"
+ },
+ {
+ "data" : "23/02/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Sombra e Água Fresca...",
+ "passagens" : "Provérbios 26.13-16",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev2302n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev2302n.mp4"
+ },
+ {
+ "data" : "23/02/2014",
+ "pregador" : "Pr. Lucas Perruci",
+ "pregador_img" : "http://www.ibmorumbi.com.br/audio/imagens/l_perruci.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "Só mais uma espiadinha...",
+ "passagens" : "I Tess. 4.1-8",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev2302m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev2302m.mp4"
+ },
+ {
+ "data" : "16/02/2014",
+ "pregador" : "Pr. Rivanildo Guedes",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_rivanildo.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Se eu fose você...",
+ "passagens" : "Tiago 3.13",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev1602n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev1602n.mp4"
+ },
+ {
+ "data" : "16/02/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "O diabo veste prada",
+ "passagens" : "Tiago 4.1-10",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev1602m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev1602m.mp4"
+ },
+ {
+ "data" : "09/02/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15 - Noite - 18h00",
+ "tema" : "A casa pega Fogo",
+ "passagens" : "Gálatas 5.13-18",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev0902m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev0902m.mp4"
+ },
+ {
+ "data" : "02/02/2014",
+ "pregador" : "Pr. Isaque Sicsú",
+ "pregador_img" : "http://www.ibmorumbi.com.br/audio/imagens/isaque_s.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Os Perigos da Superficialidade",
+ "passagens" : "Atos 18.24-28",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev0202n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev0202n.mp4"
+ },
+ {
+ "data" : "02/02/2014",
+ "pregador" : "Pr. Rivanildo Guedes",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_rivanildo.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "De todo o coração",
+ "passagens" : "Efésios 1.15-23",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/fev0202m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/fev0202m.mp4"
+ },
+ {
+ "data" : "26/01/2014",
+ "pregador" : "Pb. Claudio Duarte",
+ "pregador_img" : "http://www.ibmorumbi.com.br/presbiterio/imagens/claudio_duarte.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Eu tenho o sonho de ser íntimo de Deus",
+ "passagens" : "Jeremias 29.1-11",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan2601n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan2601n.mp4"
+ },
+ {
+ "data" : "26/01/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "Adoração Radical",
+ "passagens" : "Exôdo 20.1-4",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan2601m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan2601m.mp4"
+ },
+ {
+ "data" : "19/01/2014",
+ "pregador" : "Pr. Rivanildo Guedes",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_rivanildo.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Eu tenho o sonho de uma igreja impactante no mundo",
+ "passagens" : "Tiago 2.14-26",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan1901n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan1901n.mp4"
+ },
+ {
+ "data" : "19/01/2014",
+ "pregador" : "Pr. Lisânias Moura",
+ "pregador_img" : "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "Salvação, decisão Radical",
+ "passagens" : "Marcos 10.18-20",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan1901m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan1901m.mp4"
+ },
+ {
+ "data" : "12/01/2014",
+ "pregador" : "Pr. Isaque Sicsú",
+ "pregador_img" : "http://www.ibmorumbi.com.br/audio/imagens/isaque_s.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Eu tenho o sonho de tratar meu próximo como Jesus trataria",
+ "passagens" : "Gênesis 1.26-27",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan1201n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan1201n.mp4"
+ },
+ {
+ "data" : "12/01/2014",
+ "pregador" : "Pr. Lucas Perruci",
+ "pregador_img" : "http://www.ibmorumbi.com.br/audio/imagens/l_perruci.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "Compaixão Radical",
+ "passagens" : "Lucas 15.11-32",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan1201m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan1201m.mp4"
+ },
+ {
+ "data" : "05/01/2014",
+ "pregador" : "Pb. Gilberto Lisboa",
+ "pregador_img" : "http://www.ibmorumbi.com.br/presbiterio/imagens/Gilberto_Lisboa.jpg",
+ "cultos" : "Noite - 18h30",
+ "tema" : "Eu tenho o sonho de viver o Cristianismo coerentemente",
+ "passagens" : "Salmo 116",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan0501n.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan0501n.mp4"
+ },
+ {
+ "data" : "05/01/2014",
+ "pregador" : "Pr. André Fontana",
+ "pregador_img" : "http://www.ibmorumbi.com.br/audio/imagens/andre_fontana.jpg",
+ "cultos" : "Manhã - 9h00 e 11h15",
+ "tema" : "Compromisso Radical",
+ "passagens" : "Malaquias 1.1-12",
+ "audio" : "http://www.ibmorumbi.com.br/audio/2014/audio/jan0501m.mp3",
+ "video" : "http://www.ibmorumbi.com.br/audio/2014/video/jan0501m.mp4"
+ }
+ ]
