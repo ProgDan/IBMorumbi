@@ -632,6 +632,7 @@ Tel: (11) 3538-0250</string>
                     </tabBar>
                     <connections>
                         <segue destination="4kb-sv-TkF" kind="relationship" relationship="viewControllers" id="1tp-wc-w3Z"/>
+                        <segue destination="nxY-SK-4NM" kind="relationship" relationship="viewControllers" id="g78-Jd-bW3"/>
                         <segue destination="6gn-HN-KNE" kind="relationship" relationship="viewControllers" id="CXR-pa-24v"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UBj-Y2-05F"/>
                         <segue destination="p6i-tX-V3e" kind="relationship" relationship="viewControllers" id="zu6-OE-zFA"/>
@@ -640,6 +641,92 @@ Tel: (11) 3538-0250</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hms-lP-bbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1024" y="-212"/>
+        </scene>
+        <!--Boletim View Controller - Boletim-->
+        <scene sceneID="Aly-QI-aWb">
+            <objects>
+                <viewController id="nxY-SK-4NM" customClass="BoletimViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gSv-fT-75h"/>
+                        <viewControllerLayoutGuide type="bottom" id="1q5-Fv-ShZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ze-d3-y0D">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-Jb-SKD">
+                                <rect key="frame" x="0.0" y="20" width="324" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="2ic-ex-kky"/>
+                                    <constraint firstAttribute="width" constant="324" id="iIp-5b-iPx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bck_topo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="3fV-qj-Yd6">
+                                <rect key="frame" x="324" y="20" width="444" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iLs-Gf-7eU">
+                                <rect key="frame" x="0.0" y="110" width="768" height="865"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="w5h-Lh-0kp" detailTextLabel="m1S-h8-pYf" imageView="neD-F0-1A5" style="IBUITableViewCellStyleSubtitle" id="g8M-JD-FHG">
+                                        <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g8M-JD-FHG" id="kVk-Wu-IMr">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Boletim Informativo da IB Morumbi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w5h-Lh-0kp">
+                                                    <rect key="frame" x="73" y="3" width="282" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m1S-h8-pYf">
+                                                    <rect key="frame" x="73" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_pdf.png" id="neD-F0-1A5">
+                                                    <rect key="frame" x="15" y="0.0" width="43" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nxY-SK-4NM" id="HTp-4f-raK"/>
+                                    <outlet property="delegate" destination="nxY-SK-4NM" id="VC5-Uo-DP7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iLs-Gf-7eU" secondAttribute="trailing" id="4w3-7I-tE9"/>
+                            <constraint firstItem="hmL-Jb-SKD" firstAttribute="leading" secondItem="9ze-d3-y0D" secondAttribute="leading" id="BfQ-h5-QJ9"/>
+                            <constraint firstItem="3fV-qj-Yd6" firstAttribute="leading" secondItem="hmL-Jb-SKD" secondAttribute="trailing" id="Iuv-pf-kAL"/>
+                            <constraint firstItem="iLs-Gf-7eU" firstAttribute="leading" secondItem="9ze-d3-y0D" secondAttribute="leading" id="SWg-Xx-ZLg"/>
+                            <constraint firstItem="1q5-Fv-ShZ" firstAttribute="top" secondItem="iLs-Gf-7eU" secondAttribute="bottom" id="f2g-ux-mdN"/>
+                            <constraint firstItem="iLs-Gf-7eU" firstAttribute="top" secondItem="3fV-qj-Yd6" secondAttribute="bottom" id="jAD-IZ-bcC"/>
+                            <constraint firstItem="3fV-qj-Yd6" firstAttribute="top" secondItem="gSv-fT-75h" secondAttribute="bottom" id="lmm-RM-Qbo"/>
+                            <constraint firstItem="hmL-Jb-SKD" firstAttribute="top" secondItem="gSv-fT-75h" secondAttribute="bottom" id="vDC-o9-lFw"/>
+                            <constraint firstAttribute="trailing" secondItem="3fV-qj-Yd6" secondAttribute="trailing" id="zIP-Wf-gV1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Boletim" image="donation" id="vX5-9K-ctb"/>
+                    <connections>
+                        <outlet property="boletimTable" destination="iLs-Gf-7eU" id="fGm-8e-DTW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUb-dQ-JMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1019" y="-1532"/>
         </scene>
         <!--Navigation Controller - Mensagens-->
         <scene sceneID="Omh-mR-lae">
@@ -664,7 +751,9 @@ Tel: (11) 3538-0250</string>
     <resources>
         <image name="about" width="28" height="28"/>
         <image name="bck_topo.gif" width="2048" height="90"/>
+        <image name="donation" width="29" height="29"/>
         <image name="globe" width="29" height="29"/>
+        <image name="icon_pdf.png" width="512" height="512"/>
         <image name="img_serie.jpg" width="425" height="105"/>
         <image name="logo_IBMorumbi_iPad.png" width="496" height="411"/>
         <image name="map" width="29" height="29"/>

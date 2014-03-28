@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655159C818E4E60C0086CCF7 /* boletins.json in Resources */ = {isa = PBXBuildFile; fileRef = 655159C718E4E60C0086CCF7 /* boletins.json */; };
+		655159CB18E4E8760086CCF7 /* BoletimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655159CA18E4E8760086CCF7 /* BoletimViewController.m */; };
+		655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 655159CC18E4F41B0086CCF7 /* icon_pdf.png */; };
 		6552135918E3458100924CB0 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552135818E3458100924CB0 /* MessageTableViewController.m */; };
 		6552135F18E345D100924CB0 /* MessageVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552135E18E345D100924CB0 /* MessageVideoPlayerViewController.m */; };
 		6552136518E346C400924CB0 /* MessageAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */; };
@@ -67,6 +70,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655159C718E4E60C0086CCF7 /* boletins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = boletins.json; sourceTree = "<group>"; };
+		655159C918E4E8760086CCF7 /* BoletimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoletimViewController.h; sourceTree = "<group>"; };
+		655159CA18E4E8760086CCF7 /* BoletimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoletimViewController.m; sourceTree = "<group>"; };
+		655159CC18E4F41B0086CCF7 /* icon_pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pdf.png; sourceTree = "<group>"; };
 		6552135718E3458100924CB0 /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
 		6552135818E3458100924CB0 /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
 		6552135D18E345D100924CB0 /* MessageVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageVideoPlayerViewController.h; sourceTree = "<group>"; };
@@ -161,6 +168,7 @@
 			children = (
 				6552136918E3601800924CB0 /* ibmorumbi.json */,
 				6552136A18E3601800924CB0 /* messages.json */,
+				655159C718E4E60C0086CCF7 /* boletins.json */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -224,6 +232,8 @@
 				65AB7E6618D787E9007FF707 /* AppDelegate.m */,
 				65AB7E6818D787E9007FF707 /* Main_iPhone.storyboard */,
 				65AB7E6B18D787E9007FF707 /* Main_iPad.storyboard */,
+				655159C918E4E8760086CCF7 /* BoletimViewController.h */,
+				655159CA18E4E8760086CCF7 /* BoletimViewController.m */,
 				65AB7E9218D789A2007FF707 /* MapViewController.h */,
 				65AB7E9318D789A2007FF707 /* MapViewController.m */,
 				6552136318E346C400924CB0 /* MessageAudioPlayerViewController.h */,
@@ -289,6 +299,7 @@
 		65DD692118E387C5007E3D80 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				655159CC18E4F41B0086CCF7 /* icon_pdf.png */,
 				65DD692218E387E2007E3D80 /* botoes_player */,
 			);
 			name = icons;
@@ -383,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
+				655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */,
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
 				6552136718E35D3000924CB0 /* message_logo.gif in Resources */,
 				65DD692818E387E2007E3D80 /* pause.png in Resources */,
@@ -398,6 +410,7 @@
 				65BA4D3318E4D553006AD658 /* l_perruci.jpg in Resources */,
 				65DD692018E38169007E3D80 /* img_serie.jpg in Resources */,
 				6552136E18E3725000924CB0 /* bck_topo.gif in Resources */,
+				655159C818E4E60C0086CCF7 /* boletins.json in Resources */,
 				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
 				65DD692B18E387E2007E3D80 /* stop.png in Resources */,
 				65DD692A18E387E2007E3D80 /* proximo.png in Resources */,
@@ -433,6 +446,7 @@
 				65DD693318E3C470007E3D80 /* WebViewController.m in Sources */,
 				6552135F18E345D100924CB0 /* MessageVideoPlayerViewController.m in Sources */,
 				65AB7E6318D787E8007FF707 /* main.m in Sources */,
+				655159CB18E4E8760086CCF7 /* BoletimViewController.m in Sources */,
 				65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */,
 				6552136518E346C400924CB0 /* MessageAudioPlayerViewController.m in Sources */,
 			);
