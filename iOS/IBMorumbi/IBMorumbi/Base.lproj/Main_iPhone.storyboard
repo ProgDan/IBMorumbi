@@ -276,7 +276,7 @@ Tel: (11) 3538-0250</string>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Boletim" image="donation" id="hMK-D5-g9K"/>
+                    <tabBarItem key="tabBarItem" title="Boletim" image="notebook" id="hMK-D5-g9K"/>
                     <connections>
                         <outlet property="boletimTable" destination="Ths-DF-VIE" id="aWg-Yg-7jo"/>
                     </connections>
@@ -726,7 +726,6 @@ Tel: (11) 3538-0250</string>
     </scenes>
     <resources>
         <image name="about" width="28" height="28"/>
-        <image name="donation" width="29" height="29"/>
         <image name="globe" width="29" height="29"/>
         <image name="icon_pdf.png" width="512" height="512"/>
         <image name="logo_IBMorumbi_iPhone.png" width="280" height="232"/>
@@ -734,6 +733,7 @@ Tel: (11) 3538-0250</string>
         <image name="message" width="28" height="28"/>
         <image name="message_logo.gif" width="324" height="90"/>
         <image name="mystery-man.jpg" width="114" height="114"/>
+        <image name="notebook" width="28" height="28"/>
         <image name="pause.png" width="32" height="32"/>
         <image name="play.png" width="32" height="32"/>
         <image name="preview_mensagens_470.jpg" width="470" height="320"/>

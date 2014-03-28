@@ -719,7 +719,7 @@ Tel: (11) 3538-0250</string>
                             <constraint firstAttribute="trailing" secondItem="3fV-qj-Yd6" secondAttribute="trailing" id="zIP-Wf-gV1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Boletim" image="donation" id="vX5-9K-ctb"/>
+                    <tabBarItem key="tabBarItem" title="Boletim" image="notebook" id="vX5-9K-ctb"/>
                     <connections>
                         <outlet property="boletimTable" destination="iLs-Gf-7eU" id="fGm-8e-DTW"/>
                     </connections>
@@ -751,7 +751,6 @@ Tel: (11) 3538-0250</string>
     <resources>
         <image name="about" width="28" height="28"/>
         <image name="bck_topo.gif" width="2048" height="90"/>
-        <image name="donation" width="29" height="29"/>
         <image name="globe" width="29" height="29"/>
         <image name="icon_pdf.png" width="512" height="512"/>
         <image name="img_serie.jpg" width="425" height="105"/>
@@ -759,6 +758,7 @@ Tel: (11) 3538-0250</string>
         <image name="map" width="29" height="29"/>
         <image name="message" width="28" height="28"/>
         <image name="message_logo.gif" width="324" height="90"/>
+        <image name="notebook" width="28" height="28"/>
         <image name="pause.png" width="32" height="32"/>
         <image name="play.png" width="32" height="32"/>
         <image name="preview_mensagens_470.jpg" width="470" height="320"/>
