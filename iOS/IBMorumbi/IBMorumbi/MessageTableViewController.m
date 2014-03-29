@@ -43,6 +43,9 @@
     NSError *error;
     self.messageList = [NSJSONSerialization JSONObjectWithData:dadosArquivo options:NSJSONReadingAllowFragments error:&error];
     
+    // Exibição da imagem da série de mensagens
+    self.imgMsgSerie.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.ibmorumbiConfig[@"logo_mensagens"]]]];
+    
     [self.messagesTable reloadData];
 }
 
@@ -122,14 +125,14 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"MessageCell" forIndexPath:indexPath];
         cell.textLabel.text = self.messageList[indexPath.row][@"tema"];
         cell.detailTextLabel.text = self.messageList[indexPath.row][@"pregador"];
-        cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.messageList[indexPath.row][@"pregador_img"]]]];
+//        cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.messageList[indexPath.row][@"pregador_img"]]]];
     }
     // Seção do Morumbi+
     else {
         cell = [tableView dequeueReusableCellWithIdentifier:@"MorumbiPlus" forIndexPath:indexPath];
         cell.textLabel.text = @"Morumbi+";
-        // cell.imageView.image = [UIImage imageNamed:@"preview_morumbiplus_470.jpg"];
-        cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.ibmorumbiConfig[@"logo_morumbiplus"]]]];
+        cell.imageView.image = [UIImage imageNamed:@"preview_morumbiplus_470.jpg"];
+        // cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.ibmorumbiConfig[@"logo_morumbiplus"]]]];
     }
     return cell;
 }

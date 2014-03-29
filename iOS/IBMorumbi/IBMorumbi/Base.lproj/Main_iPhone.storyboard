@@ -416,7 +416,7 @@ Tel: (11) 3538-0250</string>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="imgMsgSerie" destination="3WR-ng-h7J" id="aEJ-DB-AZM"/>
+                        <outlet property="imgMsgSerie" destination="3WR-ng-h7J" id="Gbi-8m-d18"/>
                         <outlet property="mediaSelector" destination="NaR-CE-BRL" id="VzW-nL-xJd"/>
                         <outlet property="messagesTable" destination="IoD-BI-vkF" id="y4w-P7-F8N"/>
                     </connections>
