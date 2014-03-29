@@ -17,6 +17,7 @@
 		6552136B18E3601800924CB0 /* ibmorumbi.json in Resources */ = {isa = PBXBuildFile; fileRef = 6552136918E3601800924CB0 /* ibmorumbi.json */; };
 		6552136C18E3601800924CB0 /* messages.json in Resources */ = {isa = PBXBuildFile; fileRef = 6552136A18E3601800924CB0 /* messages.json */; };
 		6552136E18E3725000924CB0 /* bck_topo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6552136D18E3725000924CB0 /* bck_topo.gif */; };
+		6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B94318E74BE600F04FB4 /* AboutViewController.m */; };
 		659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E518D7B48F001DADB7 /* Localizable.strings */; };
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
 		659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */; };
@@ -84,6 +85,8 @@
 		6552136918E3601800924CB0 /* ibmorumbi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ibmorumbi.json; sourceTree = "<group>"; };
 		6552136A18E3601800924CB0 /* messages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = messages.json; sourceTree = "<group>"; };
 		6552136D18E3725000924CB0 /* bck_topo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bck_topo.gif; sourceTree = "<group>"; };
+		6587B94218E74BE600F04FB4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		6587B94318E74BE600F04FB4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		659D28E118D7B47B001DADB7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
 		659D28E218D7B47B001DADB7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		659D28E418D7B48F001DADB7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				65AB7E6618D787E9007FF707 /* AppDelegate.m */,
 				65AB7E6818D787E9007FF707 /* Main_iPhone.storyboard */,
 				65AB7E6B18D787E9007FF707 /* Main_iPad.storyboard */,
+				6587B94218E74BE600F04FB4 /* AboutViewController.h */,
+				6587B94318E74BE600F04FB4 /* AboutViewController.m */,
 				655159C918E4E8760086CCF7 /* BoletimViewController.h */,
 				655159CA18E4E8760086CCF7 /* BoletimViewController.m */,
 				65AB7E9218D789A2007FF707 /* MapViewController.h */,
@@ -444,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */,
 				6552135918E3458100924CB0 /* MessageTableViewController.m in Sources */,
 				65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */,
 				65DD693318E3C470007E3D80 /* WebViewController.m in Sources */,

@@ -561,10 +561,10 @@
             </objects>
             <point key="canvasLocation" x="-1055" y="1254"/>
         </scene>
-        <!--View Controller - Sobre-->
+        <!--About View Controller - Sobre-->
         <scene sceneID="36A-hv-TrT">
             <objects>
-                <viewController id="p6i-tX-V3e" sceneMemberID="viewController">
+                <viewController id="p6i-tX-V3e" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="djI-QY-eUa"/>
                         <viewControllerLayoutGuide type="bottom" id="CER-rO-hO1"/>
@@ -574,7 +574,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Igreja Batista do Morumbi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KT9-gw-I3C">
-                                <rect key="frame" x="140" y="461" width="488" height="54"/>
+                                <rect key="frame" x="140" y="449" width="488" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="8qb-wF-Yc8"/>
@@ -584,7 +584,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zlX-TL-PDp">
-                                <rect key="frame" x="136" y="550" width="496" height="200"/>
+                                <rect key="frame" x="136" y="511" width="496" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -603,15 +603,39 @@ Tel: (11) 3538-0250</string>
                                 <rect key="frame" x="136" y="30" width="496" height="411"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14A-uu-KZz">
+                                <rect key="frame" x="136" y="719" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openFacebook:" destination="p6i-tX-V3e" eventType="touchUpInside" id="sGt-u5-X96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Res-J4-SOX">
+                                <rect key="frame" x="586" y="719" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openTwitter:" destination="p6i-tX-V3e" eventType="touchUpInside" id="kLs-ol-GX8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vaK-SJ-zhb" firstAttribute="top" secondItem="djI-QY-eUa" secondAttribute="bottom" constant="10" id="0wS-cb-bUX"/>
-                            <constraint firstItem="KT9-gw-I3C" firstAttribute="top" secondItem="vaK-SJ-zhb" secondAttribute="bottom" constant="20" id="6sl-gd-SSg"/>
+                            <constraint firstItem="zlX-TL-PDp" firstAttribute="leading" secondItem="14A-uu-KZz" secondAttribute="leading" id="33U-am-58f"/>
+                            <constraint firstItem="KT9-gw-I3C" firstAttribute="top" secondItem="vaK-SJ-zhb" secondAttribute="bottom" constant="8" id="6sl-gd-SSg"/>
                             <constraint firstAttribute="centerX" secondItem="zlX-TL-PDp" secondAttribute="centerX" id="7wT-YR-Yyd"/>
                             <constraint firstAttribute="centerX" secondItem="KT9-gw-I3C" secondAttribute="centerX" id="ImD-IZ-rIi"/>
                             <constraint firstAttribute="centerX" secondItem="vaK-SJ-zhb" secondAttribute="centerX" id="S8H-5p-36N"/>
-                            <constraint firstItem="zlX-TL-PDp" firstAttribute="top" secondItem="KT9-gw-I3C" secondAttribute="bottom" constant="35" id="ynG-FD-RcJ"/>
+                            <constraint firstItem="Res-J4-SOX" firstAttribute="trailing" secondItem="zlX-TL-PDp" secondAttribute="trailing" id="lEH-vY-E8E"/>
+                            <constraint firstItem="Res-J4-SOX" firstAttribute="top" secondItem="zlX-TL-PDp" secondAttribute="bottom" constant="8" id="nP7-Er-XpB"/>
+                            <constraint firstItem="zlX-TL-PDp" firstAttribute="top" secondItem="KT9-gw-I3C" secondAttribute="bottom" constant="8" id="ynG-FD-RcJ"/>
+                            <constraint firstItem="14A-uu-KZz" firstAttribute="top" secondItem="zlX-TL-PDp" secondAttribute="bottom" constant="8" id="z0X-yV-ZG0"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sobre" image="about" id="GCS-s1-Kvs"/>
