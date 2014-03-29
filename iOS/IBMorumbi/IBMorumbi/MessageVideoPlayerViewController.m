@@ -117,8 +117,11 @@
     self.playerVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
     self.playerVideo.view.frame = self.videoArea.bounds;
     
+    
     // adicionar na tela
     [self.videoArea addSubview:self.playerVideo.view];
+    self.playerVideo.view.clipsToBounds = YES;
+    self.playerVideo.view.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
     [self.playerVideo play];
 }
