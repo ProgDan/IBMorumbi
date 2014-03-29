@@ -125,7 +125,21 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"MessageCell" forIndexPath:indexPath];
         cell.textLabel.text = self.messageList[indexPath.row][@"tema"];
         cell.detailTextLabel.text = self.messageList[indexPath.row][@"pregador"];
-//        cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.messageList[indexPath.row][@"pregador_img"]]]];
+        
+        // Verifica se a imagem do pastor já se encontra no aplicativo
+        NSArray *names = [self.messageList[indexPath.row][@"pregador_img"] componentsSeparatedByString:@"/"];
+        NSString *fileName =  names[names.count-1];
+        names = [fileName componentsSeparatedByString:@"."];
+        fileName =  names[names.count-1];
+        NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"jpg"];
+        
+        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            // O arquivo não existe
+            cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.messageList[indexPath.row][@"pregador_img"]]]];
+        }
+        else {
+            cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:path]]];
+        }
     }
     // Seção do Morumbi+
     else {
