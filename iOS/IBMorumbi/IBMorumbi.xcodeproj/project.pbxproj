@@ -14,6 +14,8 @@
 		6552136518E346C400924CB0 /* MessageAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */; };
 		6552136718E35D3000924CB0 /* message_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6552136618E35D3000924CB0 /* message_logo.gif */; };
 		6552136E18E3725000924CB0 /* bck_topo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6552136D18E3725000924CB0 /* bck_topo.gif */; };
+		6568BA0B18E8616700C216C2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0A18E8616700C216C2 /* facebook.png */; };
+		6568BA0D18E8655A00C216C2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0C18E8655A00C216C2 /* twitter.png */; };
 		6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B94318E74BE600F04FB4 /* AboutViewController.m */; };
 		659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E518D7B48F001DADB7 /* Localizable.strings */; };
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
@@ -77,6 +79,8 @@
 		6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAudioPlayerViewController.m; sourceTree = "<group>"; };
 		6552136618E35D3000924CB0 /* message_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = message_logo.gif; sourceTree = "<group>"; };
 		6552136D18E3725000924CB0 /* bck_topo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bck_topo.gif; sourceTree = "<group>"; };
+		6568BA0A18E8616700C216C2 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		6568BA0C18E8655A00C216C2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		6587B94218E74BE600F04FB4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		6587B94318E74BE600F04FB4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		659D28E618D7B49E001DADB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -153,6 +157,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6568BA0718E8613200C216C2 /* logos */ = {
+			isa = PBXGroup;
+			children = (
+				6568BA0C18E8655A00C216C2 /* twitter.png */,
+				6568BA0A18E8616700C216C2 /* facebook.png */,
+			);
+			name = logos;
+			sourceTree = "<group>";
+		};
 		659D28E718D7B7D0001DADB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +291,7 @@
 		65DD692118E387C5007E3D80 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				6568BA0718E8613200C216C2 /* logos */,
 				655159CC18E4F41B0086CCF7 /* icon_pdf.png */,
 				65DD692218E387E2007E3D80 /* botoes_player */,
 			);
@@ -379,6 +393,7 @@
 				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
 				655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */,
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
+				6568BA0B18E8616700C216C2 /* facebook.png in Resources */,
 				6552136718E35D3000924CB0 /* message_logo.gif in Resources */,
 				65DD692818E387E2007E3D80 /* pause.png in Resources */,
 				65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */,
@@ -401,6 +416,7 @@
 				65AB7E6A18D787E9007FF707 /* Main_iPhone.storyboard in Resources */,
 				65BA4D2F18E4D553006AD658 /* andre_fontana.jpg in Resources */,
 				65DD692C18E387E2007E3D80 /* voltar.png in Resources */,
+				6568BA0D18E8655A00C216C2 /* twitter.png in Resources */,
 				65BA4D3618E4D553006AD658 /* samuel_mendes.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
