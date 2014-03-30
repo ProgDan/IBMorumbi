@@ -45,8 +45,8 @@ Tel: (11) 3538-0250</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-vF-6hI">
-                                <rect key="frame" x="20" y="398" width="68" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-vF-6hI">
+                                <rect key="frame" x="20" y="392" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,8 +55,8 @@ Tel: (11) 3538-0250</string>
                                     <action selector="openFacebook:" destination="oN5-8Y-AXj" eventType="touchUpInside" id="rd0-xN-4hd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8L-ia-tBd">
-                                <rect key="frame" x="251" y="398" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8L-ia-tBd">
+                                <rect key="frame" x="254" y="392" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Twitter">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,11 +69,15 @@ Tel: (11) 3538-0250</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3oX-Te-ZbO" secondAttribute="trailing" constant="20" id="BiP-fO-BBO"/>
+                            <constraint firstAttribute="bottom" secondItem="y8L-ia-tBd" secondAttribute="bottom" constant="58" id="GNm-z5-Vr0"/>
                             <constraint firstAttribute="trailing" secondItem="iAM-xT-AK9" secondAttribute="trailing" constant="23" id="Gc7-O7-ZEI"/>
                             <constraint firstItem="3oX-Te-ZbO" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="20" id="GsZ-dN-T2Q"/>
+                            <constraint firstAttribute="bottom" secondItem="pSs-vF-6hI" secondAttribute="bottom" constant="58" id="K7N-Pp-55p"/>
                             <constraint firstItem="3oX-Te-ZbO" firstAttribute="top" secondItem="iAM-xT-AK9" secondAttribute="bottom" constant="8" id="NEU-Hk-WAe"/>
                             <constraint firstItem="YL8-eL-FNy" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="20" id="aSg-Sy-IOX"/>
                             <constraint firstItem="iAM-xT-AK9" firstAttribute="top" secondItem="YL8-eL-FNy" secondAttribute="bottom" constant="10" id="bi4-zL-S5F"/>
+                            <constraint firstAttribute="trailing" secondItem="y8L-ia-tBd" secondAttribute="trailing" constant="20" id="huf-Da-YkE"/>
+                            <constraint firstItem="pSs-vF-6hI" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="20" id="qwX-go-5fS"/>
                             <constraint firstItem="iAM-xT-AK9" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="23" id="tPZ-Vx-SBH"/>
                             <constraint firstAttribute="trailing" secondItem="YL8-eL-FNy" secondAttribute="trailing" constant="20" id="uQj-NC-cHW"/>
                             <constraint firstItem="YL8-eL-FNy" firstAttribute="top" secondItem="Wn1-vv-T6l" secondAttribute="bottom" constant="8" id="y9P-J9-ZuA"/>

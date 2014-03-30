@@ -31,15 +31,19 @@
     
     // Carga do arquivo de configuração
     // Localizando o arquivo no projeto
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"ibmorumbi" ofType:@"json"];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"ibmorumbi" ofType:@"json"];
+    NSString *path = @"http://mini.progdan.com/ibmorumbi/appsettings.php";
     // Carregando os dados contidos no arquivo
-    NSData *dadosArquivo = [NSData dataWithContentsOfFile:path];
+//    NSData *dadosArquivo = [NSData dataWithContentsOfFile:path];
+    NSData *dadosArquivo = [NSData dataWithContentsOfURL:[NSURL URLWithString:path]];
     // Convertendo o arquivo para uma estrutura conhecida - vetor
     self.ibmorumbiConfig = [NSJSONSerialization JSONObjectWithData:dadosArquivo options:NSJSONReadingAllowFragments error:nil];
     
     // Carga da lista de mensagens
-    path = [[NSBundle mainBundle] pathForResource:@"messages" ofType:@"json"];
-    dadosArquivo = [NSData dataWithContentsOfFile:path];
+//    path = [[NSBundle mainBundle] pathForResource:@"messages" ofType:@"json"];
+    path = @"http://mini.progdan.com/ibmorumbi/messages.php";
+//    dadosArquivo = [NSData dataWithContentsOfFile:path];
+    dadosArquivo = [NSData dataWithContentsOfURL:[NSURL URLWithString:path]];
     NSError *error;
     self.messageList = [NSJSONSerialization JSONObjectWithData:dadosArquivo options:NSJSONReadingAllowFragments error:&error];
     
