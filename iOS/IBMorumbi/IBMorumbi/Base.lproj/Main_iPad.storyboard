@@ -240,7 +240,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-rI-5Yo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-man.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-rI-5Yo">
                                 <rect key="frame" x="20" y="599" width="90" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -404,7 +404,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-kg-90j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-man.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-kg-90j">
                                 <rect key="frame" x="20" y="127" width="90" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -787,6 +787,7 @@ Tel: (11) 3538-0250</string>
         <image name="map" width="29" height="29"/>
         <image name="message" width="28" height="28"/>
         <image name="message_logo.gif" width="324" height="90"/>
+        <image name="mystery-man.jpg" width="173" height="233"/>
         <image name="notebook" width="28" height="28"/>
         <image name="pause.png" width="32" height="32"/>
         <image name="play.png" width="32" height="32"/>

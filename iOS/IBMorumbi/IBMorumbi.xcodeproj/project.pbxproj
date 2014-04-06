@@ -17,6 +17,7 @@
 		6568BA0B18E8616700C216C2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0A18E8616700C216C2 /* facebook.png */; };
 		6568BA0D18E8655A00C216C2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0C18E8655A00C216C2 /* twitter.png */; };
 		6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B94318E74BE600F04FB4 /* AboutViewController.m */; };
+		6598499018EE01FB00C89A86 /* mystery-man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6598498F18EE01FB00C89A86 /* mystery-man.jpg */; };
 		659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E518D7B48F001DADB7 /* Localizable.strings */; };
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
 		659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */; };
@@ -53,7 +54,6 @@
 		65DD692B18E387E2007E3D80 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DD692618E387E2007E3D80 /* stop.png */; };
 		65DD692C18E387E2007E3D80 /* voltar.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DD692718E387E2007E3D80 /* voltar.png */; };
 		65DD692E18E3A80E007E3D80 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DD692D18E3A80E007E3D80 /* AVFoundation.framework */; };
-		65DD693018E3BB72007E3D80 /* mystery-man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65DD692F18E3BB72007E3D80 /* mystery-man.jpg */; };
 		65DD693318E3C470007E3D80 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DD693218E3C470007E3D80 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +83,7 @@
 		6568BA0C18E8655A00C216C2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		6587B94218E74BE600F04FB4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		6587B94318E74BE600F04FB4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		6598498F18EE01FB00C89A86 /* mystery-man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mystery-man.jpg"; sourceTree = "<group>"; };
 		659D28E618D7B49E001DADB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPad.png; sourceTree = "<group>"; };
 		659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
@@ -124,7 +125,6 @@
 		65DD692618E387E2007E3D80 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
 		65DD692718E387E2007E3D80 /* voltar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voltar.png; sourceTree = "<group>"; };
 		65DD692D18E3A80E007E3D80 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		65DD692F18E3BB72007E3D80 /* mystery-man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mystery-man.jpg"; path = "../../../../../../../Downloads/mystery-man.jpg"; sourceTree = "<group>"; };
 		65DD693118E3C470007E3D80 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		65DD693218E3C470007E3D80 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -275,7 +275,7 @@
 		65BA4D2618E4D553006AD658 /* pastores */ = {
 			isa = PBXGroup;
 			children = (
-				65DD692F18E3BB72007E3D80 /* mystery-man.jpg */,
+				6598498F18EE01FB00C89A86 /* mystery-man.jpg */,
 				65BA4D2718E4D553006AD658 /* andre_fontana.jpg */,
 				65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */,
 				65BA4D2918E4D553006AD658 /* Gilberto_Lisboa.jpg */,
@@ -394,11 +394,11 @@
 				655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */,
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
 				6568BA0B18E8616700C216C2 /* facebook.png in Resources */,
+				6598499018EE01FB00C89A86 /* mystery-man.jpg in Resources */,
 				6552136718E35D3000924CB0 /* message_logo.gif in Resources */,
 				65DD692818E387E2007E3D80 /* pause.png in Resources */,
 				65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */,
 				65BA4D3218E4D553006AD658 /* isaque_s.jpg in Resources */,
-				65DD693018E3BB72007E3D80 /* mystery-man.jpg in Resources */,
 				659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */,
 				65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */,
 				659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */,
@@ -574,8 +574,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "CE0F88B9-117E-47ED-A21C-404021F657A0";
+				PROVISIONING_PROFILE = "914226F6-63EA-4CB0-B783-A8D9E1936EBB";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -585,12 +588,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Alves (HDWCFAFUKQ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Alves (3PSB9V93UY)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9A803E53-B572-4C22-8067-0D9F731EDAF5";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -761,7 +761,7 @@ Tel: (11) 3538-0250</string>
         <image name="map" width="29" height="29"/>
         <image name="message" width="28" height="28"/>
         <image name="message_logo.gif" width="324" height="90"/>
-        <image name="mystery-man.jpg" width="114" height="114"/>
+        <image name="mystery-man.jpg" width="173" height="233"/>
         <image name="notebook" width="28" height="28"/>
         <image name="pause.png" width="32" height="32"/>
         <image name="play.png" width="32" height="32"/>
