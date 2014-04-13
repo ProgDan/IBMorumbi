@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650D29F118F5D48B00137FBC /* ibmorumbi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650D29F018F5D48B00137FBC /* ibmorumbi.jpg */; };
 		655159CB18E4E8760086CCF7 /* BoletimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655159CA18E4E8760086CCF7 /* BoletimViewController.m */; };
 		655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 655159CC18E4F41B0086CCF7 /* icon_pdf.png */; };
 		6552135918E3458100924CB0 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552135818E3458100924CB0 /* MessageTableViewController.m */; };
@@ -68,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650D29F018F5D48B00137FBC /* ibmorumbi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ibmorumbi.jpg; sourceTree = "<group>"; };
 		655159C918E4E8760086CCF7 /* BoletimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoletimViewController.h; sourceTree = "<group>"; };
 		655159CA18E4E8760086CCF7 /* BoletimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoletimViewController.m; sourceTree = "<group>"; };
 		655159CC18E4F41B0086CCF7 /* icon_pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pdf.png; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		65BA4D2618E4D553006AD658 /* pastores */ = {
 			isa = PBXGroup;
 			children = (
+				650D29F018F5D48B00137FBC /* ibmorumbi.jpg */,
 				6598498F18EE01FB00C89A86 /* mystery-man.jpg */,
 				65BA4D2718E4D553006AD658 /* andre_fontana.jpg */,
 				65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */,
@@ -400,6 +403,7 @@
 				65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */,
 				65BA4D3218E4D553006AD658 /* isaque_s.jpg in Resources */,
 				659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */,
+				650D29F118F5D48B00137FBC /* ibmorumbi.jpg in Resources */,
 				65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */,
 				659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */,
 				659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */,

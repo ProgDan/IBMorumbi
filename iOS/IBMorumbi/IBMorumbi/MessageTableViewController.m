@@ -139,7 +139,7 @@
         
         if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
             // O arquivo não existe
-            cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL fileURLWithPath:self.messageList[indexPath.row][@"pregador_img"]]]];
+            cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.messageList[indexPath.row][@"pregador_img"]]]];
         }
         else {
             cell.imageView.image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL fileURLWithPath:path]]];

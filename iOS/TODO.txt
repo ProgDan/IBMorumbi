@@ -1,0 +1,16 @@
+@TODO List
+====================
+
+Data: 06/04/2014	
+Pregador: Pr. Lisânias Moura e Samuel Mendes
+Cultos: Manhã - 9h00 e 11h15
+Tema: Culpa e Graça
+Passagens: Gênesis
+
+-URL da imagem: http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg
++URL da imagem: http://www.ibmorumbi.com.br/audio/imagens/ibmorumbi.jpg
+
+Correção do Bug #4: Falha na exibição do ícone de um novo pastor
+
+====================
+
