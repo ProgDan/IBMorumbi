@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">IBMorumbi</string>
+    
+    <string name="message">Mensagens</string>
+    <string name="newsletter">Boletim</string>
+    <string name="website">Website</string>
+    <string name="map">Mapa</string>
+    <string name="about">Sobre</string>
+
+</resources>
