@@ -7,5 +7,14 @@
     <string name="website">Website</string>
     <string name="map">Mapa</string>
     <string name="about">Sobre</string>
-
+    
+    <string name="ibmorumbi_logo">IB Morumbi Logo</string>
+    <string name="ibmorumbi">Igreja Batista do Morumbi</string>
+    <string name="address_street">Rua Carvalho de Freitas, 1.076</string>
+    <string name="address_district">Morumbi</string>
+    <string name="address_city">05728&#8211;030 &#8211; São Paulo &#8211; SP &#8211; Brasil</string>
+    <string name="address_phone">Tel: (11) 3538&#8211;0250</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    
 </resources>

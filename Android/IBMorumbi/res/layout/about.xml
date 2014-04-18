@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ibmorumbi_phone"
+        android:contentDescription="@string/ibmorumbi_logo" />
+
+    <TextView
+        android:id="@+id/textViewIgreja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewLogo"
+        android:layout_marginTop="10dp"
+        android:text="@string/ibmorumbi"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/about_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewRua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewIgreja"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/address_street" />
+
+    <TextView
+        android:id="@+id/textViewBairro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRua"
+        android:layout_centerHorizontal="true"
+        android:text="@string/address_district" />
+
+    <TextView
+        android:id="@+id/textViewCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewBairro"
+        android:text="@string/address_city" />
+
+    <TextView
+        android:id="@+id/textViewFone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textViewCidade"
+        android:text="@string/address_phone" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewFone"
+        android:layout_below="@+id/textViewFone"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/facebook"
+        android:contentDescription="@string/facebook"
+        android:onClick="openFacebook" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewIgreja"
+        android:layout_below="@+id/imageButtonFacebook"
+        android:src="@drawable/twitter"
+        android:contentDescription="@string/twitter"
+        android:onClick="openTwitter" />
+
+</RelativeLayout>
