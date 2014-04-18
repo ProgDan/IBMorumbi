@@ -40,7 +40,7 @@ public class FragmentAbout extends Fragment {
 		try {
 			Context context = v.getContext();
 			context.getPackageManager().getPackageInfo("com.facebook.katana", 0);
-			intent = new Intent(Intent.ACTION_VIEW,Uri.parse("fp://profile/100002117943796"));
+			intent = new Intent(Intent.ACTION_VIEW,Uri.parse("fb://profile/100002117943796"));
 		} catch (Exception e) {
 			intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/igreja.batistadomorumbi"));
 		}
