@@ -4,6 +4,7 @@
     android:versionName="1.0"
     android:installLocation="auto" >
     
+    <!-- Internet Permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-sdk
