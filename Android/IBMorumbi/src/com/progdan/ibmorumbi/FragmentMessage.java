@@ -37,7 +37,7 @@ public class FragmentMessage extends ListFragment {
 	    // do something with the data
 		  Map<String, Object> map = messages.get(position);
 		  
-		  boolean video = false;
+		  boolean video = true;
 		  
 		  if(video){
 			  Intent intent = new Intent(VideoActivity.ACAO_EXIBIR_VIDEO);
