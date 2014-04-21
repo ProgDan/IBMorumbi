@@ -97,9 +97,6 @@ public class FragmentMap extends Fragment implements LocationListener {
 		// adding marker
 		googleMap.addMarker(marker);
 		
-		// Moving Camera to a Location with animation
-		float cameraZoom = 16;		
-		
 		v2GetRouteDirection = new GMapV2GetRouteDirection();
 		
 		// Enable all gestures on Map

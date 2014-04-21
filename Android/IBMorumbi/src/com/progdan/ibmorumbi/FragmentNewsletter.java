@@ -5,7 +5,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.progdan.ibmorumbi.json.JSONParser;
+
 import android.app.ListFragment;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -13,18 +22,13 @@ import android.widget.SimpleAdapter;
 
 public class FragmentNewsletter extends ListFragment {
 	private List<Map<String, Object>> boletins;
+	private static String url = "http://mini.progdan.com/ibmorumbi/boletins.php";
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		
-		String[] from = {"image", "text", "detail"};
-		int[] to = {R.id.imageView, R.id.textLabel, R.id.detailTextLabel};
-		
-		SimpleAdapter adapter = new SimpleAdapter(getActivity(), listBoletins(), R.layout.list_row, from, to);
-		adapter.setViewBinder(new MyViewBinder());
-		
-		setListAdapter(adapter);
+		new ProgressTask(FragmentNewsletter.this).execute();		
 	}
 	
 	  @Override
@@ -32,38 +36,67 @@ public class FragmentNewsletter extends ListFragment {
 	    // do something with the data
 	  }
 
-	  private List<Map<String, Object>> listBoletins() {
-		  boletins = new ArrayList<Map<String, Object>>();
+	  private class ProgressTask extends AsyncTask<String, Void, Boolean> {
+		  private ProgressDialog dialog;		  
+		  private Context context;
 		  
-		  Map<String, Object> item = new HashMap<String, Object>();
-		  item.put("image", R.drawable.icon_pdf);
-		  item.put("text", "Boletim Informativo");
-		  item.put("detail", "16 a 23 de Março de 2014");
-		  boletins.add(item);
+		  public ProgressTask(ListFragment fragment) {
+			  context = fragment.getActivity();
+			  dialog = new ProgressDialog(context);
+		  }
 		  
-		  item = new HashMap<String, Object>();
-		  item.put("image", R.drawable.icon_pdf);
-		  item.put("text", "Boletim Informativo");
-		  item.put("detail", "02 a 09 de Março de 2014");
-		  boletins.add(item);
+		  protected void onPreExecute() {
+			  this.dialog.setMessage("Progress start");
+			  this.dialog.show();
+		  }
 		  
-		  item = new HashMap<String, Object>();
-		  item.put("image", R.drawable.icon_pdf);
-		  item.put("text", "Boletim Informativo");
-		  item.put("detail", "16 a 23 de Fevereiro de 2014");
-		  boletins.add(item);
+		  @Override
+		  protected void onPostExecute(final Boolean success) {
+			  if (dialog.isShowing()) {
+				  dialog.dismiss();
+			  }
+			  
+			  String[] from = {"image", "text", "detail"};
+			  int[] to = {R.id.imageView, R.id.textLabel, R.id.detailTextLabel};
+				
+			  SimpleAdapter adapter = new SimpleAdapter(context, boletins, R.layout.list_row, from, to);
+			  adapter.setViewBinder(new MyViewBinder());
+				
+			  setListAdapter(adapter);
+		  }
 		  
-		  return boletins;
-	  }
-
-	
-/*	
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
-		View view = inflater.inflate(R.layout.tab, container, false);
-		TextView textView = (TextView) view.findViewById(R.id.tabtextview);
-		textView.setText(R.string.newsletter);
-		return view;
-	}
-*/
+		  @Override
+		  protected Boolean doInBackground(String... args) {
+			  boletins = new ArrayList<Map<String, Object>>();
+			  JSONParser jParser = new JSONParser();
+			  
+			  // get JSON data from URL
+			  JSONArray json = jParser.getJSONFromUrl(url);
+			  
+			  for (int i = 0; i < json.length(); i++) {
+				  try {
+					  JSONObject c = json.getJSONObject(i);
+					  
+					  Object image = R.drawable.icon_pdf;
+					  String text = "Boletim Informativo";
+					  String detail = c.getString("data");
+					  String file = c.getString("file");
+					  
+					  HashMap<String, Object> map = new HashMap<String, Object>();
+					  
+					  // Add child node to HashMap key & value
+					  map.put("image", image);
+					  map.put("text", text);
+					  map.put("detail", detail);
+					  map.put("file", file);
+					  boletins.add(map);
+					  
+				  } catch (JSONException e) {
+					  e.printStackTrace();
+				  }
+			  }
+			  
+			  return null;
+		  }
+	 }
 }
