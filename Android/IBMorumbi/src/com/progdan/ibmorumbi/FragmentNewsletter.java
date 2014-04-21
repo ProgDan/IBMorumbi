@@ -10,6 +10,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.progdan.ibmorumbi.json.JSONParser;
+import com.progdan.ibmorumbi.pdftools.PDFTools;
 
 import android.app.ListFragment;
 import android.app.ProgressDialog;
@@ -19,6 +20,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 public class FragmentNewsletter extends ListFragment {
 	private List<Map<String, Object>> boletins;
@@ -34,6 +36,11 @@ public class FragmentNewsletter extends ListFragment {
 	  @Override
 	  public void onListItemClick(ListView list, View view, int position, long id) {
 	    // do something with the data
+		  Map<String, Object> map = boletins.get(position);
+		  String descricao = (String) map.get("detail");
+		  String mensagem = "Boletim selecionado: " + descricao;
+		  Toast.makeText(getActivity(), mensagem, Toast.LENGTH_SHORT).show();
+		  PDFTools.showPDFUrl(getActivity(), (String)map.get("file"));
 	  }
 
 	  private class ProgressTask extends AsyncTask<String, Void, Boolean> {

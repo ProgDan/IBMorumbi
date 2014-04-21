@@ -5,14 +5,22 @@
         android:title="Select map type"
         android:showAsAction="always">
         <menu>
-            <item android:id="@+id/normal_map"
-                  android:title="Normal map"/>
-            <item android:id="@+id/satellite_map"
-                  android:title="Satellite map"/>
-            <item android:id="@+id/terrain_map"
-                  android:title="Terrain map"/>
-            <item android:id="@+id/hybrid_map"
-                  android:title="Hybrid map"/>
+            <group
+                android:id="@+id/map_type"
+                android:checkableBehavior="single" >
+	            <item android:id="@+id/normal_map"
+	                  android:title="Normal map"
+	                  android:checked="true" />
+	            <item android:id="@+id/satellite_map"
+	                  android:title="Satellite map"
+	                  android:checked="false" />
+	            <item android:id="@+id/terrain_map"
+	                  android:title="Terrain map"
+	                  android:checked="false" />
+	            <item android:id="@+id/hybrid_map"
+	                  android:title="Hybrid map"
+	                  android:checked="false" />
+            </group>
         </menu>
     </item>
     <item android:id="@+id/route"

@@ -14,6 +14,7 @@ import com.progdan.ibmorumbi.json.JSONParser;
 import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -34,30 +35,28 @@ public class FragmentMessage extends ListFragment {
 	  @Override
 	  public void onListItemClick(ListView list, View view, int position, long id) {
 	    // do something with the data
-	  }
-	  
-	  private List<Map<String, Object>> listMessages() {
-		  messages = new ArrayList<Map<String, Object>>();
+		  Map<String, Object> map = messages.get(position);
 		  
-		  Map<String, Object> item = new HashMap<String, Object>();
-		  item.put("image", "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg");
-		  item.put("text", "Reconstruindo a Esperança");
-		  item.put("detail", "Pr. Lisânias Moura");
-		  messages.add(item);
+		  boolean video = false;
 		  
-		  item = new HashMap<String, Object>();
-		  item.put("image", "http://www.ibmorumbi.com.br/pastores/imagens/pastor_lisanias.jpg");
-		  item.put("text", "Um dia a casa Cai");
-		  item.put("detail", "Pr. Lisânias Moura");
-		  messages.add(item);
-		  
-		  item = new HashMap<String, Object>();
-		  item.put("image", "http://www.ibmorumbi.com.br/pastores/imagens/samuel_mendes.jpg");
-		  item.put("text", "Em busca da Felicidade");
-		  item.put("detail", "Pr. Samuel Mendes");
-		  messages.add(item);
-		  
-		  return messages;
+		  if(video){
+			  Intent intent = new Intent(VideoActivity.ACAO_EXIBIR_VIDEO);
+			  
+			  intent.addCategory(VideoActivity.CATEGORIA_VIDEO);
+			  
+			  String url = (String)map.get("video");
+			  intent.putExtra(VideoActivity.EXTRA_VIDEO_URL, url);
+			  startActivity(intent);
+		  }
+		  else {
+			  Intent intent = new Intent(AudioActivity.ACAO_EXIBIR_AUDIO);
+			  
+			  intent.addCategory(AudioActivity.CATEGORIA_AUDIO);
+			  
+			  String url = (String)map.get("audio");
+			  intent.putExtra(AudioActivity.EXTRA_AUDIO_URL, url);
+			  startActivity(intent);
+		  }
 	  }
 	  
 	  private class ProgressTask extends AsyncTask<String, Void, Boolean> {

@@ -66,6 +66,23 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
          
+         <activity
+             android:name="com.progdan.ibmorumbi.VideoActivity">
+             <intent-filter>
+                 <action android:name="ibmorumbi.ACAO_EXIBIR_VIDEO" />
+                 <category android:name="ibmorumbi.CATEGORIA_VIDEO" />
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>    
+         </activity>
+         <activity
+             android:name="com.progdan.ibmorumbi.AudioActivity">
+             <intent-filter>
+                 <action android:name="ibmorumbi.ACAO_EXIBIR_AUDIO" />
+                 <category android:name="ibmorumbi.CATEGORIA_AUDIO" />
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>    
+         </activity>
+         
     </application>
     
     

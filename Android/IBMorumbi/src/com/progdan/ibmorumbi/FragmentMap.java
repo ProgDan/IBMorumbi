@@ -136,6 +136,9 @@ public class FragmentMap extends Fragment implements LocationListener {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		super.onOptionsItemSelected(item);
 		
+		// Marca o item selecionado
+		item.setChecked(true);
+		
 		switch(item.getItemId()) {
 		case R.id.normal_map:
 			mapType = GoogleMap.MAP_TYPE_NORMAL;
