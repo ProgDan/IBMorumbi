@@ -53,7 +53,7 @@ public class FragmentNewsletter extends ListFragment {
 		}
 
 		protected void onPreExecute() {
-			this.dialog.setMessage("Progress start");
+			this.dialog.setMessage(getString(R.string.content_loading));
 			this.dialog.show();
 		}
 

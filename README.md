@@ -10,6 +10,8 @@ Nosso desejo é que Deus possa falar com você através desse aplicativo!
 
 Não esqueça de compartilhar com sua família e amigos!
 
-Deus abençõe! Equipe de comunicação da Igreja Batista do Morumbi.
+Deus abençõe!
+
+Equipe de comunicação da Igreja Batista do Morumbi.
 Contato: comunicacao@ibmorumbi.com.br
 
