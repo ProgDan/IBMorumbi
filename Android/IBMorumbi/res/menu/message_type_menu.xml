@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/message_types"
+        android:icon="@drawable/menu_audiovisual"
+        android:title="@string/message_chooser"
+        android:showAsAction="always">
+        <menu>
+            <group
+                android:id="@+id/message_type"
+                android:checkableBehavior="single" >
+	            <item android:id="@+id/video_message"
+	                  android:title="@string/message_video"
+	                  android:checked="true" />
+	            <item android:id="@+id/audio_message"
+	                  android:title="@string/message_audio"
+	                  android:checked="false" />
+            </group>
+        </menu>
+    </item>
+</menu>

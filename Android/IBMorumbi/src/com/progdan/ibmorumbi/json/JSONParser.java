@@ -52,7 +52,10 @@ public class JSONParser {
 		
 		// Parse String to JSON object
 		try {
-			jArray = new JSONArray(builder.toString());
+			String rawData = builder.toString();
+			if(!rawData.startsWith("["))
+				rawData = "["+builder.toString()+"]";
+			jArray = new JSONArray(rawData);
 		} catch (JSONException e) {
 			Log.e("JSON Parser", "Error parsing data " + e.toString());
 		}

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="about_title">24dp</dimen>
+    <dimen name="message_title">16dp</dimen>
+    <dimen name="message_cultos">10dp</dimen>
+    <dimen name="message_pregador">14dp</dimen>
 </resources>

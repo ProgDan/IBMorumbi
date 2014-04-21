@@ -13,7 +13,7 @@ import android.webkit.WebView;
 public class FragmentWebsite extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
-		View view = inflater.inflate(R.layout.website, container, false);
+		View view = inflater.inflate(R.layout.fragment_website, container, false);
 		
 		String url = "http://www.ibmorumbi.com.br/";
 		WebView myWebView = (WebView) view.findViewById(R.id.webview);

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <VideoView
+        android:id="@+id/VideoView"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/VideoView" >
+
+        <TextView
+            android:id="@+id/message_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/message_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/message_references"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_theme"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/message_pregador_img"
+            android:layout_width="90dp"
+            android:layout_height="110dp"
+            android:layout_below="@+id/message_references"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/pastor_img"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ibmorumbi" />
+
+        <TextView
+            android:id="@+id/message_pregador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_references"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/message_pregador_img"
+            android:textSize="@dimen/message_pregador" />
+
+        <TextView
+            android:id="@+id/message_cultos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/message_pregador_img"
+            android:layout_alignLeft="@+id/message_pregador"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/message_pregador_img"
+            android:textSize="@dimen/message_cultos" />
+
+        <TextView
+            android:id="@+id/message_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/message_cultos"
+            android:layout_alignLeft="@+id/message_pregador"
+            android:layout_toRightOf="@+id/message_pregador_img" />
+
+        <ImageView
+            android:id="@+id/message_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/ibmorumbi_logo"
+            android:src="@drawable/ibmorumbi_phone" />
+    </RelativeLayout>
+
+</RelativeLayout>

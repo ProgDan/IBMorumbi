@@ -1,12 +1,26 @@
 <resources>
 
     <string name="app_name">IBMorumbi</string>
-    
     <string name="message">Mensagens</string>
     <string name="newsletter">Boletim</string>
     <string name="website">Website</string>
     <string name="map">Mapa</string>
     <string name="about">Sobre</string>
+    <string name="message_series">Série de mensagens</string>
+    <string name="content_loading">Carregando conteúdos&#8230;</string>
+    <string name="buffering_video">Carregando vídeo&#8230;</string>
+    <string name="buffering_audio">Carregando áudio&#8230;</string>
+    <string name="video_play_error">Erro ao exibir o vídeo</string>
+    <string name="message_audio">Áudio</string>
+    <string name="message_video">Vídeo</string>
+    <string name="message_chooser">Escolha o tipo de mensagem</string>
+    
+    <string name="map_type">Selecione o tipo de Mapa</string>
+    <string name="normal_map">Normal</string>
+    <string name="satellite_map">Satélite</string>
+    <string name="terrain_map">Terreno</string>
+    <string name="hybrid_map">Híbrido</string>
+    <string name="calculate_route">Traçar Rota</string>
     
     <string name="ibmorumbi_logo">IB Morumbi Logo</string>
     <string name="ibmorumbi">Igreja Batista do Morumbi</string>
@@ -19,11 +33,11 @@
     
     <string name="pastor_img">Pastor</string>
     
-    <string name="pdf_show_online_dialog_title">Show PDF</string>
-    <string name="pdf_show_online_dialog_question">You are trying to open a PDF file, but you don\'t have a PDF reader installed. Do you want to read the PDF file online with Google Drive (Requires Google account)?</string>
-    <string name="pdf_show_online_dialog_button_yes">Yes, read online</string>
-    <string name="pdf_show_online_dialog_button_no">No</string>
-    <string name="pdf_show_local_progress_title">Please wait</string>
-    <string name="pdf_show_local_progress_content">Downloading PDF&#8230;</string>
-    
+    <string name="pdf_show_online_dialog_title">Exibir PDF</string>
+    <string name="pdf_show_online_dialog_question">Você está tentando abrir um arquivo PDF, mas você não tem nenhum leitor de PDF instalado. Você quer ler o arquivo PDF on-line com o Google Drive (precisa de uma conta do Google)?</string>
+    <string name="pdf_show_online_dialog_button_yes">Sim, exibir on-line</string>
+    <string name="pdf_show_online_dialog_button_no">Não</string>
+    <string name="pdf_show_local_progress_title">Aguarde</string>
+    <string name="pdf_show_local_progress_content">Carregando o arquivo PDF&#8230;</string>
+
 </resources>

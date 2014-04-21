@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 public class FragmentAbout extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
-		View view = inflater.inflate(R.layout.about, container, false);
+		View view = inflater.inflate(R.layout.fragment_about, container, false);
 		
 		final ImageButton facebook = (ImageButton) view.findViewById(R.id.imageButtonFacebook);
 		facebook.setOnClickListener( new OnClickListener() {		

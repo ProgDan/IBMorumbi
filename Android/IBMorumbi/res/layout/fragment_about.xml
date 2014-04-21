@@ -66,7 +66,7 @@
         android:layout_alignRight="@+id/textViewFone"
         android:layout_below="@+id/textViewFone"
         android:layout_marginTop="10dp"
-        android:src="@drawable/facebook"
+        android:src="@drawable/button_facebook"
         android:contentDescription="@string/facebook"
         android:onClick="openFacebook" />
 
@@ -76,8 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textViewIgreja"
         android:layout_below="@+id/imageButtonFacebook"
-        android:src="@drawable/twitter"
         android:contentDescription="@string/twitter"
-        android:onClick="openTwitter" />
+        android:onClick="openTwitter"
+        android:src="@drawable/button_twitter" />
 
 </RelativeLayout>

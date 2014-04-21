@@ -28,7 +28,7 @@ public class MyViewBinder implements ViewBinder {
 		}
 		if ((view instanceof ImageView) && (data instanceof String)) {
 			// Loader image - will be shown before loading image
-			int loader = R.drawable.loader;
+			int loader = R.drawable.icon_loader;
 			
 			// Imageview to show
 			image = (ImageView) view;
