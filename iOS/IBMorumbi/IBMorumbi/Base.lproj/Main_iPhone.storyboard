@@ -70,9 +70,19 @@ Tel: (11) 3538-0250</string>
                                     <action selector="openTwitter:" destination="oN5-8Y-AXj" eventType="touchUpInside" id="4UT-jn-9BI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v. 1.0.1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or5-A7-5P1">
+                                <rect key="frame" x="225" y="28" width="75" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="c5A-bw-HoI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="or5-A7-5P1" secondAttribute="trailing" constant="20" id="7Sr-SD-DfQ"/>
                             <constraint firstAttribute="trailing" secondItem="3oX-Te-ZbO" secondAttribute="trailing" constant="20" id="BiP-fO-BBO"/>
                             <constraint firstAttribute="trailing" secondItem="iAM-xT-AK9" secondAttribute="trailing" constant="23" id="Gc7-O7-ZEI"/>
                             <constraint firstItem="3oX-Te-ZbO" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="20" id="GsZ-dN-T2Q"/>
@@ -85,10 +95,14 @@ Tel: (11) 3538-0250</string>
                             <constraint firstItem="pSs-vF-6hI" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="20" id="qwX-go-5fS"/>
                             <constraint firstItem="iAM-xT-AK9" firstAttribute="leading" secondItem="LwX-F2-7z3" secondAttribute="leading" constant="23" id="tPZ-Vx-SBH"/>
                             <constraint firstAttribute="trailing" secondItem="YL8-eL-FNy" secondAttribute="trailing" constant="20" id="uQj-NC-cHW"/>
+                            <constraint firstItem="or5-A7-5P1" firstAttribute="top" secondItem="Wn1-vv-T6l" secondAttribute="bottom" constant="8" id="xAS-id-Ipc"/>
                             <constraint firstItem="YL8-eL-FNy" firstAttribute="top" secondItem="Wn1-vv-T6l" secondAttribute="bottom" constant="8" id="y9P-J9-ZuA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sobre" image="about" id="Imx-6T-efU"/>
+                    <connections>
+                        <outlet property="labelRelease" destination="or5-A7-5P1" id="CtT-1b-x8j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmD-Vk-3fn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

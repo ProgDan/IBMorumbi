@@ -11,6 +11,7 @@
 @interface AboutViewController ()
 - (IBAction)openFacebook:(UIButton *)sender;
 - (IBAction)openTwitter:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *labelRelease;
 
 @end
 
@@ -20,6 +21,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString *appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+    self.labelRelease.text = [NSString stringWithFormat:@"v. %@", appVersion];
 }
 
 - (IBAction)openFacebook:(UIButton *)sender {

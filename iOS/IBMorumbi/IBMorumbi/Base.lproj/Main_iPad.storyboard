@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="83Z-Mv-Q1L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="83Z-Mv-Q1L">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -627,6 +628,16 @@ Tel: (11) 3538-0250</string>
                                     <action selector="openTwitter:" destination="p6i-tX-V3e" eventType="touchUpInside" id="kLs-ol-GX8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v. 1.0.1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC9-8q-cYu">
+                                <rect key="frame" x="573" y="30" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="dzr-qb-Hx0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -635,14 +646,19 @@ Tel: (11) 3538-0250</string>
                             <constraint firstItem="KT9-gw-I3C" firstAttribute="top" secondItem="vaK-SJ-zhb" secondAttribute="bottom" constant="8" id="6sl-gd-SSg"/>
                             <constraint firstAttribute="centerX" secondItem="zlX-TL-PDp" secondAttribute="centerX" id="7wT-YR-Yyd"/>
                             <constraint firstAttribute="centerX" secondItem="KT9-gw-I3C" secondAttribute="centerX" id="ImD-IZ-rIi"/>
+                            <constraint firstItem="yC9-8q-cYu" firstAttribute="top" secondItem="djI-QY-eUa" secondAttribute="bottom" constant="10" id="JGa-Uj-NfR"/>
                             <constraint firstAttribute="bottom" secondItem="14A-uu-KZz" secondAttribute="bottom" constant="68" id="Ofm-PQ-gmx"/>
                             <constraint firstAttribute="centerX" secondItem="vaK-SJ-zhb" secondAttribute="centerX" id="S8H-5p-36N"/>
+                            <constraint firstAttribute="trailing" secondItem="yC9-8q-cYu" secondAttribute="trailing" constant="20" id="eaM-es-jeH"/>
                             <constraint firstAttribute="bottom" secondItem="Res-J4-SOX" secondAttribute="bottom" constant="68" id="f6w-OW-jxx"/>
                             <constraint firstItem="14A-uu-KZz" firstAttribute="leading" secondItem="vaK-SJ-zhb" secondAttribute="leading" id="rdZ-sd-yij"/>
                             <constraint firstItem="zlX-TL-PDp" firstAttribute="top" secondItem="KT9-gw-I3C" secondAttribute="bottom" constant="8" id="ynG-FD-RcJ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sobre" image="about" id="GCS-s1-Kvs"/>
+                    <connections>
+                        <outlet property="labelRelease" destination="yC9-8q-cYu" id="VAK-0P-XT9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c35-AV-QYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
