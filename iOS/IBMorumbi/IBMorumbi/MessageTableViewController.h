@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sys/utsname.h>
 #import "MessageAudioPlayerViewController.h"
 #import "MessageVideoPlayerViewController.h"
 

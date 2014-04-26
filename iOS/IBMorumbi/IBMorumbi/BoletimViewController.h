@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <sys/utsname.h>
 
 @interface BoletimViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIDocumentInteractionControllerDelegate>
 

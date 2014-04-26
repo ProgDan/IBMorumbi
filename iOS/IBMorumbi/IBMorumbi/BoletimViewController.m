@@ -26,10 +26,13 @@
 
     // Carga do arquivo de configuração
     // Localizando o arquivo no projeto
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"boletins" ofType:@"json"];
-    NSString *path = @"http://mini.progdan.com/ibmorumbi/boletins.php";
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *device= [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    NSString *ver = [[UIDevice currentDevice] systemVersion];
+    NSString *appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+    NSString *path = [NSString stringWithFormat:@"http://mini.progdan.com/ibmorumbi/boletins.php?platform=iOS&device=%@&os=%@&client=%@", device, ver, appVersion];
     // Carregando os dados contidos no arquivo
-//    NSData *dadosArquivo = [NSData dataWithContentsOfFile:path];
     NSData *dadosArquivo = [NSData dataWithContentsOfURL:[NSURL URLWithString:path]];
     // Convertendo o arquivo para uma estrutura conhecida - vetor
     self.boletimList = [NSJSONSerialization JSONObjectWithData:dadosArquivo options:NSJSONReadingAllowFragments error:nil];
