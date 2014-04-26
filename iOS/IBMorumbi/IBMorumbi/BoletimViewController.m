@@ -93,7 +93,7 @@
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Boletins Informativos IBMorumbi";
+    return NSLocalizedString(@"newsletterList", @"");
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

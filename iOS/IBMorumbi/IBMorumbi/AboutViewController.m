@@ -12,6 +12,7 @@
 - (IBAction)openFacebook:(UIButton *)sender;
 - (IBAction)openTwitter:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *labelRelease;
+@property (weak, nonatomic) IBOutlet UITextView *textAddress;
 
 @end
 
@@ -23,6 +24,8 @@
     // Do any additional setup after loading the view.
     NSString *appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
     self.labelRelease.text = [NSString stringWithFormat:@"v. %@", appVersion];
+    
+    self.textAddress.text = NSLocalizedString(@"address", @"");
 }
 
 - (void)viewWillAppear:(BOOL)animated

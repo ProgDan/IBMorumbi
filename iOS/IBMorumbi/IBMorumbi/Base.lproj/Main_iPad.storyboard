@@ -658,6 +658,7 @@ Tel: (11) 3538-0250</string>
                     <tabBarItem key="tabBarItem" title="Sobre" image="about" id="GCS-s1-Kvs"/>
                     <connections>
                         <outlet property="labelRelease" destination="yC9-8q-cYu" id="VAK-0P-XT9"/>
+                        <outlet property="textAddress" destination="zlX-TL-PDp" id="Vxo-bv-gnZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c35-AV-QYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -686,7 +687,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="-1024" y="-212"/>
         </scene>
-        <!--Boletim View Controller - Boletim-->
+        <!--Boletim View Controller - Boletins-->
         <scene sceneID="Aly-QI-aWb">
             <objects>
                 <viewController id="nxY-SK-4NM" customClass="BoletimViewController" sceneMemberID="viewController">
@@ -763,7 +764,7 @@ Tel: (11) 3538-0250</string>
                             <constraint firstAttribute="trailing" secondItem="3fV-qj-Yd6" secondAttribute="trailing" id="zIP-Wf-gV1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Boletim" image="notebook" id="vX5-9K-ctb"/>
+                    <tabBarItem key="tabBarItem" title="Boletins" image="notebook" id="vX5-9K-ctb"/>
                     <connections>
                         <outlet property="boletimTable" destination="iLs-Gf-7eU" id="fGm-8e-DTW"/>
                     </connections>

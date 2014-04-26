@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  IBMorumbi
+
+  Created by Daniel Arndt Alves on 3/17/14.
+  Copyright (c) 2014 ProgDan Software. All rights reserved.
+*/
+
+/* TabBar Items */
+"messages" = "Messages";
+"newsletter" = "Newsletter";
+"website" = "Website";
+"map" = "Map";
+"about" = "About";
+
+/* MessageTableViewController */
+"Video" = "Video";
+"Audio" = "Audio";
+
+"Morumbi+" = "Morumbi+";
+"cultosList" = "IBMorumbi's Worships";
+
+/* NewsletterTableViewController */
+"newsletterList" = "IBMorumbi's Newsletters";
+
+/* AboutViewController */
+"address" = "1076 Carvalho de Freitas St.\nMorumbi\n05728-030 - Sao Paulo - SP - Brazil\nPhone: +55 11 3538-0250";

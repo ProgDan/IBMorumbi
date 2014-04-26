@@ -29,12 +29,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // Carga do arquivo de configuração
+    // Suporte à Internacionalização
+    [self.mediaSelector setTitle:NSLocalizedString(@"Video", @"") forSegmentAtIndex:0];
+    [self.mediaSelector setTitle:NSLocalizedString(@"Audio", @"") forSegmentAtIndex:1];
+    
+    // Identificando o tipo do dispositivo, a versão do OS e a versão do App
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *device= [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
     NSString *ver = [[UIDevice currentDevice] systemVersion];
     NSString *appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleVersion"];
+    
+    // Carga do arquivo de configuração
     NSString *path = [NSString stringWithFormat:@"http://mini.progdan.com/ibmorumbi/appsettings.php?platform=iOS&device=%@&os=%@&client=%@", device, ver, appVersion];
     // Carregando os dados contidos no arquivo
     NSData *dadosArquivo = [NSData dataWithContentsOfURL:[NSURL URLWithString:path]];
@@ -87,7 +93,7 @@
             detalhe.mensagem = self.messageList[indexPath.row];
         }
         else {
-            detalhe.mensagem = @{@"tema": @"Morumbi+",@"video":video_morumbiplus};
+            detalhe.mensagem = @{@"tema": NSLocalizedString(@"Morumbi+", @""),@"video":video_morumbiplus};
         }
         [self.navigationController pushViewController:detalhe animated:YES];
     }
@@ -111,11 +117,11 @@
 {
     // Caso seja Audio, ou a seção 1 em Vídeo
     if (self.mediaSelector.selectedSegmentIndex || section) {
-        return @"Cultos IB Morumbi";
+        return NSLocalizedString(@"cultosList", @"");
     }
     
     // Caso contrário, é a seção do Morumbi+
-    return @"Morumbi+";
+    return NSLocalizedString(@"Morumbi+", @"");
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
