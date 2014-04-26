@@ -99,6 +99,13 @@
     [self.videoArea bringSubviewToFront:self.spinner];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.screenName = @"MessageVideoPlayer Screen";
+}
+
+
 - (void) playerVideoMudouEstado {
     if (self.playerVideo.loadState == MPMovieLoadStatePlayable || self.playerVideo.loadState == MPMovieLoadStatePlaythroughOK || self.playerVideo.loadState == MPMovieLoadStateUnknown) {
         [self.spinner stopAnimating];

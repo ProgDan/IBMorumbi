@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <sys/utsname.h>
+#import "GAITrackedViewController.h"
 
-@interface BoletimViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIDocumentInteractionControllerDelegate>
+@interface BoletimViewController : GAITrackedViewController <UITableViewDataSource, UITableViewDelegate, UIDocumentInteractionControllerDelegate>
 
 @end

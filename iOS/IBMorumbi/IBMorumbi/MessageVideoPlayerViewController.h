@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "GAITrackedViewController.h"
 
-@interface MessageVideoPlayerViewController : UIViewController
+@interface MessageVideoPlayerViewController : GAITrackedViewController
 
 // Dado recebido da View Controller de Lista de Mensagens
 @property (strong, nonatomic) NSDictionary *mensagem;

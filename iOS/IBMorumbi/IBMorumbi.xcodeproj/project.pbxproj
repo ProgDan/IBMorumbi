@@ -18,6 +18,11 @@
 		6568BA0B18E8616700C216C2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0A18E8616700C216C2 /* facebook.png */; };
 		6568BA0D18E8655A00C216C2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0C18E8655A00C216C2 /* twitter.png */; };
 		6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B94318E74BE600F04FB4 /* AboutViewController.m */; };
+		659388A7190C158400CD4D1D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388A6190C158400CD4D1D /* libGoogleAnalyticsServices.a */; };
+		659388B0190C162100CD4D1D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388AF190C162100CD4D1D /* AdSupport.framework */; };
+		659388B2190C162D00CD4D1D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388B1190C162D00CD4D1D /* CoreData.framework */; };
+		659388B4190C163A00CD4D1D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388B3190C163A00CD4D1D /* SystemConfiguration.framework */; };
+		659388B6190C164600CD4D1D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388B5190C164600CD4D1D /* libz.dylib */; };
 		6598499018EE01FB00C89A86 /* mystery-man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6598498F18EE01FB00C89A86 /* mystery-man.jpg */; };
 		659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E518D7B48F001DADB7 /* Localizable.strings */; };
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
@@ -85,6 +90,17 @@
 		6568BA0C18E8655A00C216C2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		6587B94218E74BE600F04FB4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		6587B94318E74BE600F04FB4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		659388A6190C158400CD4D1D /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		659388A8190C15CC00CD4D1D /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		659388A9190C15CC00CD4D1D /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		659388AA190C15CC00CD4D1D /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		659388AB190C15CC00CD4D1D /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		659388AC190C15CC00CD4D1D /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		659388AD190C15CC00CD4D1D /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		659388AF190C162100CD4D1D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		659388B1190C162D00CD4D1D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		659388B3190C163A00CD4D1D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		659388B5190C164600CD4D1D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6598498F18EE01FB00C89A86 /* mystery-man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mystery-man.jpg"; sourceTree = "<group>"; };
 		659D28E618D7B49E001DADB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPad.png; sourceTree = "<group>"; };
@@ -136,9 +152,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659388B6190C164600CD4D1D /* libz.dylib in Frameworks */,
+				659388B4190C163A00CD4D1D /* SystemConfiguration.framework in Frameworks */,
+				659388B2190C162D00CD4D1D /* CoreData.framework in Frameworks */,
+				659388B0190C162100CD4D1D /* AdSupport.framework in Frameworks */,
 				65BA4D2518E4CB16006AD658 /* MediaPlayer.framework in Frameworks */,
 				65DD692E18E3A80E007E3D80 /* AVFoundation.framework in Frameworks */,
 				65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */,
+				659388A7190C158400CD4D1D /* libGoogleAnalyticsServices.a in Frameworks */,
 				65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */,
 				65AB7E5918D787E8007FF707 /* CoreGraphics.framework in Frameworks */,
 				65AB7E5B18D787E8007FF707 /* UIKit.framework in Frameworks */,
@@ -166,6 +187,20 @@
 				6568BA0A18E8616700C216C2 /* facebook.png */,
 			);
 			name = logos;
+			sourceTree = "<group>";
+		};
+		659388AE190C15E900CD4D1D /* Google Analytics SDK */ = {
+			isa = PBXGroup;
+			children = (
+				659388A8190C15CC00CD4D1D /* GAI.h */,
+				659388A9190C15CC00CD4D1D /* GAIDictionaryBuilder.h */,
+				659388AA190C15CC00CD4D1D /* GAIFields.h */,
+				659388AB190C15CC00CD4D1D /* GAILogger.h */,
+				659388AC190C15CC00CD4D1D /* GAITrackedViewController.h */,
+				659388AD190C15CC00CD4D1D /* GAITracker.h */,
+				659388A6190C158400CD4D1D /* libGoogleAnalyticsServices.a */,
+			);
+			name = "Google Analytics SDK";
 			sourceTree = "<group>";
 		};
 		659D28E718D7B7D0001DADB7 /* images */ = {
@@ -204,6 +239,10 @@
 		65AB7E5518D787E8007FF707 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				659388B5190C164600CD4D1D /* libz.dylib */,
+				659388B3190C163A00CD4D1D /* SystemConfiguration.framework */,
+				659388B1190C162D00CD4D1D /* CoreData.framework */,
+				659388AF190C162100CD4D1D /* AdSupport.framework */,
 				65DD692D18E3A80E007E3D80 /* AVFoundation.framework */,
 				659D28F118D7C905001DADB7 /* MediaPlayer.framework */,
 				65AB7E9018D7882A007FF707 /* CoreLocation.framework */,
@@ -219,6 +258,7 @@
 		65AB7E5C18D787E8007FF707 /* IBMorumbi */ = {
 			isa = PBXGroup;
 			children = (
+				659388AE190C15E900CD4D1D /* Google Analytics SDK */,
 				65BA4D2618E4D553006AD658 /* pastores */,
 				65DD692118E387C5007E3D80 /* icons */,
 				659D28E718D7B7D0001DADB7 /* images */,
@@ -580,6 +620,10 @@
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IBMorumbi",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "914226F6-63EA-4CB0-B783-A8D9E1936EBB";
@@ -599,6 +643,10 @@
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IBMorumbi",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9A803E53-B572-4C22-8067-0D9F731EDAF5";

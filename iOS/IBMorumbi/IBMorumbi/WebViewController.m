@@ -30,6 +30,12 @@
     [self openPageWithUrl:@"http://www.ibmorumbi.com.br"];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.screenName = @"WebView Screen";
+}
+
 -(void) openPageWithUrl: (NSString*) strUrl
 {
     if ([strUrl rangeOfString:@"http://"].location != 0) {

@@ -25,6 +25,12 @@
     self.labelRelease.text = [NSString stringWithFormat:@"v. %@", appVersion];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.screenName = @"About Screen";
+}
+
 - (IBAction)openFacebook:(UIButton *)sender {
     // Para pegar o ID da página no Facebook: https://graph.facebook.com/yourappspage
     NSURL *facebookURL = [NSURL URLWithString:@"fb://profile/100002117943796"];
@@ -43,4 +49,5 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://twitter.com/ibmorumbi"]];
     }
 }
+
 @end

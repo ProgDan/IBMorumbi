@@ -10,7 +10,8 @@
 #import <sys/utsname.h>
 #import "MessageAudioPlayerViewController.h"
 #import "MessageVideoPlayerViewController.h"
+#import "GAITrackedViewController.h"
 
-@interface MessageTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MessageTableViewController : GAITrackedViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

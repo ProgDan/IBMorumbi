@@ -67,6 +67,13 @@
     [self playerPrepare];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.screenName = @"MessageAudioPlayer Screen";
+}
+
+
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     if (object == self.player && [keyPath isEqualToString:@"status"]) {
