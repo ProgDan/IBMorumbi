@@ -3,13 +3,31 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "logo_IBMorumbi_29x2.png",
+      "filename" : "logo_IBMorumbi_29-1.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "logo_IBMorumbi_29x2-1.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
       "filename" : "logo_IBMorumbi_40x2-1.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "logo_IBMorumbi_57.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "logo_IBMorumbi_57x2.png",
       "scale" : "2x"
     },
     {
@@ -27,7 +45,7 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "logo_IBMorumbi_29x2-1.png",
+      "filename" : "logo_IBMorumbi_29x2.png",
       "scale" : "2x"
     },
     {
@@ -40,6 +58,30 @@
       "size" : "40x40",
       "idiom" : "ipad",
       "filename" : "logo_IBMorumbi_40x2.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "ipad",
+      "filename" : "logo_IBMorumbi_50-1.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "50x50",
+      "idiom" : "ipad",
+      "filename" : "logo_IBMorumbi_50x2.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "logo_IBMorumbi_72.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "logo_IBMorumbi_72x2.png",
       "scale" : "2x"
     },
     {
