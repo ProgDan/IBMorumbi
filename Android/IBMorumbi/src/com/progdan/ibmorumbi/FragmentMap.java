@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.w3c.dom.Document;
 
+import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -266,5 +267,18 @@ public class FragmentMap extends Fragment implements LocationListener {
 		// TODO Auto-generated method stub
 
 	}
+	
+	@Override
+	public void onStart(){
+		super.onStart();
+		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
+	}
+	
 
 }

@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.google.analytics.tracking.android.EasyTracker;
 import com.progdan.ibmorumbi.json.JSONParser;
 import com.progdan.ibmorumbi.pdftools.PDFTools;
 
@@ -33,6 +34,18 @@ public class FragmentNewsletter extends ListFragment {
 		new ProgressTask(FragmentNewsletter.this).execute();
 	}
 
+	@Override
+	public void onStart(){
+		super.onStart();
+		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
+	}
+		
 	@Override
 	public void onListItemClick(ListView list, View view, int position, long id) {
 		// do something with the data

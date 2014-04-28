@@ -1,5 +1,7 @@
 package com.progdan.ibmorumbi;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
@@ -37,5 +39,17 @@ public class IBMorumbiActivity extends Activity {
 		actionBar.addTab(website);
 		actionBar.addTab(map);
 		actionBar.addTab(about);
+	}
+	
+	@Override
+	public void onStart(){
+		super.onStart();
+		EasyTracker.getInstance(this).activityStart(this);
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		EasyTracker.getInstance(this).activityStop(this);
 	}
 }

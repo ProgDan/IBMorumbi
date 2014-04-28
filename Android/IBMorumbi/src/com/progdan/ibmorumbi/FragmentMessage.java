@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.google.analytics.tracking.android.EasyTracker;
 import com.progdan.ibmorumbi.imageloader.ImageLoader;
 import com.progdan.ibmorumbi.json.JSONParser;
 
@@ -43,6 +44,18 @@ public class FragmentMessage extends ListFragment {
 		View v = inflater.inflate(R.layout.message_list_layout, null);
 		setHasOptionsMenu(true);
 		return v;
+	}
+	
+	@Override
+	public void onStart(){
+		super.onStart();
+		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
 	}
 
 	@Override

@@ -1,5 +1,7 @@
 package com.progdan.ibmorumbi;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.os.Bundle;
@@ -30,4 +32,16 @@ public class FragmentWebsite extends Fragment {
 		
 		return view;
 	}
+	
+	@Override
+	public void onStart(){
+		super.onStart();
+		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
+	}
+	
+	@Override
+	public void onStop(){
+		super.onStop();
+		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
+	}	
 }
