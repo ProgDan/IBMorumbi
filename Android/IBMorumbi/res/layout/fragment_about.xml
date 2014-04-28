@@ -80,4 +80,14 @@
         android:onClick="openTwitter"
         android:src="@drawable/button_twitter" />
 
+    <TextView
+        android:id="@+id/textViewRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewLogo"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:textAlignment="gravity" />
+
 </RelativeLayout>

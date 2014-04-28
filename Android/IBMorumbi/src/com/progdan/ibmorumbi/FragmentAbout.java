@@ -5,18 +5,29 @@ import com.google.analytics.tracking.android.EasyTracker;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class FragmentAbout extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstance) {
 		View view = inflater.inflate(R.layout.fragment_about, container, false);
+		
+		try {
+			String app_ver = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName;
+			TextView textViewRelease = (TextView) view.findViewById(R.id.textViewRelease);
+			textViewRelease.setText(app_ver);
+		} catch (NameNotFoundException e) {
+			Log.v("ERROR", e.getMessage());
+		}
 		
 		final ImageButton facebook = (ImageButton) view.findViewById(R.id.imageButtonFacebook);
 		facebook.setOnClickListener( new OnClickListener() {		
