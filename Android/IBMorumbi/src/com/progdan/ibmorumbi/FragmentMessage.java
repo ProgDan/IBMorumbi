@@ -17,8 +17,11 @@ import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -30,8 +33,8 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 public class FragmentMessage extends ListFragment {
-	private static String url = "http://mini.progdan.com/ibmorumbi/messages.php";
-	private static String settingsurl = "http://mini.progdan.com/ibmorumbi/appsettings.php";
+	private String url = "http://mini.progdan.com/ibmorumbi/messages.php";
+	private String settingsurl = "http://mini.progdan.com/ibmorumbi/appsettings.php";
 
 	private List<Map<String, Object>> messages;
 	private Map<String, Object> appsettigs;
@@ -43,6 +46,20 @@ public class FragmentMessage extends ListFragment {
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.message_list_layout, null);
 		setHasOptionsMenu(true);
+		
+		// Identificação da versão do SO, Tipo de Dispositivo e versão do Aplicativo
+		String androidOS = Build.VERSION.RELEASE;
+		String device = Build.MANUFACTURER + " (" + Build.BRAND + ") - " + Build.MODEL;
+		String app_ver = "unknow";
+		try {
+			app_ver = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName;
+		} catch (NameNotFoundException e) {
+			Log.v("ERROR", e.getMessage());
+		}
+		
+		this.url = "http://mini.progdan.com/ibmorumbi/messages.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver;
+		this.settingsurl = "http://mini.progdan.com/ibmorumbi/appsettings.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver;
+		
 		return v;
 	}
 	
