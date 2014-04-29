@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- 
-    	<string name="content_loading">Content loading&#8230;</string>
-    	<string name="buffering_video">Buffering video&#8230;</string>
-    	<string name="video_play_error">Video Play Error</string>
-    	<string name="message_chooser">Select message type</string>
-    	
-    	<string name="map_type">Select map type</string>
-    	<string name="normal_map">Normal map</string>
-    	<string name="satellite_map">Satellite map</string>
-    	<string name="terrain_map">Terrain map</string>
-    	<string name="hybrid_map">Hybrid map</string>
 
-    	<string name="pdf_show_online_dialog_title">Show PDF</string>
-    	<string name="pdf_show_online_dialog_question">You are trying to open a PDF file, but you don\'t have a PDF reader installed. Do you want to read the PDF file online with Google Drive (Requires Google account)?</string>
-    	<string name="pdf_show_online_dialog_button_yes">Yes, read online</string>
-    	<string name="pdf_show_online_dialog_button_no">No</string>
-    	<string name="pdf_show_local_progress_title">Please wait</string>
-    	<string name="pdf_show_local_progress_content">Downloading PDF&#8230;</string>
-    	
-     -->
+    <string name="app_name">IBMorumbi</string>
+    <string name="message">Messages</string>
+    <string name="newsletter">Newsletter</string>
+    <string name="website">Website</string>
+    <string name="map">Map</string>
+    <string name="about">About</string>
+    <string name="message_series">Messages series</string>
+    <string name="content_loading">Content loading&#8230;</string>
+    <string name="buffering_video">Buffering video&#8230;</string>
+    <string name="buffering_audio">Buffering audio&#8230;</string>
+    <string name="video_play_error">Video Play Error</string>
+    <string name="message_audio">Audio</string>
+    <string name="message_video">Video</string>
+    <string name="message_chooser">Select message type</string>
+    
+    <string name="map_type">Select map type</string>
+    <string name="normal_map">Normal</string>
+    <string name="satellite_map">Satellite</string>
+    <string name="terrain_map">Terrain</string>
+    <string name="hybrid_map">Hybrid</string>
+    <string name="calculate_route">Calculate Route</string>
+
+    <string name="ibmorumbi_logo">IB Morumbi Logo</string>
+    <string name="ibmorumbi">Morumbi Baptist Church</string>
+    <string name="address_street">1076 Carvalho de Freitas St.</string>
+    <string name="address_district">Morumbi</string>
+    <string name="address_city">05728&#8211;030 &#8211; Sao Paulo &#8211; SP &#8211; Brazil</string>
+    <string name="address_phone">Tel: +55 11 3538&#8211;0250</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    
+    <string name="pastor_img">Pastor</string>
+     
+   	<string name="pdf_show_online_dialog_title">Show PDF</string>
+   	<string name="pdf_show_online_dialog_question">You are trying to open a PDF file, but you don\'t have a PDF reader installed. Do you want to read the PDF file online with Google Drive (Requires Google account)?</string>
+   	<string name="pdf_show_online_dialog_button_yes">Yes, read online</string>
+   	<string name="pdf_show_online_dialog_button_no">No</string>
+   	<string name="pdf_show_local_progress_title">Please wait</string>
+   	<string name="pdf_show_local_progress_content">Downloading PDF&#8230;</string>
+    
 </resources>
