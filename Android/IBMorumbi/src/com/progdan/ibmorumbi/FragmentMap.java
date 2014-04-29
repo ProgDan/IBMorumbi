@@ -27,6 +27,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -59,7 +60,7 @@ public class FragmentMap extends Fragment implements LocationListener {
 			// Loading map
 			initilizeMap();
 		} catch (Exception e) {
-			e.printStackTrace();
+	         Log.e("ERROR", e.getLocalizedMessage()); // enable to log errors
 		}
 
 		configureMap();

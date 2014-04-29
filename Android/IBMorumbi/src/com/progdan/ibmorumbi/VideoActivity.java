@@ -13,6 +13,7 @@ import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.MediaController;
@@ -146,7 +147,7 @@ public class VideoActivity extends Activity {
 					this,
 					getString(R.string.video_play_error) + ": "
 							+ e.getMessage(), Toast.LENGTH_SHORT).show();
-			e.printStackTrace();
+	         Log.e("VideoActivity ERROR", e.getLocalizedMessage()); // enable to log errors
 			finish();
 		}
 	}

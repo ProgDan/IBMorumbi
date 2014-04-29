@@ -254,13 +254,13 @@ public class AudioActivity extends Activity {
 				prepared = true;
 			} catch (SecurityException e) {
 				prepared = false;
-				e.printStackTrace();
+		         Log.e("AudioActivity ERROR", e.getLocalizedMessage()); // enable to log errors
 			} catch (IllegalStateException e) {
 				prepared = false;
-				e.printStackTrace();
+		         Log.e("AudioActivity ERROR", e.getLocalizedMessage()); // enable to log errors
 			} catch (IOException e) {
 				prepared = false;
-				e.printStackTrace();
+		         Log.e("AudioActivity ERROR", e.getLocalizedMessage()); // enable to log errors
 			}
 			return prepared;
 		}

@@ -9,6 +9,7 @@ import com.progdan.ibmorumbi.imageloader.ImageLoader;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.SimpleAdapter.ViewBinder;
@@ -48,13 +49,13 @@ public class MyViewBinder implements ViewBinder {
 				    Bitmap bit=BitmapFactory.decodeStream(bitmap);
 				    image.setImageBitmap(bit);	
 				} catch (IOException e) {
-				    e.printStackTrace();
+			         Log.e("MyViewBinder ERROR", e.getLocalizedMessage()); // enable to log errors
 				} finally {
 					try {
 					    if(bitmap!=null)
 					    	bitmap.close();
 					} catch (IOException e) {
-						e.printStackTrace();
+				         Log.e("MyViewBinder ERROR", e.getLocalizedMessage()); // enable to log errors
 					}
 				}
 			}
@@ -81,7 +82,7 @@ public class MyViewBinder implements ViewBinder {
 	            }
 	        }
 	    } catch (IOException e) {
-	        // Log.w(TAG, e); // enable to log errors
+	         Log.e("MyViewBinder ERROR", e.getLocalizedMessage()); // enable to log errors
 	    }
 	    return false;
 	}

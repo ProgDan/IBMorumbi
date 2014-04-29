@@ -57,7 +57,7 @@ public class FragmentAbout extends Fragment {
 			TextView textViewRelease = (TextView) view.findViewById(R.id.textViewRelease);
 			textViewRelease.setText("v. " + app_ver);
 		} catch (NameNotFoundException e) {
-			Log.v("ERROR", e.getMessage());
+	         Log.e("FragmentAbout ERROR", e.getLocalizedMessage()); // enable to log errors
 		}
 		
 		final ImageButton facebook = (ImageButton) view.findViewById(R.id.imageButtonFacebook);

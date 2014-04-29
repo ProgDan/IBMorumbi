@@ -87,7 +87,7 @@ public class FragmentNewsletter extends ListFragment {
 		try {
 			app_ver = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName;
 		} catch (NameNotFoundException e) {
-			Log.v("ERROR", e.getMessage());
+	         Log.e("FragmentNewsletter ERROR", e.getLocalizedMessage()); // enable to log errors
 		}
 		
 			this.url = new String("http://mini.progdan.com/ibmorumbi/boletins.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver).replaceAll(" ","%20");
@@ -136,11 +136,6 @@ public class FragmentNewsletter extends ListFragment {
 			}
 		}
 
-/*		protected void onPreExecute() {
-			this.dialog.setMessage(getString(R.string.content_loading));
-			this.dialog.show();
-		}
-*/
 		@Override
 		protected void onPostExecute(final Boolean success) {
 			String[] from = { "image", "text", "detail" };
@@ -180,7 +175,7 @@ public class FragmentNewsletter extends ListFragment {
 					boletins.add(map);
 
 				} catch (JSONException e) {
-					e.printStackTrace();
+			         Log.e("FragmentNewsletter JSON ERROR", e.getLocalizedMessage()); // enable to log errors
 				}
 			}
 

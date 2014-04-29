@@ -112,7 +112,7 @@ public class FragmentMessage extends ListFragment {
 			app_ver = getActivity().getPackageManager().getPackageInfo(
 					getActivity().getPackageName(), 0).versionName;
 		} catch (NameNotFoundException e) {
-			Log.v("ERROR", e.getMessage());
+	         Log.e("FragmentMessage ERROR", e.getLocalizedMessage()); // enable to log errors
 		}
 
 		this.url = new String(
@@ -281,7 +281,7 @@ public class FragmentMessage extends ListFragment {
 				appsettigs.put("video_morumbiplus", video_morumbiplus);
 				appsettigs.put("video_morumbiplushd", video_morumbiplushd);
 			} catch (JSONException e) {
-				e.printStackTrace();
+		         Log.e("FragmentMessage JSON ERROR", e.getLocalizedMessage()); // enable to log errors
 			}
 
 			// Configura a imagem da série de mensagens
@@ -360,7 +360,7 @@ public class FragmentMessage extends ListFragment {
 					messages.add(map);
 
 				} catch (JSONException e) {
-					e.printStackTrace();
+			         Log.e("FragmentMessage JSON ERROR", e.getLocalizedMessage()); // enable to log errors
 				}
 			}
 
