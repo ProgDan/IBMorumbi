@@ -17,6 +17,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.progdan.ibmorumbi.route.GMapV2GetRouteDirection;
 
+import android.R;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
@@ -96,7 +97,7 @@ public class FragmentMap extends Fragment implements LocationListener {
 
 		// create marker
 		MarkerOptions marker = new MarkerOptions()
-				.position(new LatLng(latitude, longitude)).title("IB Morumbi")
+				.position(new LatLng(latitude, longitude)).title("IBMorumbi")
 				.snippet(getString(R.string.ibmorumbi));
 
 		// adding marker
@@ -224,7 +225,12 @@ public class FragmentMap extends Fragment implements LocationListener {
 			// Get All Route values
 			document = v2GetRouteDirection.getDocument(fromPosition,
 					toPosition, GMapV2GetRouteDirection.MODE_DRIVING);
+			if(document != null) {
 			response = "Success";
+			}
+			else {
+				response = "Fail";
+			}
 			return response;
 		}
 
@@ -240,7 +246,7 @@ public class FragmentMap extends Fragment implements LocationListener {
 
 			// create marker
 			MarkerOptions marker = new MarkerOptions().position(toPosition)
-					.title("IB Morumbi").snippet("Igreja Batista do Morumbi");
+					.title("IBMorumbi").snippet(getString(R.string.ibmorumbi));
 
 			// adding marker
 			googleMap.addMarker(marker);
