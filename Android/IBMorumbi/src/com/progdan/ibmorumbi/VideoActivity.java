@@ -1,6 +1,8 @@
 package com.progdan.ibmorumbi;
 
-import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.progdan.ibmorumbi.imageloader.ImageLoader;
 
 import android.app.Activity;
@@ -36,9 +38,39 @@ public class VideoActivity extends Activity {
 	VideoView videoView;
 
 	@Override
+	public void onStart() {
+		super.onStart();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+	}
+	@Override
+	public void onStop() {
+		super.onStop();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+	}
+	@Override
+	public void onResume() {
+		super.onResume();
+
+        // Get tracker.
+        Tracker t = ((IBMorumbiApp) getApplication()).getTracker();
+
+        // Set screen name.
+        // Where path is a String representing the screen name.
+        t.setScreenName("MessageVideoPlayer Screen");
+
+        // Send a screen view.
+        t.send(new HitBuilders.AppViewBuilder().build());
+	}
+	
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_video);
+		//Get a Tracker (should auto-report)
+		((IBMorumbiApp) getApplication()).getTracker();
+		
 		videoView = (VideoView) findViewById(R.id.VideoView);
 
 		ImageView logo = (ImageView) findViewById(R.id.message_logo);
@@ -117,17 +149,5 @@ public class VideoActivity extends Activity {
 			e.printStackTrace();
 			finish();
 		}
-	}
-
-	@Override
-	public void onStart(){
-		super.onStart();
-		EasyTracker.getInstance(this).activityStart(this);
-	}
-	
-	@Override
-	public void onStop(){
-		super.onStop();
-		EasyTracker.getInstance(this).activityStop(this);
 	}
 }

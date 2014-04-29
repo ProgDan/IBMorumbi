@@ -9,7 +9,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.progdan.ibmorumbi.json.JSONParser;
 import com.progdan.ibmorumbi.pdftools.PDFTools;
 
@@ -29,10 +31,39 @@ import android.widget.Toast;
 public class FragmentNewsletter extends ListFragment {
 	private List<Map<String, Object>> boletins;
 	private String url = "http://mini.progdan.com/ibmorumbi/boletins.php";
+
+	@Override
+	public void onStart() {
+		super.onStart();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(getActivity()).reportActivityStart(getActivity());
+	}
+	@Override
+	public void onStop() {
+		super.onStop();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(getActivity()).reportActivityStop(getActivity());
+	}
+	@Override
+	public void onResume() {
+		super.onResume();
+
+        // Get tracker.
+        Tracker t = ((IBMorumbiApp) getActivity().getApplication()).getTracker();
+
+        // Set screen name.
+        // Where path is a String representing the screen name.
+        t.setScreenName("Newsletter Screen");
+
+        // Send a screen view.
+        t.send(new HitBuilders.AppViewBuilder().build());
+	}
 	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
+		//Get a Tracker (should auto-report)
+		((IBMorumbiApp) getActivity().getApplication()).getTracker();
 
 		// Identificação da versão do SO, Tipo de Dispositivo e versão do Aplicativo
 		String androidOS = Build.VERSION.RELEASE;
@@ -44,23 +75,12 @@ public class FragmentNewsletter extends ListFragment {
 			Log.v("ERROR", e.getMessage());
 		}
 		
-		this.url = "http://mini.progdan.com/ibmorumbi/boletins.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver;
+			this.url = new String("http://mini.progdan.com/ibmorumbi/boletins.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver).replaceAll(" ","%20");
+
 		
 		new ProgressTask(FragmentNewsletter.this).execute();
 	}
 
-	@Override
-	public void onStart(){
-		super.onStart();
-		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
-	}
-	
-	@Override
-	public void onStop(){
-		super.onStop();
-		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
-	}
-		
 	@Override
 	public void onListItemClick(ListView list, View view, int position, long id) {
 		// do something with the data

@@ -9,7 +9,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.progdan.ibmorumbi.imageloader.ImageLoader;
 import com.progdan.ibmorumbi.json.JSONParser;
 
@@ -17,6 +19,7 @@ import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -42,37 +45,71 @@ public class FragmentMessage extends ListFragment {
 	private boolean videomode;
 
 	@Override
+	public void onResume() {
+		super.onResume();
+
+		// Get tracker.
+		Tracker t = ((IBMorumbiApp) getActivity().getApplication())
+				.getTracker();
+
+		// Set screen name.
+		// Where path is a String representing the screen name.
+		t.setScreenName("Message Screen");
+
+		// Send a screen view.
+		t.send(new HitBuilders.AppViewBuilder().build());
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+		// Get an Analytics tracker to report app starts & uncaught exceptions
+		// etc.
+		GoogleAnalytics.getInstance(getActivity()).reportActivityStart(
+				getActivity());
+	}
+
+	@Override
+	public void onStop() {
+		super.onStop();
+		// Get an Analytics tracker to report app starts & uncaught exceptions
+		// etc.
+		GoogleAnalytics.getInstance(getActivity()).reportActivityStop(
+				getActivity());
+	}
+
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.message_list_layout, null);
 		setHasOptionsMenu(true);
-		
-		// Identificação da versão do SO, Tipo de Dispositivo e versão do Aplicativo
+
+		// Get a Tracker (should auto-report)
+		((IBMorumbiApp) getActivity().getApplication()).getTracker();
+
+		// Identificação da versão do SO, Tipo de Dispositivo e versão do
+		// Aplicativo
 		String androidOS = Build.VERSION.RELEASE;
-		String device = Build.MANUFACTURER + " (" + Build.BRAND + ") - " + Build.MODEL;
+		String device = Build.MANUFACTURER + " (" + Build.BRAND + ") - "
+				+ Build.MODEL;
 		String app_ver = "unknow";
 		try {
-			app_ver = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName;
+			app_ver = getActivity().getPackageManager().getPackageInfo(
+					getActivity().getPackageName(), 0).versionName;
 		} catch (NameNotFoundException e) {
 			Log.v("ERROR", e.getMessage());
 		}
-		
-		this.url = "http://mini.progdan.com/ibmorumbi/messages.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver;
-		this.settingsurl = "http://mini.progdan.com/ibmorumbi/appsettings.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver;
-		
+
+		this.url = new String(
+				"http://mini.progdan.com/ibmorumbi/messages.php?platform=Android&device="
+						+ device + "&os=" + androidOS + "&client=" + app_ver)
+				.replaceAll(" ", "%20");
+		this.settingsurl = new String(
+				"http://mini.progdan.com/ibmorumbi/appsettings.php?platform=Android&device="
+						+ device + "&os=" + androidOS + "&client=" + app_ver)
+				.replaceAll(" ", "%20");
+
 		return v;
-	}
-	
-	@Override
-	public void onStart(){
-		super.onStart();
-		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
-	}
-	
-	@Override
-	public void onStop(){
-		super.onStop();
-		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
 	}
 
 	@Override
@@ -172,6 +209,9 @@ public class FragmentMessage extends ListFragment {
 		}
 
 		protected void onPreExecute() {
+			//Desabilita o sensor de rotação da tela
+			getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
+			
 			this.dialog.setMessage(getString(R.string.content_loading));
 			this.dialog.show();
 		}
@@ -190,6 +230,9 @@ public class FragmentMessage extends ListFragment {
 			adapter.setViewBinder(new MyViewBinder());
 
 			setListAdapter(adapter);
+			
+			//Habilita o sensor de rotação da tela
+			getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
 		}
 
 		@Override

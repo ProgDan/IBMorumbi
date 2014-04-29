@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.w3c.dom.Document;
 
-import com.google.analytics.tracking.android.EasyTracker;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -50,6 +52,8 @@ public class FragmentMap extends Fragment implements LocationListener {
 			Bundle savedInstance) {
 		View view = inflater.inflate(R.layout.fragment_map, container, false);
 		setHasOptionsMenu(true);
+		//Get a Tracker (should auto-report)
+		((IBMorumbiApp) getActivity().getApplication()).getTracker();
 
 		try {
 			// Loading map
@@ -93,7 +97,7 @@ public class FragmentMap extends Fragment implements LocationListener {
 		// create marker
 		MarkerOptions marker = new MarkerOptions()
 				.position(new LatLng(latitude, longitude)).title("IB Morumbi")
-				.snippet("Igreja Batista do Morumbi");
+				.snippet(getString(R.string.ibmorumbi));
 
 		// adding marker
 		googleMap.addMarker(marker);
@@ -113,8 +117,31 @@ public class FragmentMap extends Fragment implements LocationListener {
 	}
 
 	@Override
+	public void onStart() {
+		super.onStart();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(getActivity()).reportActivityStart(getActivity());
+	}
+	@Override
+	public void onStop() {
+		super.onStop();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(getActivity()).reportActivityStop(getActivity());
+	}
+	@Override
 	public void onResume() {
 		super.onResume();
+
+        // Get tracker.
+        Tracker t = ((IBMorumbiApp) getActivity().getApplication()).getTracker();
+
+        // Set screen name.
+        // Where path is a String representing the screen name.
+        t.setScreenName("Map Screen");
+
+        // Send a screen view.
+        t.send(new HitBuilders.AppViewBuilder().build());
+        
 		initilizeMap();
 		configureMap();
 	}
@@ -171,7 +198,7 @@ public class FragmentMap extends Fragment implements LocationListener {
 	public void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
 
-		// save the map type so when we change orientation, the mape type can be
+		// save the map type so when we change orientation, the map type can be
 		// restored
 		LatLng cameraLatLng = googleMap.getCameraPosition().target;
 		float cameraZoom = googleMap.getCameraPosition().zoom;
@@ -267,18 +294,5 @@ public class FragmentMap extends Fragment implements LocationListener {
 		// TODO Auto-generated method stub
 
 	}
-	
-	@Override
-	public void onStart(){
-		super.onStart();
-		EasyTracker.getInstance(getActivity()).activityStart(getActivity());
-	}
-	
-	@Override
-	public void onStop(){
-		super.onStop();
-		EasyTracker.getInstance(getActivity()).activityStop(getActivity());
-	}
-	
 
 }

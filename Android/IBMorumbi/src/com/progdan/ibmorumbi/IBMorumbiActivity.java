@@ -1,6 +1,7 @@
 package com.progdan.ibmorumbi;
 
-import com.google.analytics.tracking.android.EasyTracker;
+
+import com.google.android.gms.analytics.GoogleAnalytics;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -15,9 +16,24 @@ public class IBMorumbiActivity extends Activity {
 	Fragment fragmentMap = new FragmentMap();
 	Fragment fragmentAbout = new FragmentAbout();
 
+	@Override
+	public void onStart() {
+		super.onStart();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStart(this);
+	}
+	@Override
+	public void onStop() {
+		super.onStop();
+		//Get an Analytics tracker to report app starts & uncaught exceptions etc.
+		GoogleAnalytics.getInstance(this).reportActivityStop(this);
+	}
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ibmorumbi);
+		//Get a Tracker (should auto-report)
+		((IBMorumbiApp) getApplication()).getTracker();
 
 		ActionBar actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -41,15 +57,4 @@ public class IBMorumbiActivity extends Activity {
 		actionBar.addTab(about);
 	}
 	
-	@Override
-	public void onStart(){
-		super.onStart();
-		EasyTracker.getInstance(this).activityStart(this);
-	}
-	
-	@Override
-	public void onStop(){
-		super.onStop();
-		EasyTracker.getInstance(this).activityStop(this);
-	}
 }
