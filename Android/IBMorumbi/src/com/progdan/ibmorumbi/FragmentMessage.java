@@ -15,12 +15,13 @@ import com.google.android.gms.analytics.Tracker;
 import com.progdan.ibmorumbi.imageloader.ImageLoader;
 import com.progdan.ibmorumbi.json.JSONParser;
 
+import android.app.Activity;
 import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -41,8 +42,21 @@ public class FragmentMessage extends ListFragment {
 
 	private List<Map<String, Object>> messages;
 	private Map<String, Object> appsettigs;
+	
+	private static ProgressTask progressTask = null;
+	private ProgressDialog dialog = null;
 
 	private boolean videomode;
+	
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		
+		if(dialog != null && dialog.isShowing()){
+			dialog.dismiss();
+			dialog = null;
+		}
+	}
 
 	@Override
 	public void onResume() {
@@ -83,6 +97,7 @@ public class FragmentMessage extends ListFragment {
 			Bundle savedInstanceState) {
 		View v = inflater.inflate(R.layout.message_list_layout, null);
 		setHasOptionsMenu(true);
+		setRetainInstance(true);
 
 		// Get a Tracker (should auto-report)
 		((IBMorumbiApp) getActivity().getApplication()).getTracker();
@@ -127,10 +142,12 @@ public class FragmentMessage extends ListFragment {
 
 		switch (item.getItemId()) {
 		case R.id.video_message:
+			inicializarLista();
 			videomode = true;
 			new ProgressTask(FragmentMessage.this).execute();
 			break;
 		case R.id.audio_message:
+			inicializarLista();
 			videomode = false;
 			new ProgressTask(FragmentMessage.this).execute();
 			break;
@@ -144,7 +161,28 @@ public class FragmentMessage extends ListFragment {
 		super.onActivityCreated(savedInstanceState);
 
 		videomode = true;
-		new ProgressTask(FragmentMessage.this).execute();
+		
+		inicializarLista();
+		
+		progressTask = new ProgressTask(this);
+		progressTask.execute();
+	}
+	
+	private synchronized void inicializarLista(){
+		if(dialog == null) {
+			dialog = new ProgressDialog(getActivity());
+			dialog.setMessage(getString(R.string.content_loading));
+			if(!dialog.isShowing())
+				dialog.show();
+		}
+	}
+	
+	private synchronized void atualizarLista(SimpleAdapter adapter){
+		setListAdapter(adapter);
+		if(dialog != null && dialog.isShowing()){
+			dialog.dismiss();
+			dialog = null;
+		}
 	}
 
 	@Override
@@ -200,39 +238,22 @@ public class FragmentMessage extends ListFragment {
 	}
 
 	private class ProgressTask extends AsyncTask<String, Void, Boolean> {
-		private ProgressDialog dialog;
 		private Context context;
 
 		public ProgressTask(ListFragment fragment) {
 			context = fragment.getActivity();
-			dialog = new ProgressDialog(context);
-		}
-
-		protected void onPreExecute() {
-			//Desabilita o sensor de rotação da tela
-			getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
-			
-			this.dialog.setMessage(getString(R.string.content_loading));
-			this.dialog.show();
 		}
 
 		@Override
 		protected void onPostExecute(final Boolean success) {
-			if (dialog.isShowing()) {
-				dialog.dismiss();
-			}
-
 			String[] from = { "image", "text", "detail" };
 			int[] to = { R.id.imageView, R.id.textLabel, R.id.detailTextLabel };
 
 			SimpleAdapter adapter = new SimpleAdapter(context, messages,
 					R.layout.list_row, from, to);
 			adapter.setViewBinder(new MyViewBinder());
-
-			setListAdapter(adapter);
 			
-			//Habilita o sensor de rotação da tela
-			getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
+			atualizarLista(adapter);
 		}
 
 		@Override
@@ -264,26 +285,30 @@ public class FragmentMessage extends ListFragment {
 			}
 
 			// Configura a imagem da série de mensagens
-			getActivity().runOnUiThread(new Runnable() {
-				@Override
-				public void run() {
-					// Loader image - will be shown before loading image
-					int loader = R.drawable.image_serie;
-
-					// Imageview to show
-					ImageView imageView = (ImageView) getView().findViewById(
-							R.id.message_series);
-
-					// Image url
-					String image_url = (String) appsettigs
-							.get("logo_mensagens");
-
-					// ImageLoader class instance
-					ImageLoader imgLoader = new ImageLoader(getView()
-							.getContext().getApplicationContext());
-					imgLoader.DisplayImage(image_url, loader, imageView);
-				}
-			});
+			Activity activity = getActivity();
+			if(activity != null){
+				activity.runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						// Loader image - will be shown before loading image
+//						int loader = R.drawable.image_serie;
+						int loader = 0;
+	
+						// Imageview to show
+						ImageView imageView = (ImageView) getView().findViewById(
+								R.id.message_series);
+	
+						// Image url
+						String image_url = (String) appsettigs
+								.get("logo_mensagens");
+	
+						// ImageLoader class instance
+						ImageLoader imgLoader = new ImageLoader(getView()
+								.getContext().getApplicationContext());
+						imgLoader.DisplayImage(image_url, loader, imageView);
+					}
+				});
+			}
 
 			// Se for Vídeo, apresenta o primeiro item o Morumbi+
 			if (videomode) {

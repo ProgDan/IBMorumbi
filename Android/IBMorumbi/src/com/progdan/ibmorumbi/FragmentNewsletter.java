@@ -19,6 +19,7 @@ import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Configuration;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -31,7 +32,20 @@ import android.widget.Toast;
 public class FragmentNewsletter extends ListFragment {
 	private List<Map<String, Object>> boletins;
 	private String url = "http://mini.progdan.com/ibmorumbi/boletins.php";
+	
+	private ProgressDialog dialog = null;
+	private static ProgressTask progressTask = null;
 
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		
+		if(dialog != null && dialog.isShowing()){
+			dialog.dismiss();
+			dialog = null;
+		}
+	}
+	
 	@Override
 	public void onStart() {
 		super.onStart();
@@ -62,6 +76,7 @@ public class FragmentNewsletter extends ListFragment {
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
+		setRetainInstance(true);
 		//Get a Tracker (should auto-report)
 		((IBMorumbiApp) getActivity().getApplication()).getTracker();
 
@@ -77,8 +92,10 @@ public class FragmentNewsletter extends ListFragment {
 		
 			this.url = new String("http://mini.progdan.com/ibmorumbi/boletins.php?platform=Android&device=" + device + "&os=" + androidOS + "&client="+ app_ver).replaceAll(" ","%20");
 
+			inicializarLista();
 		
-		new ProgressTask(FragmentNewsletter.this).execute();
+			progressTask = new ProgressTask(this);
+			progressTask.execute();
 	}
 
 	@Override
@@ -91,26 +108,41 @@ public class FragmentNewsletter extends ListFragment {
 		PDFTools.showPDFUrl(getActivity(), (String) map.get("file"));
 	}
 
+	private synchronized void inicializarLista(){
+		if(dialog == null) {
+			dialog = new ProgressDialog(getActivity());
+			dialog.setMessage(getString(R.string.content_loading));
+			if(!dialog.isShowing())
+				dialog.show();
+		}
+	}
+
+	private synchronized void atualizarLista(SimpleAdapter adapter){
+		setListAdapter(adapter);
+		if(dialog != null && dialog.isShowing()){
+			dialog.dismiss();
+			dialog = null;
+		}
+	}
+	
+	
 	private class ProgressTask extends AsyncTask<String, Void, Boolean> {
-		private ProgressDialog dialog;
 		private Context context;
 
 		public ProgressTask(ListFragment fragment) {
 			context = fragment.getActivity();
-			dialog = new ProgressDialog(context);
+			if(dialog == null) {
+				dialog = new ProgressDialog(context);
+			}
 		}
 
-		protected void onPreExecute() {
+/*		protected void onPreExecute() {
 			this.dialog.setMessage(getString(R.string.content_loading));
 			this.dialog.show();
 		}
-
+*/
 		@Override
 		protected void onPostExecute(final Boolean success) {
-			if (dialog.isShowing()) {
-				dialog.dismiss();
-			}
-
 			String[] from = { "image", "text", "detail" };
 			int[] to = { R.id.imageView, R.id.textLabel, R.id.detailTextLabel };
 
@@ -118,7 +150,7 @@ public class FragmentNewsletter extends ListFragment {
 					R.layout.list_row, from, to);
 			adapter.setViewBinder(new MyViewBinder());
 
-			setListAdapter(adapter);
+			atualizarLista(adapter);
 		}
 
 		@Override
