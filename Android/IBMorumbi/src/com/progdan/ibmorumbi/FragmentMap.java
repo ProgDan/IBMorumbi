@@ -17,7 +17,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.progdan.ibmorumbi.route.GMapV2GetRouteDirection;
 
-import android.R;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
