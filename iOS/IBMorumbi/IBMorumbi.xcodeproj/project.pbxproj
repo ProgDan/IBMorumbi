@@ -43,6 +43,7 @@
 		65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E8E18D78823007FF707 /* MapKit.framework */; };
 		65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E9018D7882A007FF707 /* CoreLocation.framework */; };
 		65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65AB7E9318D789A2007FF707 /* MapViewController.m */; };
+		65B2444019142913007D5828 /* celsinho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65B2443F19142913007D5828 /* celsinho.jpg */; };
 		65BA4D2518E4CB16006AD658 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659D28F118D7C905001DADB7 /* MediaPlayer.framework */; };
 		65BA4D2F18E4D553006AD658 /* andre_fontana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2718E4D553006AD658 /* andre_fontana.jpg */; };
 		65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */; };
@@ -136,6 +137,7 @@
 		65AB7E9018D7882A007FF707 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		65AB7E9218D789A2007FF707 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		65AB7E9318D789A2007FF707 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		65B2443F19142913007D5828 /* celsinho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celsinho.jpg; sourceTree = "<group>"; };
 		65BA4D2718E4D553006AD658 /* andre_fontana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = andre_fontana.jpg; sourceTree = "<group>"; };
 		65BA4D2818E4D553006AD658 /* claudio_duarte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = claudio_duarte.jpg; sourceTree = "<group>"; };
 		65BA4D2918E4D553006AD658 /* Gilberto_Lisboa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gilberto_Lisboa.jpg; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 		65BA4D2618E4D553006AD658 /* pastores */ = {
 			isa = PBXGroup;
 			children = (
+				65B2443F19142913007D5828 /* celsinho.jpg */,
 				650D29F018F5D48B00137FBC /* ibmorumbi.jpg */,
 				6598498F18EE01FB00C89A86 /* mystery-man.jpg */,
 				65BA4D2718E4D553006AD658 /* andre_fontana.jpg */,
@@ -443,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B2444019142913007D5828 /* celsinho.jpg in Resources */,
 				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
 				655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */,
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
