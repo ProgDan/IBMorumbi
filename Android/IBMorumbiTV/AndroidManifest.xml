@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sample.amazon.uiwidgetssample"
+    package="com.progdan.ibmorumbitv"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:largeHeap="true"
         android:theme="@style/LauncherAppTheme" >
         <activity
-            android:name="com.sample.amazon.uiwidgetssample.SampleAppActivity"
+            android:name="com.progdan.ibmorumbitv.SampleAppActivity"
             android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,27 +22,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
-            android:name="com.sample.amazon.uiwidgetssample.details.SampleDetailsActivity"
+            android:name="com.progdan.ibmorumbitv.details.SampleDetailsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="landscape" >
         </activity>
-
         <activity
-            android:name="com.sample.amazon.uiwidgetssample.list.SampleCarouselActivity"
+            android:name="com.progdan.ibmorumbitv.list.SampleCarouselActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="landscape" >
         </activity>
-
         <activity
-            android:name="com.sample.amazon.uiwidgetssample.list.SamplePagingCarouselActivity"
+            android:name="com.progdan.ibmorumbitv.list.SamplePagingCarouselActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="landscape" >
         </activity>
-
         <activity
-            android:name="com.sample.amazon.uiwidgetssample.keyboard.KeyboardInputActivity"
+            android:name="com.progdan.ibmorumbitv.keyboard.KeyboardInputActivity"
             android:configChanges="orientation"
             android:screenOrientation="landscape" >
         </activity>
