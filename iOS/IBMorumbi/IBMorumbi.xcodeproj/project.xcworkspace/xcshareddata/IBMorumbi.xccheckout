@@ -10,29 +10,29 @@
 	<string>IBMorumbi</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B3635AF7-0C47-4834-BFFC-10D6E7822B76</key>
-		<string>ssh://github.com/ProgDan/IBMorumbi.git</string>
+		<key>0E65AE82BFE8735943CFCA53BDB5A7CECA54B363</key>
+		<string>github.com:ProgDan/IBMorumbi.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/IBMorumbi/IBMorumbi.xcodeproj/project.xcworkspace</string>
+	<string>iOS/IBMorumbi/IBMorumbi.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B3635AF7-0C47-4834-BFFC-10D6E7822B76</key>
+		<key>0E65AE82BFE8735943CFCA53BDB5A7CECA54B363</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/ProgDan/IBMorumbi.git</string>
+	<string>github.com:ProgDan/IBMorumbi.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B3635AF7-0C47-4834-BFFC-10D6E7822B76</string>
+	<string>0E65AE82BFE8735943CFCA53BDB5A7CECA54B363</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B3635AF7-0C47-4834-BFFC-10D6E7822B76</string>
+			<string>0E65AE82BFE8735943CFCA53BDB5A7CECA54B363</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IBMorumbi</string>
 		</dict>

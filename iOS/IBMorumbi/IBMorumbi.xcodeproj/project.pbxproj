@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		650D29F118F5D48B00137FBC /* ibmorumbi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 650D29F018F5D48B00137FBC /* ibmorumbi.jpg */; };
+		65422C8E19C1DE910021E540 /* john_piper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65422C8819C1DE910021E540 /* john_piper.jpg */; };
+		65422C8F19C1DE910021E540 /* jonas_m.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65422C8919C1DE910021E540 /* jonas_m.jpg */; };
+		65422C9019C1DE910021E540 /* pastor_pmoreira.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65422C8A19C1DE910021E540 /* pastor_pmoreira.jpg */; };
+		65422C9119C1DE910021E540 /* ramechr.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65422C8B19C1DE910021E540 /* ramechr.jpg */; };
+		65422C9219C1DE910021E540 /* rene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65422C8C19C1DE910021E540 /* rene.jpg */; };
+		65422C9319C1DE910021E540 /* tomas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65422C8D19C1DE910021E540 /* tomas.jpg */; };
+		65422C9819C1ED220021E540 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388A6190C158400CD4D1D /* libGoogleAnalyticsServices.a */; };
+		65422C9A19C1EE160021E540 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65422C9919C1EE160021E540 /* libAdIdAccess.a */; };
 		655159CB18E4E8760086CCF7 /* BoletimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655159CA18E4E8760086CCF7 /* BoletimViewController.m */; };
 		655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 655159CC18E4F41B0086CCF7 /* icon_pdf.png */; };
 		6552135918E3458100924CB0 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552135818E3458100924CB0 /* MessageTableViewController.m */; };
@@ -18,7 +26,6 @@
 		6568BA0B18E8616700C216C2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0A18E8616700C216C2 /* facebook.png */; };
 		6568BA0D18E8655A00C216C2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0C18E8655A00C216C2 /* twitter.png */; };
 		6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B94318E74BE600F04FB4 /* AboutViewController.m */; };
-		659388A7190C158400CD4D1D /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388A6190C158400CD4D1D /* libGoogleAnalyticsServices.a */; };
 		659388B0190C162100CD4D1D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388AF190C162100CD4D1D /* AdSupport.framework */; };
 		659388B2190C162D00CD4D1D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388B1190C162D00CD4D1D /* CoreData.framework */; };
 		659388B4190C163A00CD4D1D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659388B3190C163A00CD4D1D /* SystemConfiguration.framework */; };
@@ -76,6 +83,17 @@
 
 /* Begin PBXFileReference section */
 		650D29F018F5D48B00137FBC /* ibmorumbi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ibmorumbi.jpg; sourceTree = "<group>"; };
+		65422C8819C1DE910021E540 /* john_piper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john_piper.jpg; sourceTree = "<group>"; };
+		65422C8919C1DE910021E540 /* jonas_m.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jonas_m.jpg; sourceTree = "<group>"; };
+		65422C8A19C1DE910021E540 /* pastor_pmoreira.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pastor_pmoreira.jpg; sourceTree = "<group>"; };
+		65422C8B19C1DE910021E540 /* ramechr.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ramechr.jpg; sourceTree = "<group>"; };
+		65422C8C19C1DE910021E540 /* rene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rene.jpg; sourceTree = "<group>"; };
+		65422C8D19C1DE910021E540 /* tomas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomas.jpg; sourceTree = "<group>"; };
+		65422C9419C1EC6A0021E540 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		65422C9519C1EC6A0021E540 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		65422C9619C1EC6A0021E540 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		65422C9719C1EC6A0021E540 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		65422C9919C1EE160021E540 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdIdAccess.a; sourceTree = "<group>"; };
 		655159C918E4E8760086CCF7 /* BoletimViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoletimViewController.h; sourceTree = "<group>"; };
 		655159CA18E4E8760086CCF7 /* BoletimViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoletimViewController.m; sourceTree = "<group>"; };
 		655159CC18E4F41B0086CCF7 /* icon_pdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pdf.png; sourceTree = "<group>"; };
@@ -163,14 +181,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65422C9819C1ED220021E540 /* libGoogleAnalyticsServices.a in Frameworks */,
 				659388B6190C164600CD4D1D /* libz.dylib in Frameworks */,
+				65422C9A19C1EE160021E540 /* libAdIdAccess.a in Frameworks */,
 				659388B4190C163A00CD4D1D /* SystemConfiguration.framework in Frameworks */,
 				659388B2190C162D00CD4D1D /* CoreData.framework in Frameworks */,
 				659388B0190C162100CD4D1D /* AdSupport.framework in Frameworks */,
 				65BA4D2518E4CB16006AD658 /* MediaPlayer.framework in Frameworks */,
 				65DD692E18E3A80E007E3D80 /* AVFoundation.framework in Frameworks */,
 				65AB7E9118D7882A007FF707 /* CoreLocation.framework in Frameworks */,
-				659388A7190C158400CD4D1D /* libGoogleAnalyticsServices.a in Frameworks */,
 				65AB7E8F18D78823007FF707 /* MapKit.framework in Frameworks */,
 				65AB7E5918D787E8007FF707 /* CoreGraphics.framework in Frameworks */,
 				65AB7E5B18D787E8007FF707 /* UIKit.framework in Frameworks */,
@@ -203,6 +222,10 @@
 		659388AE190C15E900CD4D1D /* Google Analytics SDK */ = {
 			isa = PBXGroup;
 			children = (
+				65422C9419C1EC6A0021E540 /* GAIEcommerceFields.h */,
+				65422C9519C1EC6A0021E540 /* GAIEcommerceProduct.h */,
+				65422C9619C1EC6A0021E540 /* GAIEcommerceProductAction.h */,
+				65422C9719C1EC6A0021E540 /* GAIEcommercePromotion.h */,
 				659388A8190C15CC00CD4D1D /* GAI.h */,
 				659388A9190C15CC00CD4D1D /* GAIDictionaryBuilder.h */,
 				659388AA190C15CC00CD4D1D /* GAIFields.h */,
@@ -210,6 +233,7 @@
 				659388AC190C15CC00CD4D1D /* GAITrackedViewController.h */,
 				659388AD190C15CC00CD4D1D /* GAITracker.h */,
 				659388A6190C158400CD4D1D /* libGoogleAnalyticsServices.a */,
+				65422C9919C1EE160021E540 /* libAdIdAccess.a */,
 			);
 			name = "Google Analytics SDK";
 			sourceTree = "<group>";
@@ -328,6 +352,12 @@
 		65BA4D2618E4D553006AD658 /* pastores */ = {
 			isa = PBXGroup;
 			children = (
+				65422C8819C1DE910021E540 /* john_piper.jpg */,
+				65422C8919C1DE910021E540 /* jonas_m.jpg */,
+				65422C8A19C1DE910021E540 /* pastor_pmoreira.jpg */,
+				65422C8B19C1DE910021E540 /* ramechr.jpg */,
+				65422C8C19C1DE910021E540 /* rene.jpg */,
+				65422C8D19C1DE910021E540 /* tomas.jpg */,
 				65B2443F19142913007D5828 /* celsinho.jpg */,
 				650D29F018F5D48B00137FBC /* ibmorumbi.jpg */,
 				6598498F18EE01FB00C89A86 /* mystery-man.jpg */,
@@ -447,24 +477,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B2444019142913007D5828 /* celsinho.jpg in Resources */,
+				65422C8F19C1DE910021E540 /* jonas_m.jpg in Resources */,
 				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
 				655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */,
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
 				6568BA0B18E8616700C216C2 /* facebook.png in Resources */,
 				6598499018EE01FB00C89A86 /* mystery-man.jpg in Resources */,
 				6552136718E35D3000924CB0 /* message_logo.gif in Resources */,
+				65422C9319C1DE910021E540 /* tomas.jpg in Resources */,
 				65DD692818E387E2007E3D80 /* pause.png in Resources */,
 				65BA4D3018E4D553006AD658 /* claudio_duarte.jpg in Resources */,
 				65BA4D3218E4D553006AD658 /* isaque_s.jpg in Resources */,
+				65422C9219C1DE910021E540 /* rene.jpg in Resources */,
 				659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */,
 				650D29F118F5D48B00137FBC /* ibmorumbi.jpg in Resources */,
+				65422C8E19C1DE910021E540 /* john_piper.jpg in Resources */,
 				65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */,
 				659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */,
 				659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */,
 				65BA4D3118E4D553006AD658 /* Gilberto_Lisboa.jpg in Resources */,
+				65422C9019C1DE910021E540 /* pastor_pmoreira.jpg in Resources */,
 				65BA4D3318E4D553006AD658 /* l_perruci.jpg in Resources */,
 				65DD692018E38169007E3D80 /* img_serie.jpg in Resources */,
 				6552136E18E3725000924CB0 /* bck_topo.gif in Resources */,
+				65422C9119C1DE910021E540 /* ramechr.jpg in Resources */,
 				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
 				65DD692B18E387E2007E3D80 /* stop.png in Resources */,
 				65DD692A18E387E2007E3D80 /* proximo.png in Resources */,
@@ -576,7 +612,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Alves (HDWCFAFUKQ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Alves (HDWCFAFUKQ)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -592,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -615,7 +652,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Alves (3PSB9V93UY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Daniel Alves (3PSB9V93UY)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -625,7 +663,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -648,8 +686,9 @@
 					"$(PROJECT_DIR)/IBMorumbi",
 				);
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "914226F6-63EA-4CB0-B783-A8D9E1936EBB";
+				PROVISIONING_PROFILE = "1369aae2-818e-4440-ad3c-71eaff925846";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -671,8 +710,9 @@
 					"$(PROJECT_DIR)/IBMorumbi",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9A803E53-B572-4C22-8067-0D9F731EDAF5";
+				PROVISIONING_PROFILE = "272c6878-68a6-473a-944c-ae26418de82f";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

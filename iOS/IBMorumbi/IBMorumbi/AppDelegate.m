@@ -29,6 +29,10 @@
     // Initialize tracker. Replace with your tracking ID.
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-50297107-1"];
     
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    // Enable IDFA collection.
+    [tracker setAllowIDFACollection:false];
+    
     return YES;
 }
 							
