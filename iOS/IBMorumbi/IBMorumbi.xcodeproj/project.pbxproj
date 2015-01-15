@@ -23,6 +23,10 @@
 		6552136518E346C400924CB0 /* MessageAudioPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */; };
 		6552136718E35D3000924CB0 /* message_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6552136618E35D3000924CB0 /* message_logo.gif */; };
 		6552136E18E3725000924CB0 /* bck_topo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6552136D18E3725000924CB0 /* bck_topo.gif */; };
+		655DFD3D1A681C5100BAA5C2 /* clauber_carrenho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655DFD391A681C5100BAA5C2 /* clauber_carrenho.jpg */; };
+		655DFD3E1A681C5100BAA5C2 /* humberto_a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655DFD3A1A681C5100BAA5C2 /* humberto_a.jpg */; };
+		655DFD3F1A681C5100BAA5C2 /* JosephDsouza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655DFD3B1A681C5100BAA5C2 /* JosephDsouza.jpg */; };
+		655DFD401A681C5100BAA5C2 /* leandro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655DFD3C1A681C5100BAA5C2 /* leandro.jpg */; };
 		6568BA0B18E8616700C216C2 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0A18E8616700C216C2 /* facebook.png */; };
 		6568BA0D18E8655A00C216C2 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 6568BA0C18E8655A00C216C2 /* twitter.png */; };
 		6587B94418E74BE600F04FB4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6587B94318E74BE600F04FB4 /* AboutViewController.m */; };
@@ -105,6 +109,10 @@
 		6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAudioPlayerViewController.m; sourceTree = "<group>"; };
 		6552136618E35D3000924CB0 /* message_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = message_logo.gif; sourceTree = "<group>"; };
 		6552136D18E3725000924CB0 /* bck_topo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bck_topo.gif; sourceTree = "<group>"; };
+		655DFD391A681C5100BAA5C2 /* clauber_carrenho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clauber_carrenho.jpg; sourceTree = "<group>"; };
+		655DFD3A1A681C5100BAA5C2 /* humberto_a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humberto_a.jpg; sourceTree = "<group>"; };
+		655DFD3B1A681C5100BAA5C2 /* JosephDsouza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JosephDsouza.jpg; sourceTree = "<group>"; };
+		655DFD3C1A681C5100BAA5C2 /* leandro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leandro.jpg; sourceTree = "<group>"; };
 		6568BA0A18E8616700C216C2 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		6568BA0C18E8655A00C216C2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		6570432A190C1DF4003C8FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
@@ -352,6 +360,10 @@
 		65BA4D2618E4D553006AD658 /* pastores */ = {
 			isa = PBXGroup;
 			children = (
+				655DFD391A681C5100BAA5C2 /* clauber_carrenho.jpg */,
+				655DFD3A1A681C5100BAA5C2 /* humberto_a.jpg */,
+				655DFD3B1A681C5100BAA5C2 /* JosephDsouza.jpg */,
+				655DFD3C1A681C5100BAA5C2 /* leandro.jpg */,
 				65422C8819C1DE910021E540 /* john_piper.jpg */,
 				65422C8919C1DE910021E540 /* jonas_m.jpg */,
 				65422C8A19C1DE910021E540 /* pastor_pmoreira.jpg */,
@@ -476,12 +488,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655DFD3F1A681C5100BAA5C2 /* JosephDsouza.jpg in Resources */,
 				65B2444019142913007D5828 /* celsinho.jpg in Resources */,
 				65422C8F19C1DE910021E540 /* jonas_m.jpg in Resources */,
 				659D28E318D7B48F001DADB7 /* Localizable.strings in Resources */,
 				655159CD18E4F41B0086CCF7 /* icon_pdf.png in Resources */,
 				65DD692918E387E2007E3D80 /* play.png in Resources */,
 				6568BA0B18E8616700C216C2 /* facebook.png in Resources */,
+				655DFD401A681C5100BAA5C2 /* leandro.jpg in Resources */,
 				6598499018EE01FB00C89A86 /* mystery-man.jpg in Resources */,
 				6552136718E35D3000924CB0 /* message_logo.gif in Resources */,
 				65422C9319C1DE910021E540 /* tomas.jpg in Resources */,
@@ -493,6 +507,7 @@
 				650D29F118F5D48B00137FBC /* ibmorumbi.jpg in Resources */,
 				65422C8E19C1DE910021E540 /* john_piper.jpg in Resources */,
 				65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */,
+				655DFD3E1A681C5100BAA5C2 /* humberto_a.jpg in Resources */,
 				659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */,
 				659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */,
 				65BA4D3118E4D553006AD658 /* Gilberto_Lisboa.jpg in Resources */,
@@ -500,6 +515,7 @@
 				65BA4D3318E4D553006AD658 /* l_perruci.jpg in Resources */,
 				65DD692018E38169007E3D80 /* img_serie.jpg in Resources */,
 				6552136E18E3725000924CB0 /* bck_topo.gif in Resources */,
+				655DFD3D1A681C5100BAA5C2 /* clauber_carrenho.jpg in Resources */,
 				65422C9119C1DE910021E540 /* ramechr.jpg in Resources */,
 				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
 				65DD692B18E387E2007E3D80 /* stop.png in Resources */,
@@ -675,8 +691,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Alves (HDWCFAFUKQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Alves (HDWCFAFUKQ)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
@@ -688,7 +704,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1369aae2-818e-4440-ad3c-71eaff925846";
+				PROVISIONING_PROFILE = "cff821f7-2814-4a06-a353-2164e27460ca";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -699,8 +715,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Alves (3PSB9V93UY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Daniel Alves (3PSB9V93UY)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IBMorumbi/IBMorumbi-Prefix.pch";
 				INFOPLIST_FILE = "IBMorumbi/IBMorumbi-Info.plist";
@@ -712,7 +728,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "272c6878-68a6-473a-944c-ae26418de82f";
+				PROVISIONING_PROFILE = "acd4687c-a86b-4f69-851b-f95caeaf9925";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

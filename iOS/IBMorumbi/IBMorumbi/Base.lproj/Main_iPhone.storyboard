@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="GxQ-xM-vTa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GxQ-xM-vTa">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--About View Controller - Sobre-->
+        <!--Sobre-->
         <scene sceneID="peJ-zg-lji">
             <objects>
                 <viewController id="oN5-8Y-AXj" customClass="AboutViewController" sceneMemberID="viewController">
@@ -15,19 +15,17 @@
                         <viewControllerLayoutGuide type="bottom" id="TxF-JG-xvg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LwX-F2-7z3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_IBMorumbi_iPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-eL-FNy">
-                                <rect key="frame" x="20" y="28" width="280" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="28" width="560" height="232"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="232" id="b6D-p9-prD"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3oX-Te-ZbO">
-                                <rect key="frame" x="20" y="306" width="280" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="306" width="560" height="100"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="l2U-P2-rgn"/>
@@ -41,14 +39,12 @@ Tel: (11) 3538-0250</string>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Igreja Batista do Morumbi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAM-xT-AK9">
-                                <rect key="frame" x="23" y="270" width="274" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="23" y="270" width="554" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-vF-6hI">
                                 <rect key="frame" x="20" y="396" width="100" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="facebook.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -57,8 +53,7 @@ Tel: (11) 3538-0250</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8L-ia-tBd">
-                                <rect key="frame" x="140" y="403" width="160" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="420" y="403" width="160" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="y8L-ia-tBd" secondAttribute="height" multiplier="245:29" id="CVx-dd-MmQ"/>
                                     <constraint firstAttribute="width" constant="160" id="s8s-5E-jZi"/>
@@ -71,8 +66,7 @@ Tel: (11) 3538-0250</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v. 1.0.1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or5-A7-5P1">
-                                <rect key="frame" x="225" y="28" width="75" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="505" y="28" width="75" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="c5A-bw-HoI"/>
                                 </constraints>
@@ -107,9 +101,9 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmD-Vk-3fn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="1265"/>
+            <point key="canvasLocation" x="1466.25" y="2260"/>
         </scene>
-        <!--Web View Controller - Webite-->
+        <!--Webite-->
         <scene sceneID="aDY-5s-Apa">
             <objects>
                 <viewController id="Xwb-Jr-B2W" customClass="WebViewController" sceneMemberID="viewController">
@@ -118,12 +112,11 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="jvR-TD-pgx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i6l-6p-WFl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azl-N1-qKm">
-                                <rect key="frame" x="0.0" y="387" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="rewind" id="6g5-Au-bUA">
                                         <connections>
@@ -151,16 +144,14 @@ Tel: (11) 3538-0250</string>
                                 </items>
                             </toolbar>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R00-kI-sef">
-                                <rect key="frame" x="0.0" y="20" width="320" height="367"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="487"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="Xwb-Jr-B2W" id="uXp-y7-r7y"/>
                                 </connections>
                             </webView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="x3K-YJ-03V">
-                                <rect key="frame" x="142" y="175" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="282" y="235" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -185,9 +176,9 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X4o-YL-I0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256" y="614"/>
+            <point key="canvasLocation" x="1466.25" y="776.25"/>
         </scene>
-        <!--Map View Controller - Mapa-->
+        <!--Mapa-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="MapViewController" sceneMemberID="viewController">
@@ -196,12 +187,11 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-Ig-Vpc">
-                                <rect key="frame" x="20" y="393" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="513" width="79" height="30"/>
                                 <state key="normal" title="Traçar Rota">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -210,8 +200,7 @@ Tel: (11) 3538-0250</string>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RXx-I1-rmm">
-                                <rect key="frame" x="181" y="396" width="119" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="461" y="516" width="119" height="29"/>
                                 <segments>
                                     <segment title="Mapa"/>
                                     <segment title="Satélite"/>
@@ -221,8 +210,7 @@ Tel: (11) 3538-0250</string>
                                 </connections>
                             </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K19-Jb-EDz">
-                                <rect key="frame" x="0.0" y="20" width="320" height="365"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="485"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="xgk-WS-sX6"/>
                                 </connections>
@@ -248,9 +236,9 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="654"/>
+            <point key="canvasLocation" x="1466.25" y="1525"/>
         </scene>
-        <!--Boletim View Controller - Boletins-->
+        <!--Boletins-->
         <scene sceneID="8B6-ID-LKK">
             <objects>
                 <viewController id="MVj-yy-rc3" customClass="BoletimViewController" sceneMemberID="viewController">
@@ -259,12 +247,11 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="CX3-1r-Yfq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2uJ-QQ-fh4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ths-DF-VIE">
-                                <rect key="frame" x="0.0" y="110" width="320" height="321"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="110" width="600" height="441"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="bL9-Rc-OmL" detailTextLabel="I7e-gG-dTo" imageView="h0R-ge-n7w" style="IBUITableViewCellStyleSubtitle" id="dNP-lz-dFW">
@@ -302,8 +289,7 @@ Tel: (11) 3538-0250</string>
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="CcS-td-TPJ">
-                                <rect key="frame" x="-2" y="20" width="324" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="138" y="20" width="324" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Kku-Ca-MHk"/>
                                 </constraints>
@@ -327,7 +313,7 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcK-HC-slX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256" y="-593"/>
+            <point key="canvasLocation" x="1466.25" y="20"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Axp-xi-hfJ">
@@ -349,7 +335,7 @@ Tel: (11) 3538-0250</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1U-Yj-SEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256" y="16"/>
+            <point key="canvasLocation" x="480" y="20"/>
         </scene>
         <!--Message Table View Controller-->
         <scene sceneID="RZu-7f-vwQ">
@@ -360,19 +346,17 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="Qsi-FE-gVV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vKM-EP-zG5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="3WR-ng-h7J">
-                                <rect key="frame" x="0.0" y="64" width="320" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="9HL-BI-FZ5"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IoD-BI-vkF">
-                                <rect key="frame" x="0.0" y="154" width="320" height="277"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="frame" x="0.0" y="154" width="600" height="397"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MorumbiPlus" textLabel="z1p-jW-aHQ" imageView="XVa-nR-SGL" style="IBUITableViewCellStyleDefault" id="6Kk-RK-vKA">
@@ -467,7 +451,7 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gD9-Zb-aN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346" y="16"/>
+            <point key="canvasLocation" x="2491.875" y="-741.25"/>
         </scene>
         <!--Message Audio Player View Controller-->
         <scene sceneID="R5w-y7-uvi">
@@ -478,55 +462,48 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="uze-xI-Qrm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SYO-H8-KcL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-Xu-wBz">
-                                <rect key="frame" x="106" y="200" width="206" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="106" y="200" width="486" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-man.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7pD-yZ-h9h">
                                 <rect key="frame" x="8" y="130" width="90" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="3fz-Oh-amo"/>
                                     <constraint firstAttribute="height" constant="110" id="Ias-KO-5QG"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjC-Ko-OBZ">
-                                <rect key="frame" x="106" y="130" width="206" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="106" y="130" width="486" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultos:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDK-4y-2Gy">
-                                <rect key="frame" x="106" y="226" width="206" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="106" y="226" width="486" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-7z-XJ1">
-                                <rect key="frame" x="8" y="68" width="304" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="8" y="68" width="584" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAP-it-oxZ">
-                                <rect key="frame" x="8" y="100" width="304" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="8" y="100" width="584" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6V-Ra-LeD">
                                 <rect key="frame" x="88" y="28" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="play.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -536,7 +513,6 @@ Tel: (11) 3538-0250</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vde-bt-fXl">
                                 <rect key="frame" x="8" y="28" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="voltar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -546,7 +522,6 @@ Tel: (11) 3538-0250</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLw-Wr-6t6">
                                 <rect key="frame" x="48" y="28" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="stop.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -556,7 +531,6 @@ Tel: (11) 3538-0250</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83L-ca-tLH">
                                 <rect key="frame" x="128" y="28" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="pause.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -565,8 +539,7 @@ Tel: (11) 3538-0250</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_IBMorumbi_iPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="zjQ-Fg-RvI">
-                                <rect key="frame" x="0.0" y="250" width="320" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="250" width="600" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="3Nm-xk-IZI"/>
                                 </constraints>
@@ -620,7 +593,7 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I00-Bu-ddb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831" y="164"/>
+            <point key="canvasLocation" x="4063.125" y="-741.25"/>
         </scene>
         <!--Message Video Player View Controller-->
         <scene sceneID="QsK-CN-2Uj">
@@ -631,26 +604,23 @@ Tel: (11) 3538-0250</string>
                         <viewControllerLayoutGuide type="bottom" id="jIZ-fI-wjh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bIS-ao-BqE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_IBMorumbi_iPhone.png" translatesAutoresizingMaskIntoConstraints="NO" id="PqR-J2-wSO">
-                                <rect key="frame" x="0.0" y="308" width="320" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="428" width="600" height="172"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="172" id="uEY-fe-HXL"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-3d-fbq">
-                                <rect key="frame" x="106" y="440" width="206" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="106" y="560" width="486" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-man.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mmf-Iz-GY8">
-                                <rect key="frame" x="8" y="370" width="90" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="8" y="490" width="90" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="5OW-Ei-vxy"/>
                                     <constraint firstAttribute="height" constant="110" id="D0X-o5-Ljb"/>
@@ -659,40 +629,34 @@ Tel: (11) 3538-0250</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-QV-3pn">
-                                <rect key="frame" x="106" y="370" width="206" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="106" y="490" width="486" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultos:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-Fa-QYw">
-                                <rect key="frame" x="106" y="466" width="206" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="106" y="586" width="486" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsu-ky-5oT">
-                                <rect key="frame" x="8" y="308" width="304" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="8" y="428" width="584" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR9-gf-k3o">
-                                <rect key="frame" x="8" y="340" width="304" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="8" y="460" width="584" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCi-Ta-kNj">
-                                <rect key="frame" x="0.0" y="20" width="320" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="600" height="338"/>
                                 <subviews>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-8U-MQu">
-                                        <rect key="frame" x="142" y="71" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="282" y="150" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -746,9 +710,9 @@ Tel: (11) 3538-0250</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YA6-MR-RrA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1820" y="-404"/>
+            <point key="canvasLocation" x="3305.625" y="-741.25"/>
         </scene>
-        <!--Navigation Controller - Mensagens-->
+        <!--Mensagens-->
         <scene sceneID="haS-yg-DE6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d4g-Kf-JDD" sceneMemberID="viewController">
@@ -765,7 +729,7 @@ Tel: (11) 3538-0250</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0SK-6j-8v9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="16"/>
+            <point key="canvasLocation" x="1466.25" y="-741.25"/>
         </scene>
     </scenes>
     <resources>
@@ -787,9 +751,4 @@ Tel: (11) 3538-0250</string>
         <image name="twitter.png" width="245" height="29"/>
         <image name="voltar.png" width="32" height="32"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>
