@@ -36,6 +36,13 @@
             self.locManager = [CLLocationManager new];
             self.locManager.delegate = self;
         }
+        
+        // Check for iOS 8
+        // Without this guard the code will crash with "unknown selector" on iOS 7
+        if ([self.locManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+            [self.locManager requestWhenInUseAuthorization];
+        }
+        
         [self.locManager startUpdatingLocation];
     }
     else

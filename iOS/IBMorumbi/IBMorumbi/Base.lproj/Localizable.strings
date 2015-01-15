@@ -25,3 +25,6 @@
 
 /* AboutViewController */
 "address" = "Rua Carvalho de Freitas, 1.076\nMorumbi\n05728-030 - São Paulo - SP - Brasil\nTel: (11) 3538-0250";
+
+/* Info.plist */
+"NSLocationWhenInUseUsageDescription" = "IBMorumbi tracks your position to calculate the route to the church.";
