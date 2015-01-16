@@ -104,7 +104,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="1466.25" y="2260"/>
         </scene>
-        <!--Website-->
+        <!--Webite-->
         <scene sceneID="aDY-5s-Apa">
             <objects>
                 <viewController id="Xwb-Jr-B2W" customClass="WebViewController" sceneMemberID="viewController">
@@ -169,7 +169,7 @@ Tel: (11) 3538-0250</string>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Website" image="globe" id="Q3V-bK-HBd"/>
+                    <tabBarItem key="tabBarItem" title="Webite" image="globe" id="Q3V-bK-HBd"/>
                     <connections>
                         <outlet property="spinner" destination="x3K-YJ-03V" id="f6C-Ji-YxL"/>
                         <outlet property="web" destination="R00-kI-sef" id="QSL-5a-FPM"/>

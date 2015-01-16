@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  IBMorumbi
+
+  Created by Daniel Arndt Alves on 16/01/15.
+  Copyright (c) 2015 ProgDan Software. All rights reserved.
+*/
+
+/* Info.plist */
+"NSLocationWhenInUseUsageDescription" = "IBMorumbi regista a sua posição para calcular a rota para a igreja.";

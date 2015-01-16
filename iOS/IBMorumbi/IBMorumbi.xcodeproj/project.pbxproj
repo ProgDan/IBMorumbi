@@ -65,6 +65,7 @@
 		65BA4D3418E4D553006AD658 /* pastor_lisanias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2C18E4D553006AD658 /* pastor_lisanias.jpg */; };
 		65BA4D3518E4D553006AD658 /* pastor_rivanildo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2D18E4D553006AD658 /* pastor_rivanildo.jpg */; };
 		65BA4D3618E4D553006AD658 /* samuel_mendes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65BA4D2E18E4D553006AD658 /* samuel_mendes.jpg */; };
+		65C3BA0B1A699FF7004A1AE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65C3BA0D1A699FF7004A1AE2 /* InfoPlist.strings */; };
 		65D3D2CF18E2592900B87698 /* preview_mensagens_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */; };
 		65DD692018E38169007E3D80 /* img_serie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 65DD691F18E38169007E3D80 /* img_serie.jpg */; };
 		65DD692818E387E2007E3D80 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 65DD692318E387E2007E3D80 /* pause.png */; };
@@ -110,21 +111,14 @@
 		6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAudioPlayerViewController.m; sourceTree = "<group>"; };
 		6552136618E35D3000924CB0 /* message_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = message_logo.gif; sourceTree = "<group>"; };
 		6552136D18E3725000924CB0 /* bck_topo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bck_topo.gif; sourceTree = "<group>"; };
-		6552CF841A69907600B1B1D7 /* IBMorumbi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IBMorumbi-Info.plist"; sourceTree = "<group>"; };
 		655DFD391A681C5100BAA5C2 /* clauber_carrenho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clauber_carrenho.jpg; sourceTree = "<group>"; };
 		655DFD3A1A681C5100BAA5C2 /* humberto_a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humberto_a.jpg; sourceTree = "<group>"; };
 		655DFD3B1A681C5100BAA5C2 /* JosephDsouza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JosephDsouza.jpg; sourceTree = "<group>"; };
 		655DFD3C1A681C5100BAA5C2 /* leandro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leandro.jpg; sourceTree = "<group>"; };
 		6568BA0A18E8616700C216C2 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		6568BA0C18E8655A00C216C2 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
-		6570432A190C1DF4003C8FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
-		6570432B190C1DF4003C8FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPad.strings; sourceTree = "<group>"; };
 		6570432C190C1DF4003C8FF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		6570432D190C2B2B003C8FF7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPhone.strings"; sourceTree = "<group>"; };
-		6570432E190C2B2B003C8FF7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
 		6570432F190C2B2B003C8FF7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		65704330190C2B71003C8FF7 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
-		65704331190C2B71003C8FF7 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main_iPad.strings; sourceTree = "<group>"; };
 		65704332190C2B71003C8FF7 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6587B94218E74BE600F04FB4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		6587B94318E74BE600F04FB4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
@@ -175,6 +169,17 @@
 		65BA4D2C18E4D553006AD658 /* pastor_lisanias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pastor_lisanias.jpg; sourceTree = "<group>"; };
 		65BA4D2D18E4D553006AD658 /* pastor_rivanildo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pastor_rivanildo.jpg; sourceTree = "<group>"; };
 		65BA4D2E18E4D553006AD658 /* samuel_mendes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = samuel_mendes.jpg; sourceTree = "<group>"; };
+		65C3B9FF1A699C25004A1AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		65C3BA001A699C37004A1AE2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "pt-BR"; path = "pt-BR.lproj/Main_iPhone.storyboard"; sourceTree = "<group>"; };
+		65C3BA011A699C46004A1AE2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		65C3BA021A699CD0004A1AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		65C3BA031A699CD5004A1AE2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "pt-BR"; path = "pt-BR.lproj/Main_iPad.storyboard"; sourceTree = "<group>"; };
+		65C3BA041A699CDB004A1AE2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		65C3BA071A699ED1004A1AE2 /* IBMorumbi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IBMorumbi-Info.plist"; sourceTree = "<group>"; };
+		65C3BA0C1A699FF7004A1AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65C3BA0E1A699FFD004A1AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65C3BA101A69A009004A1AE2 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		65C3BA111A69A00A004A1AE2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65D3D2CE18E2592900B87698 /* preview_mensagens_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_mensagens_470.jpg; sourceTree = "<group>"; };
 		65DD691F18E38169007E3D80 /* img_serie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_serie.jpg; sourceTree = "<group>"; };
 		65DD692318E387E2007E3D80 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
@@ -337,10 +342,11 @@
 		65AB7E5D18D787E8007FF707 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6552CF841A69907600B1B1D7 /* IBMorumbi-Info.plist */,
+				65C3BA071A699ED1004A1AE2 /* IBMorumbi-Info.plist */,
 				659D28E518D7B48F001DADB7 /* Localizable.strings */,
 				65AB7E6218D787E8007FF707 /* main.m */,
 				65AB7E6418D787E8007FF707 /* IBMorumbi-Prefix.pch */,
+				65C3BA0D1A699FF7004A1AE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -522,6 +528,7 @@
 				6552136E18E3725000924CB0 /* bck_topo.gif in Resources */,
 				655DFD3D1A681C5100BAA5C2 /* clauber_carrenho.jpg in Resources */,
 				65422C9119C1DE910021E540 /* ramechr.jpg in Resources */,
+				65C3BA0B1A699FF7004A1AE2 /* InfoPlist.strings in Resources */,
 				65AB7E6D18D787E9007FF707 /* Main_iPad.storyboard in Resources */,
 				65DD692B18E387E2007E3D80 /* stop.png in Resources */,
 				65DD692A18E387E2007E3D80 /* proximo.png in Resources */,
@@ -597,9 +604,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				65AB7E6918D787E9007FF707 /* Base */,
-				6570432A190C1DF4003C8FF7 /* en */,
-				6570432D190C2B2B003C8FF7 /* pt-BR */,
-				65704330190C2B71003C8FF7 /* pt */,
+				65C3B9FF1A699C25004A1AE2 /* en */,
+				65C3BA001A699C37004A1AE2 /* pt-BR */,
+				65C3BA011A699C46004A1AE2 /* pt */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -608,11 +615,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				65AB7E6C18D787E9007FF707 /* Base */,
-				6570432B190C1DF4003C8FF7 /* en */,
-				6570432E190C2B2B003C8FF7 /* pt-BR */,
-				65704331190C2B71003C8FF7 /* pt */,
+				65C3BA021A699CD0004A1AE2 /* en */,
+				65C3BA031A699CD5004A1AE2 /* pt-BR */,
+				65C3BA041A699CDB004A1AE2 /* pt */,
 			);
 			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		65C3BA0D1A699FF7004A1AE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65C3BA0C1A699FF7004A1AE2 /* Base */,
+				65C3BA0E1A699FFD004A1AE2 /* en */,
+				65C3BA101A69A009004A1AE2 /* pt-BR */,
+				65C3BA111A69A00A004A1AE2 /* pt */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

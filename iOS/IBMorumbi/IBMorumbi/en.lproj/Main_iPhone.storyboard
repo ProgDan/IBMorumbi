@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GxQ-xM-vTa">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Sobre-->
+        <!--About-->
         <scene sceneID="peJ-zg-lji">
             <objects>
                 <viewController id="oN5-8Y-AXj" customClass="AboutViewController" sceneMemberID="viewController">
@@ -31,15 +30,15 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="l2U-P2-rgn"/>
                                 </constraints>
-                                <string key="text">Rua Carvalho de Freitas, 1.076
+                                <string key="text">1076 Carvalho de Freitas St.
 Morumbi
-05728-030 - São Paulo - SP - Brasil
-Tel: (11) 3538-0250</string>
+05728-030 - Sao Paulo - SP - Brazil
+Phone: +55 11 3538-0250</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Igreja Batista do Morumbi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAM-xT-AK9">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morumbi Baptist Church" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAM-xT-AK9">
                                 <rect key="frame" x="23" y="270" width="554" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="highlightedColor"/>
@@ -94,7 +93,7 @@ Tel: (11) 3538-0250</string>
                             <constraint firstItem="YL8-eL-FNy" firstAttribute="top" secondItem="Wn1-vv-T6l" secondAttribute="bottom" constant="8" id="y9P-J9-ZuA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sobre" image="about" id="Imx-6T-efU"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="Imx-6T-efU"/>
                     <connections>
                         <outlet property="labelRelease" destination="or5-A7-5P1" id="CtT-1b-x8j"/>
                         <outlet property="textAddress" destination="3oX-Te-ZbO" id="oI6-GH-udx"/>
@@ -104,7 +103,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="1466.25" y="2260"/>
         </scene>
-        <!--Website-->
+        <!--Webite-->
         <scene sceneID="aDY-5s-Apa">
             <objects>
                 <viewController id="Xwb-Jr-B2W" customClass="WebViewController" sceneMemberID="viewController">
@@ -169,7 +168,7 @@ Tel: (11) 3538-0250</string>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Website" image="globe" id="Q3V-bK-HBd"/>
+                    <tabBarItem key="tabBarItem" title="Webite" image="globe" id="Q3V-bK-HBd"/>
                     <connections>
                         <outlet property="spinner" destination="x3K-YJ-03V" id="f6C-Ji-YxL"/>
                         <outlet property="web" destination="R00-kI-sef" id="QSL-5a-FPM"/>
@@ -179,7 +178,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="1466.25" y="776.25"/>
         </scene>
-        <!--Mapa-->
+        <!--Map-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="MapViewController" sceneMemberID="viewController">
@@ -193,7 +192,7 @@ Tel: (11) 3538-0250</string>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8g-Ig-Vpc">
                                 <rect key="frame" x="20" y="513" width="79" height="30"/>
-                                <state key="normal" title="Traçar Rota">
+                                <state key="normal" title="Calculate Route">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -203,8 +202,8 @@ Tel: (11) 3538-0250</string>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RXx-I1-rmm">
                                 <rect key="frame" x="461" y="516" width="119" height="29"/>
                                 <segments>
-                                    <segment title="Mapa"/>
-                                    <segment title="Satélite"/>
+                                    <segment title="Normal"/>
+                                    <segment title="Satellite"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeMapTYpe:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Dp4-wF-KHC"/>
@@ -230,7 +229,7 @@ Tel: (11) 3538-0250</string>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Mapa" image="map" id="xNp-c5-Zj2"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="xNp-c5-Zj2"/>
                     <connections>
                         <outlet property="map" destination="K19-Jb-EDz" id="E2w-jS-24x"/>
                     </connections>
@@ -239,7 +238,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="1466.25" y="1525"/>
         </scene>
-        <!--Boletins-->
+        <!--Newsletters-->
         <scene sceneID="8B6-ID-LKK">
             <objects>
                 <viewController id="MVj-yy-rc3" customClass="BoletimViewController" sceneMemberID="viewController">
@@ -262,7 +261,7 @@ Tel: (11) 3538-0250</string>
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Boletim Informativo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bL9-Rc-OmL">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Newsletter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bL9-Rc-OmL">
                                                     <rect key="frame" x="73" y="3" width="157" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -307,7 +306,7 @@ Tel: (11) 3538-0250</string>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Boletins" image="notebook" id="hMK-D5-g9K"/>
+                    <tabBarItem key="tabBarItem" title="Newsletters" image="notebook" id="hMK-D5-g9K"/>
                     <connections>
                         <outlet property="boletimTable" destination="Ths-DF-VIE" id="aWg-Yg-7jo"/>
                     </connections>
@@ -339,7 +338,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="480" y="20"/>
         </scene>
-        <!--Doar-->
+        <!--Give-->
         <scene sceneID="003-cI-EQ2">
             <objects>
                 <viewController id="r11-kN-FkM" customClass="GiveViewController" sceneMemberID="viewController">
@@ -397,7 +396,7 @@ Tel: (11) 3538-0250</string>
                         </variation>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="Doar" image="give" id="gVE-7d-O2k"/>
+                    <tabBarItem key="tabBarItem" title="Give" image="give" id="gVE-7d-O2k"/>
                     <connections>
                         <outlet property="spinner" destination="haR-F5-Eqw" id="aR9-kt-hzU"/>
                         <outlet property="web" destination="ubQ-07-5d7" id="Mf4-yo-ioC"/>
@@ -498,14 +497,14 @@ Tel: (11) 3538-0250</string>
                     </view>
                     <navigationItem key="navigationItem" id="qdj-wU-13Y">
                         <nil key="title"/>
-                        <barButtonItem key="backBarButtonItem" title="Mensagens" id="qMt-96-aIB"/>
+                        <barButtonItem key="backBarButtonItem" title="Menssages" id="qMt-96-aIB"/>
                         <barButtonItem key="rightBarButtonItem" id="wSL-5Z-gaL">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" id="NaR-CE-BRL">
                                 <rect key="frame" x="144" y="7" width="160" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Vídeo"/>
-                                    <segment title="Áudio"/>
+                                    <segment title="Video"/>
+                                    <segment title="Audio"/>
                                 </segments>
                                 <connections>
                                     <action selector="changeMediaType:" destination="t3H-WT-yb6" eventType="valueChanged" id="XwR-5u-dD6"/>
@@ -535,7 +534,7 @@ Tel: (11) 3538-0250</string>
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-Xu-wBz">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-Xu-wBz">
                                 <rect key="frame" x="106" y="200" width="486" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -548,25 +547,25 @@ Tel: (11) 3538-0250</string>
                                     <constraint firstAttribute="height" constant="110" id="Ias-KO-5QG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjC-Ko-OBZ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homilist:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjC-Ko-OBZ">
                                 <rect key="frame" x="106" y="130" width="486" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultos:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDK-4y-2Gy">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Worships:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDK-4y-2Gy">
                                 <rect key="frame" x="106" y="226" width="486" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-7z-XJ1">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-7z-XJ1">
                                 <rect key="frame" x="8" y="68" width="584" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAP-it-oxZ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passages:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAP-it-oxZ">
                                 <rect key="frame" x="8" y="100" width="584" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -683,7 +682,7 @@ Tel: (11) 3538-0250</string>
                                     <constraint firstAttribute="height" constant="172" id="uEY-fe-HXL"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-3d-fbq">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-3d-fbq">
                                 <rect key="frame" x="106" y="560" width="486" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -698,25 +697,25 @@ Tel: (11) 3538-0250</string>
                                     <constraint firstAttribute="width" constant="90" id="Wmg-qh-qfV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-QV-3pn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homilist:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-QV-3pn">
                                 <rect key="frame" x="106" y="490" width="486" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultos:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-Fa-QYw">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Worships:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-Fa-QYw">
                                 <rect key="frame" x="106" y="586" width="486" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsu-ky-5oT">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsu-ky-5oT">
                                 <rect key="frame" x="8" y="428" width="584" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR9-gf-k3o">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passages:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR9-gf-k3o">
                                 <rect key="frame" x="8" y="460" width="584" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -782,11 +781,11 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="3305.625" y="-741.25"/>
         </scene>
-        <!--Mensagens-->
+        <!--Messages-->
         <scene sceneID="haS-yg-DE6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d4g-Kf-JDD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mensagens" image="message" id="3Mp-jl-VX3"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="message" id="3Mp-jl-VX3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pGx-qH-tIP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
