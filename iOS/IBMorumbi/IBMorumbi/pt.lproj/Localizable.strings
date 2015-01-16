@@ -12,6 +12,7 @@
 "website" = "Website";
 "map" = "Mapa";
 "about" = "Sobre";
+"give" = "Doar";
 
 /* MessageTableViewController */
 "Video" = "Vídeo";

@@ -39,6 +39,7 @@
 		659D28EA18D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E818D7B7EC001DADB7 /* logo_IBMorumbi_iPad.png */; };
 		659D28EB18D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */; };
 		659D28ED18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */; };
+		65A4AE1B1A6971BB001E84A5 /* GiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A4AE1A1A6971BB001E84A5 /* GiveViewController.m */; };
 		65AB7E5718D787E8007FF707 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5618D787E8007FF707 /* Foundation.framework */; };
 		65AB7E5918D787E8007FF707 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5818D787E8007FF707 /* CoreGraphics.framework */; };
 		65AB7E5B18D787E8007FF707 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65AB7E5A18D787E8007FF707 /* UIKit.framework */; };
@@ -109,6 +110,7 @@
 		6552136418E346C400924CB0 /* MessageAudioPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageAudioPlayerViewController.m; sourceTree = "<group>"; };
 		6552136618E35D3000924CB0 /* message_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = message_logo.gif; sourceTree = "<group>"; };
 		6552136D18E3725000924CB0 /* bck_topo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bck_topo.gif; sourceTree = "<group>"; };
+		6552CF841A69907600B1B1D7 /* IBMorumbi-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IBMorumbi-Info.plist"; sourceTree = "<group>"; };
 		655DFD391A681C5100BAA5C2 /* clauber_carrenho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clauber_carrenho.jpg; sourceTree = "<group>"; };
 		655DFD3A1A681C5100BAA5C2 /* humberto_a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = humberto_a.jpg; sourceTree = "<group>"; };
 		655DFD3B1A681C5100BAA5C2 /* JosephDsouza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JosephDsouza.jpg; sourceTree = "<group>"; };
@@ -143,11 +145,12 @@
 		659D28E918D7B7EC001DADB7 /* logo_IBMorumbi_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_IBMorumbi_iPhone.png; sourceTree = "<group>"; };
 		659D28EC18D7C5C9001DADB7 /* preview_morumbiplus_470.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = preview_morumbiplus_470.jpg; sourceTree = "<group>"; };
 		659D28F118D7C905001DADB7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		65A4AE191A6971BB001E84A5 /* GiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiveViewController.h; sourceTree = "<group>"; };
+		65A4AE1A1A6971BB001E84A5 /* GiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiveViewController.m; sourceTree = "<group>"; };
 		65AB7E5318D787E8007FF707 /* IBMorumbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBMorumbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AB7E5618D787E8007FF707 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65AB7E5818D787E8007FF707 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		65AB7E5A18D787E8007FF707 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		65AB7E5E18D787E8007FF707 /* IBMorumbi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IBMorumbi-Info.plist"; sourceTree = "<group>"; };
 		65AB7E6218D787E8007FF707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65AB7E6418D787E8007FF707 /* IBMorumbi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBMorumbi-Prefix.pch"; sourceTree = "<group>"; };
 		65AB7E6518D787E8007FF707 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -313,6 +316,8 @@
 				6587B94318E74BE600F04FB4 /* AboutViewController.m */,
 				655159C918E4E8760086CCF7 /* BoletimViewController.h */,
 				655159CA18E4E8760086CCF7 /* BoletimViewController.m */,
+				65A4AE191A6971BB001E84A5 /* GiveViewController.h */,
+				65A4AE1A1A6971BB001E84A5 /* GiveViewController.m */,
 				65AB7E9218D789A2007FF707 /* MapViewController.h */,
 				65AB7E9318D789A2007FF707 /* MapViewController.m */,
 				6552136318E346C400924CB0 /* MessageAudioPlayerViewController.h */,
@@ -332,8 +337,8 @@
 		65AB7E5D18D787E8007FF707 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6552CF841A69907600B1B1D7 /* IBMorumbi-Info.plist */,
 				659D28E518D7B48F001DADB7 /* Localizable.strings */,
-				65AB7E5E18D787E8007FF707 /* IBMorumbi-Info.plist */,
 				65AB7E6218D787E8007FF707 /* main.m */,
 				65AB7E6418D787E8007FF707 /* IBMorumbi-Prefix.pch */,
 			);
@@ -550,6 +555,7 @@
 				65AB7E6718D787E9007FF707 /* AppDelegate.m in Sources */,
 				65DD693318E3C470007E3D80 /* WebViewController.m in Sources */,
 				6552135F18E345D100924CB0 /* MessageVideoPlayerViewController.m in Sources */,
+				65A4AE1B1A6971BB001E84A5 /* GiveViewController.m in Sources */,
 				65AB7E6318D787E8007FF707 /* main.m in Sources */,
 				655159CB18E4E8760086CCF7 /* BoletimViewController.m in Sources */,
 				65AB7E9418D789A2007FF707 /* MapViewController.m in Sources */,

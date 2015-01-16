@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GxQ-xM-vTa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GxQ-xM-vTa">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Sobre-->
@@ -103,7 +104,7 @@ Tel: (11) 3538-0250</string>
             </objects>
             <point key="canvasLocation" x="1466.25" y="2260"/>
         </scene>
-        <!--Webite-->
+        <!--Website-->
         <scene sceneID="aDY-5s-Apa">
             <objects>
                 <viewController id="Xwb-Jr-B2W" customClass="WebViewController" sceneMemberID="viewController">
@@ -168,7 +169,7 @@ Tel: (11) 3538-0250</string>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Webite" image="globe" id="Q3V-bK-HBd"/>
+                    <tabBarItem key="tabBarItem" title="Website" image="globe" id="Q3V-bK-HBd"/>
                     <connections>
                         <outlet property="spinner" destination="x3K-YJ-03V" id="f6C-Ji-YxL"/>
                         <outlet property="web" destination="R00-kI-sef" id="QSL-5a-FPM"/>
@@ -265,14 +266,14 @@ Tel: (11) 3538-0250</string>
                                                     <rect key="frame" x="73" y="3" width="157" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="05 a 12 de Janeiro de 2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I7e-gG-dTo">
                                                     <rect key="frame" x="73" y="25" width="152" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_pdf.png" id="h0R-ge-n7w">
@@ -329,13 +330,82 @@ Tel: (11) 3538-0250</string>
                         <segue destination="d4g-Kf-JDD" kind="relationship" relationship="viewControllers" id="PKp-h8-yYq"/>
                         <segue destination="MVj-yy-rc3" kind="relationship" relationship="viewControllers" id="KO2-zA-wnJ"/>
                         <segue destination="Xwb-Jr-B2W" kind="relationship" relationship="viewControllers" id="nF5-Om-sq0"/>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Dcx-U6-87C"/>
                         <segue destination="oN5-8Y-AXj" kind="relationship" relationship="viewControllers" id="et1-52-8JC"/>
+                        <segue destination="r11-kN-FkM" kind="relationship" relationship="viewControllers" id="eey-Zd-Bs1"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Dcx-U6-87C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1U-Yj-SEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480" y="20"/>
+        </scene>
+        <!--Give-->
+        <scene sceneID="003-cI-EQ2">
+            <objects>
+                <viewController id="r11-kN-FkM" customClass="GiveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Udl-wg-nAf"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8B-BZ-HLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C7v-VZ-8FT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubQ-07-5d7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="r11-kN-FkM" id="Wi3-ai-j2r"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="haR-F5-Eqw">
+                                <rect key="frame" x="282" y="257" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="top" secondItem="C7v-VZ-8FT" secondAttribute="topMargin" constant="-49" id="2W5-Cc-6Dg"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="centerX" secondItem="haR-F5-Eqw" secondAttribute="centerX" id="3sP-hG-xh2"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="top" secondItem="C7v-VZ-8FT" secondAttribute="topMargin" constant="20" id="5KQ-l2-v7A"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="centerX" secondItem="haR-F5-Eqw" secondAttribute="centerX" id="7ny-hc-s8L"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="bottom" secondItem="V8B-BZ-HLr" secondAttribute="top" id="9d6-sT-jLX"/>
+                            <constraint firstAttribute="trailing" secondItem="ubQ-07-5d7" secondAttribute="trailing" id="DVy-49-DPp"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="leading" secondItem="C7v-VZ-8FT" secondAttribute="leadingMargin" constant="-16" id="O9d-n6-tOJ"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="centerY" secondItem="haR-F5-Eqw" secondAttribute="centerY" id="OSe-gm-hLV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ubQ-07-5d7" secondAttribute="bottom" id="S8n-Gq-Cz5"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="top" secondItem="Udl-wg-nAf" secondAttribute="bottom" constant="20" id="XR1-4Z-UWZ"/>
+                            <constraint firstItem="V8B-BZ-HLr" firstAttribute="top" secondItem="ubQ-07-5d7" secondAttribute="bottom" id="Xhr-Xm-nc6"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="leading" secondItem="C7v-VZ-8FT" secondAttribute="leadingMargin" id="gpS-C0-xFN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ubQ-07-5d7" secondAttribute="trailing" constant="-16" id="jFe-Xl-Wnt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ubQ-07-5d7" secondAttribute="trailing" id="jGI-eW-WWq"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="leading" secondItem="C7v-VZ-8FT" secondAttribute="leading" id="m6i-I4-33z"/>
+                            <constraint firstItem="ubQ-07-5d7" firstAttribute="top" secondItem="C7v-VZ-8FT" secondAttribute="topMargin" id="raR-5t-AKT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2W5-Cc-6Dg"/>
+                                <exclude reference="5KQ-l2-v7A"/>
+                                <exclude reference="7ny-hc-s8L"/>
+                                <exclude reference="9d6-sT-jLX"/>
+                                <exclude reference="O9d-n6-tOJ"/>
+                                <exclude reference="XR1-4Z-UWZ"/>
+                                <exclude reference="gpS-C0-xFN"/>
+                                <exclude reference="jFe-Xl-Wnt"/>
+                                <exclude reference="jGI-eW-WWq"/>
+                                <exclude reference="Xhr-Xm-nc6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Give" image="give" id="gVE-7d-O2k"/>
+                    <connections>
+                        <outlet property="spinner" destination="haR-F5-Eqw" id="aR9-kt-hzU"/>
+                        <outlet property="web" destination="ubQ-07-5d7" id="Mf4-yo-ioC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d3-QE-FYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2130" y="776"/>
         </scene>
         <!--Message Table View Controller-->
         <scene sceneID="RZu-7f-vwQ">
@@ -370,7 +440,7 @@ Tel: (11) 3538-0250</string>
                                                     <rect key="frame" x="93" y="0.0" width="212" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="preview_morumbiplus_470.jpg" id="XVa-nR-SGL">
@@ -391,14 +461,14 @@ Tel: (11) 3538-0250</string>
                                                     <rect key="frame" x="93" y="3" width="34" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zPv-of-WfV">
                                                     <rect key="frame" x="93" y="25" width="43" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="preview_mensagens_470.jpg" id="OYs-YC-aeh">
@@ -468,7 +538,7 @@ Tel: (11) 3538-0250</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Z9-Xu-wBz">
                                 <rect key="frame" x="106" y="200" width="486" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-man.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7pD-yZ-h9h">
@@ -481,25 +551,25 @@ Tel: (11) 3538-0250</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjC-Ko-OBZ">
                                 <rect key="frame" x="106" y="130" width="486" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultos:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDK-4y-2Gy">
                                 <rect key="frame" x="106" y="226" width="486" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-7z-XJ1">
                                 <rect key="frame" x="8" y="68" width="584" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAP-it-oxZ">
                                 <rect key="frame" x="8" y="100" width="584" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6V-Ra-LeD">
@@ -616,7 +686,7 @@ Tel: (11) 3538-0250</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-3d-fbq">
                                 <rect key="frame" x="106" y="560" width="486" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mystery-man.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Mmf-Iz-GY8">
@@ -631,25 +701,25 @@ Tel: (11) 3538-0250</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregador:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZT-QV-3pn">
                                 <rect key="frame" x="106" y="490" width="486" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cultos:" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d2-Fa-QYw">
                                 <rect key="frame" x="106" y="586" width="486" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tema:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsu-ky-5oT">
                                 <rect key="frame" x="8" y="428" width="584" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passagens:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UR9-gf-k3o">
                                 <rect key="frame" x="8" y="460" width="584" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCi-Ta-kNj">
@@ -735,6 +805,7 @@ Tel: (11) 3538-0250</string>
     <resources>
         <image name="about" width="28" height="28"/>
         <image name="facebook.png" width="100" height="26"/>
+        <image name="give" width="29" height="29"/>
         <image name="globe" width="29" height="29"/>
         <image name="icon_pdf.png" width="512" height="512"/>
         <image name="logo_IBMorumbi_iPhone.png" width="280" height="232"/>
