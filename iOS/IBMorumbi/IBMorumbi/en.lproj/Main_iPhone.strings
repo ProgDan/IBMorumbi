@@ -1,0 +1,90 @@
+
+/* Class = "UITabBarItem"; title = "Messages"; ObjectID = "3Mp-jl-VX3"; */
+"3Mp-jl-VX3.title" = "Messages";
+
+/* Class = "UITextView"; text = "1076 Carvalho de Freitas St.\nMorumbi\n05728-030 - Sao Paulo - SP - Brazil\nPhone: +55 11 3538-0250"; ObjectID = "3oX-Te-ZbO"; */
+"3oX-Te-ZbO.text" = "1076 Carvalho de Freitas St.\nMorumbi\n05728-030 - Sao Paulo - SP - Brazil\nPhone: +55 11 3538-0250";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "6g4-3d-fbq"; */
+"6g4-3d-fbq.text" = "Date:";
+
+/* Class = "UILabel"; text = "Worships:"; ObjectID = "7d2-Fa-QYw"; */
+"7d2-Fa-QYw.text" = "Worships:";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "9Z9-Xu-wBz"; */
+"9Z9-Xu-wBz.text" = "Date:";
+
+/* Class = "UILabel"; text = "Homilist:"; ObjectID = "CZT-QV-3pn"; */
+"CZT-QV-3pn.text" = "Homilist:";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "DdI-BN-HvF"; */
+"DdI-BN-HvF.text" = "Title";
+
+/* Class = "UILabel"; text = "05 a 12 de Janeiro de 2014"; ObjectID = "I7e-gG-dTo"; */
+"I7e-gG-dTo.text" = "05 a 12 de Janeiro de 2014";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "Imx-6T-efU"; */
+"Imx-6T-efU.title" = "About";
+
+/* Class = "UILabel"; text = "Homilist:"; ObjectID = "JjC-Ko-OBZ"; */
+"JjC-Ko-OBZ.text" = "Homilist:";
+
+/* Class = "UISegmentedControl"; NaR-CE-BRL.segmentTitles[0] = "Video"; ObjectID = "NaR-CE-BRL"; */
+"NaR-CE-BRL.segmentTitles[0]" = "Video";
+
+/* Class = "UISegmentedControl"; NaR-CE-BRL.segmentTitles[1] = "Audio"; ObjectID = "NaR-CE-BRL"; */
+"NaR-CE-BRL.segmentTitles[1]" = "Audio";
+
+/* Class = "UILabel"; text = "Theme:"; ObjectID = "Nsu-ky-5oT"; */
+"Nsu-ky-5oT.text" = "Theme:";
+
+/* Class = "UITabBarItem"; title = "Webite"; ObjectID = "Q3V-bK-HBd"; */
+"Q3V-bK-HBd.title" = "Webite";
+
+/* Class = "UISegmentedControl"; RXx-I1-rmm.segmentTitles[0] = "Normal"; ObjectID = "RXx-I1-rmm"; */
+"RXx-I1-rmm.segmentTitles[0]" = "Normal";
+
+/* Class = "UISegmentedControl"; RXx-I1-rmm.segmentTitles[1] = "Satellite"; ObjectID = "RXx-I1-rmm"; */
+"RXx-I1-rmm.segmentTitles[1]" = "Satellite";
+
+/* Class = "UILabel"; text = "Passages:"; ObjectID = "UR9-gf-k3o"; */
+"UR9-gf-k3o.text" = "Passages:";
+
+/* Class = "UILabel"; text = "Worships:"; ObjectID = "aDK-4y-2Gy"; */
+"aDK-4y-2Gy.text" = "Worships:";
+
+/* Class = "UIButton"; normalTitle = "Calculate Route"; ObjectID = "b8g-Ig-Vpc"; */
+"b8g-Ig-Vpc.normalTitle" = "Calculate Route";
+
+/* Class = "UILabel"; text = "Newsletter"; ObjectID = "bL9-Rc-OmL"; */
+"bL9-Rc-OmL.text" = "Newsletter";
+
+/* Class = "UILabel"; text = "Theme:"; ObjectID = "cWw-7z-XJ1"; */
+"cWw-7z-XJ1.text" = "Theme:";
+
+/* Class = "UITabBarItem"; title = "Give"; ObjectID = "gVE-7d-O2k"; */
+"gVE-7d-O2k.title" = "Give";
+
+/* Class = "UITabBarItem"; title = "Newsletters"; ObjectID = "hMK-D5-g9K"; */
+"hMK-D5-g9K.title" = "Newsletters";
+
+/* Class = "UILabel"; text = "Morumbi Baptist Church"; ObjectID = "iAM-xT-AK9"; */
+"iAM-xT-AK9.text" = "Morumbi Baptist Church";
+
+/* Class = "UILabel"; text = "v. 1.0.1"; ObjectID = "or5-A7-5P1"; */
+"or5-A7-5P1.text" = "v. 1.0.1";
+
+/* Class = "UIBarButtonItem"; title = "Menssages"; ObjectID = "qMt-96-aIB"; */
+"qMt-96-aIB.title" = "Menssages";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "xNp-c5-Zj2"; */
+"xNp-c5-Zj2.title" = "Map";
+
+/* Class = "UILabel"; text = "Morumbi+"; ObjectID = "z1p-jW-aHQ"; */
+"z1p-jW-aHQ.text" = "Morumbi+";
+
+/* Class = "UILabel"; text = "Passages:"; ObjectID = "zAP-it-oxZ"; */
+"zAP-it-oxZ.text" = "Passages:";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "zPv-of-WfV"; */
+"zPv-of-WfV.text" = "Subtitle";

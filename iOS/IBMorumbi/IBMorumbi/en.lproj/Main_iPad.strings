@@ -1,0 +1,90 @@
+
+/* Class = "UITabBarItem"; title = "Messages"; ObjectID = "0pe-XG-RWH"; */
+"0pe-XG-RWH.title" = "Messages";
+
+/* Class = "UILabel"; text = "Homilist"; ObjectID = "5R9-KJ-gbv"; */
+"5R9-KJ-gbv.text" = "Homilist";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "63B-dh-d7H"; */
+"63B-dh-d7H.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "Website"; ObjectID = "9BD-0I-ZAR"; */
+"9BD-0I-ZAR.title" = "Website";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "AKn-8U-0dK"; */
+"AKn-8U-0dK.text" = "Date";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "F1e-c6-884"; */
+"F1e-c6-884.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Passages"; ObjectID = "GC4-YY-vMO"; */
+"GC4-YY-vMO.text" = "Passages";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "GCS-s1-Kvs"; */
+"GCS-s1-Kvs.title" = "About";
+
+/* Class = "UILabel"; text = "Worships"; ObjectID = "Jz8-J1-McF"; */
+"Jz8-J1-McF.text" = "Worships";
+
+/* Class = "UILabel"; text = "Morumbi Baptist Church"; ObjectID = "KT9-gw-I3C"; */
+"KT9-gw-I3C.text" = "Morumbi Baptist Church";
+
+/* Class = "UILabel"; text = "Theme"; ObjectID = "Rqc-OX-UNp"; */
+"Rqc-OX-UNp.text" = "Theme";
+
+/* Class = "UIButton"; normalTitle = "Calculate Route"; ObjectID = "UZw-7u-49k"; */
+"UZw-7u-49k.normalTitle" = "Calculate Route";
+
+/* Class = "UISegmentedControl"; VAZ-OO-VZI.segmentTitles[0] = "Video"; ObjectID = "VAZ-OO-VZI"; */
+"VAZ-OO-VZI.segmentTitles[0]" = "Video";
+
+/* Class = "UISegmentedControl"; VAZ-OO-VZI.segmentTitles[1] = "Audio"; ObjectID = "VAZ-OO-VZI"; */
+"VAZ-OO-VZI.segmentTitles[1]" = "Audio";
+
+/* Class = "UILabel"; text = "Homilist"; ObjectID = "a6M-JC-qVt"; */
+"a6M-JC-qVt.text" = "Homilist";
+
+/* Class = "UISegmentedControl"; cbR-6m-q6v.segmentTitles[0] = "Normal"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[0]" = "Normal";
+
+/* Class = "UISegmentedControl"; cbR-6m-q6v.segmentTitles[1] = "Satellite"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[1]" = "Satellite";
+
+/* Class = "UISegmentedControl"; cbR-6m-q6v.segmentTitles[2] = "Hybrid"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[2]" = "Hybrid";
+
+/* Class = "UILabel"; text = "Morumbi+"; ObjectID = "gQw-oH-25n"; */
+"gQw-oH-25n.text" = "Morumbi+";
+
+/* Class = "UILabel"; text = "Passages"; ObjectID = "jop-5s-OM2"; */
+"jop-5s-OM2.text" = "Passages";
+
+/* Class = "UILabel"; text = "Theme"; ObjectID = "kU5-nk-tkV"; */
+"kU5-nk-tkV.text" = "Theme";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "kVN-XK-d9I"; */
+"kVN-XK-d9I.title" = "Map";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "lrj-Lw-bDP"; */
+"lrj-Lw-bDP.text" = "Date";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "m1S-h8-pYf"; */
+"m1S-h8-pYf.text" = "Subtitle";
+
+/* Class = "UITabBarItem"; title = "Give"; ObjectID = "nhc-gZ-SWg"; */
+"nhc-gZ-SWg.title" = "Give";
+
+/* Class = "UITabBarItem"; title = "Newsletters"; ObjectID = "vX5-9K-ctb"; */
+"vX5-9K-ctb.title" = "Newsletters";
+
+/* Class = "UILabel"; text = "IBMorumbi's Newsletter"; ObjectID = "w5h-Lh-0kp"; */
+"w5h-Lh-0kp.text" = "IBMorumbi's Newsletter";
+
+/* Class = "UILabel"; text = "Worships"; ObjectID = "wen-zo-WSm"; */
+"wen-zo-WSm.text" = "Worships";
+
+/* Class = "UILabel"; text = "v. 1.0.1"; ObjectID = "yC9-8q-cYu"; */
+"yC9-8q-cYu.text" = "v. 1.0.1";
+
+/* Class = "UITextView"; text = "1076 Carvalho de Freitas St.\nMorumbi\n05728-030 - Sao Paulo - SP - Brazil\nPhone: +55 11 3538-0250"; ObjectID = "zlX-TL-PDp"; */
+"zlX-TL-PDp.text" = "1076 Carvalho de Freitas St.\nMorumbi\n05728-030 - Sao Paulo - SP - Brazil\nPhone: +55 11 3538-0250";

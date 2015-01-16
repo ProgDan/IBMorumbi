@@ -1,0 +1,90 @@
+
+/* Class = "UITabBarItem"; title = "Mensagens"; ObjectID = "0pe-XG-RWH"; */
+"0pe-XG-RWH.title" = "Mensagens";
+
+/* Class = "UILabel"; text = "Pregador"; ObjectID = "5R9-KJ-gbv"; */
+"5R9-KJ-gbv.text" = "Pregador";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "63B-dh-d7H"; */
+"63B-dh-d7H.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "Website"; ObjectID = "9BD-0I-ZAR"; */
+"9BD-0I-ZAR.title" = "Website";
+
+/* Class = "UILabel"; text = "Data"; ObjectID = "AKn-8U-0dK"; */
+"AKn-8U-0dK.text" = "Data";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "F1e-c6-884"; */
+"F1e-c6-884.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Passagens"; ObjectID = "GC4-YY-vMO"; */
+"GC4-YY-vMO.text" = "Passagens";
+
+/* Class = "UITabBarItem"; title = "Sobre"; ObjectID = "GCS-s1-Kvs"; */
+"GCS-s1-Kvs.title" = "Sobre";
+
+/* Class = "UILabel"; text = "Cultos"; ObjectID = "Jz8-J1-McF"; */
+"Jz8-J1-McF.text" = "Cultos";
+
+/* Class = "UILabel"; text = "Igreja Batista do Morumbi"; ObjectID = "KT9-gw-I3C"; */
+"KT9-gw-I3C.text" = "Igreja Batista do Morumbi";
+
+/* Class = "UILabel"; text = "Tema"; ObjectID = "Rqc-OX-UNp"; */
+"Rqc-OX-UNp.text" = "Tema";
+
+/* Class = "UIButton"; normalTitle = "Traçar Rota"; ObjectID = "UZw-7u-49k"; */
+"UZw-7u-49k.normalTitle" = "Traçar Rota";
+
+/* Class = "UISegmentedControl"; VAZ-OO-VZI.segmentTitles[0] = "Vídeo"; ObjectID = "VAZ-OO-VZI"; */
+"VAZ-OO-VZI.segmentTitles[0]" = "Vídeo";
+
+/* Class = "UISegmentedControl"; VAZ-OO-VZI.segmentTitles[1] = "Áudio"; ObjectID = "VAZ-OO-VZI"; */
+"VAZ-OO-VZI.segmentTitles[1]" = "Áudio";
+
+/* Class = "UILabel"; text = "Pregador"; ObjectID = "a6M-JC-qVt"; */
+"a6M-JC-qVt.text" = "Pregador";
+
+/* Class = "UITabBarItem"; title = "Doar"; ObjectID = "bw2-RK-Y6l"; */
+"bw2-RK-Y6l.title" = "Doar";
+
+/* Class = "UISegmentedControl"; cbR-6m-q6v.segmentTitles[0] = "Mapa"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[0]" = "Mapa";
+
+/* Class = "UISegmentedControl"; cbR-6m-q6v.segmentTitles[1] = "Satélite"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[1]" = "Satélite";
+
+/* Class = "UISegmentedControl"; cbR-6m-q6v.segmentTitles[2] = "Híbrido"; ObjectID = "cbR-6m-q6v"; */
+"cbR-6m-q6v.segmentTitles[2]" = "Híbrido";
+
+/* Class = "UILabel"; text = "Morumbi+"; ObjectID = "gQw-oH-25n"; */
+"gQw-oH-25n.text" = "Morumbi+";
+
+/* Class = "UILabel"; text = "Passagens"; ObjectID = "jop-5s-OM2"; */
+"jop-5s-OM2.text" = "Passagens";
+
+/* Class = "UILabel"; text = "Tema"; ObjectID = "kU5-nk-tkV"; */
+"kU5-nk-tkV.text" = "Tema";
+
+/* Class = "UITabBarItem"; title = "Mapa"; ObjectID = "kVN-XK-d9I"; */
+"kVN-XK-d9I.title" = "Mapa";
+
+/* Class = "UILabel"; text = "Data"; ObjectID = "lrj-Lw-bDP"; */
+"lrj-Lw-bDP.text" = "Data";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "m1S-h8-pYf"; */
+"m1S-h8-pYf.text" = "Subtitle";
+
+/* Class = "UITabBarItem"; title = "Boletins"; ObjectID = "vX5-9K-ctb"; */
+"vX5-9K-ctb.title" = "Boletins";
+
+/* Class = "UILabel"; text = "Boletim Informativo da IB Morumbi"; ObjectID = "w5h-Lh-0kp"; */
+"w5h-Lh-0kp.text" = "Boletim Informativo da IB Morumbi";
+
+/* Class = "UILabel"; text = "Cultos"; ObjectID = "wen-zo-WSm"; */
+"wen-zo-WSm.text" = "Cultos";
+
+/* Class = "UILabel"; text = "v. 1.0.1"; ObjectID = "yC9-8q-cYu"; */
+"yC9-8q-cYu.text" = "v. 1.0.1";
+
+/* Class = "UITextView"; text = "Rua Carvalho de Freitas, 1.076\nMorumbi\n05728-030 - São Paulo - SP - Brasil\nTel: (11) 3538-0250"; ObjectID = "zlX-TL-PDp"; */
+"zlX-TL-PDp.text" = "Rua Carvalho de Freitas, 1.076\nMorumbi\n05728-030 - São Paulo - SP - Brasil\nTel: (11) 3538-0250";
